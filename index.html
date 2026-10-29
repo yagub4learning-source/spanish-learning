@@ -106,7 +106,7 @@ function render(data) {
       }
     }
     const paragraphs = '<div class="sentence-paragraph"><p class="flowing-paragraph">' + chunks.join(' ') + `</p><span id="${translationId}" class="sentence-translation" lang="ru" aria-live="polite" hidden></span></div>`;
-    return `<article id="story-${i+1}"><div class="eyebrow">ИСТОРИЯ ${String(i+3).padStart(2,'0')} · ${escapeHTML(s.level)}</div><h2 lang="es-ES">${escapeHTML(s.title)}</h2><button class="story-play" type="button" data-story="${i}" ${s.audio.available ? '' : 'disabled'}>${s.audio.available ? '▶ Слушать рассказ' : 'Аудио скоро'}</button><p class="reading-tip">Нажми на предложение, чтобы увидеть перевод. Нажми ещё раз, чтобы скрыть.</p><div class="spanish" lang="es-ES">${paragraphs}</div><details><summary>Полезные слова и выражения</summary><table><thead><tr><th scope="col">ESPAÑOL</th><th scope="col">РУССКИЙ</th></tr></thead><tbody>${s.vocab.map(([es,ru]) => `<tr><td lang="es-ES">${escapeHTML(es)}</td><td>${escapeHTML(ru)}</td></tr>`).join('')}</tbody></table></details></article>`;
+    return `<article id="story-${i+1}"><div class="eyebrow">ИСТОРИЯ ${String(i+3).padStart(2,'0')} · ${escapeHTML(s.level)}</div><h2 lang="es-ES">${escapeHTML(s.title)}</h2><button class="story-play" type="button" data-story="${i}" ${s.audio.available ? '' : 'disabled'}>${s.audio.available ? '▶ Слушать рассказ' : 'Аудио скоро'}</button><p class="reading-tip">Нажми на предложение, чтобы увидеть перевод. Нажми ещё раз, чтобы скрыть.</p><div class="spanish" lang="es-ES">${paragraphs}</div></article>`;
   }).join('');
   const first = stories.findIndex(s => s.audio.available);
   if (first >= 0) selectStory(first);
