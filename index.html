@@ -30,20 +30,23 @@ body{padding-bottom:150px}.audio{display:none}.player-dock{position:fixed;bottom
 
 .mobile-player{display:none}
 @media(max-width:650px){
- body{padding-bottom:260px}
- .player-dock{padding:12px max(16px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
- .player-title{font-size:16px;font-weight:650;line-height:1.4}
- .player-caption{font-size:11px}
+ body{padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+ .player-dock{padding:6px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
+ .player-title{font-size:14px;font-weight:650;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .player-caption{display:none}
+ .player-note:empty{display:none}
  .player-dock.mobile-ready audio{display:none}
- .mobile-ready .mobile-player{display:block;margin-top:10px}
- .mobile-transport{display:flex;justify-content:center;align-items:center;gap:24px}
- .mobile-transport button{min-width:56px;min-height:56px;border:1px solid #ccd6c4;border-radius:50%;background:#edf2e7;color:#173f39;font:600 17px system-ui;touch-action:manipulation}
- .mobile-transport .mobile-play{min-width:72px;min-height:64px;border-radius:24px;background:#173f39;color:#fffefa;font-size:26px}
- .mobile-seek-row{display:flex;align-items:center;gap:10px;font:13px system-ui;font-variant-numeric:tabular-nums}
- .mobile-seek-row input{flex:1;min-width:0;height:44px;margin:2px 0;accent-color:#173f39;touch-action:pan-x}
- .mobile-seek-row span{min-width:36px}
+ .mobile-ready .mobile-player{display:grid;grid-template-columns:144px minmax(0,1fr);align-items:center;gap:10px;margin-top:4px}
+ .mobile-transport{display:flex;align-items:center;gap:4px}
+ .mobile-transport button{width:44px;min-width:44px;height:44px;min-height:44px;padding:0;border:1px solid #ccd6c4;border-radius:50%;background:#edf2e7;color:#173f39;font:600 14px system-ui;touch-action:manipulation}
+ .mobile-transport .mobile-play{width:48px;min-width:48px;border-radius:16px;background:#173f39;color:#fffefa;font-size:21px}
+ .mobile-seek-row{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;font:11px/14px system-ui;font-variant-numeric:tabular-nums}
+ .mobile-seek-row input{grid-column:1/-1;grid-row:1;width:100%;min-width:0;height:30px;margin:0;accent-color:#173f39;touch-action:pan-x}
+ .mobile-seek-row span{min-width:0;grid-row:2}
+ .mobile-duration{text-align:right}
  .story-play{min-height:48px;font-size:16px}
 }
+
 </style></head><body><header><h1>Spanish stories</h1></header><div class="layout"><nav aria-label="Навигация по рассказам" id="story-nav"></nav><main id="stories"><p role="status">Загрузка историй…</p></main></div><section class="player-dock" aria-label="Аудиоплеер рассказов"><div><div class="player-caption">СЛУШАЙ И ЧИТАЙ</div><div class="player-title" id="player-title" lang="es-ES"></div><p class="player-note" id="player-note" role="status"></p></div><audio id="fixed-audio" controls preload="none" aria-label="Аудио выбранного рассказа"></audio></section>
 <script>
 const dockPlayer = document.getElementById('fixed-audio');
