@@ -39,6 +39,9 @@ body{padding-bottom:150px}.audio{display:none}.player-dock{position:fixed;bottom
  .mobile-ready .mobile-player{display:flex;flex-direction:column;gap:2px;margin-top:0}
  .mobile-transport{display:flex;justify-content:center;align-items:center;gap:20px;width:100%}
  .mobile-transport button{width:44px;min-width:44px;height:44px;min-height:44px;padding:0;border:1px solid #ccd6c4;border-radius:50%;background:#edf2e7;color:#173f39;font:600 14px system-ui;touch-action:manipulation}
+ .mobile-transport .mobile-back,.mobile-transport .mobile-forward{display:grid;place-items:center;border-color:transparent;background:transparent}
+ .mobile-transport .mobile-back:active,.mobile-transport .mobile-forward:active{background:#e2e9db}
+ .mobile-transport button:focus-visible{outline:2px solid #286054;outline-offset:2px}
  .mobile-transport .mobile-play{width:48px;min-width:48px;border-radius:16px;background:#173f39;color:#fffefa;font-size:21px}
  .mobile-seek-row{display:grid;width:100%;grid-template-columns:1fr 1fr;align-items:center;gap:0;font:11px/14px system-ui;font-variant-numeric:tabular-nums}
  .mobile-seek-row input{grid-column:1/-1;grid-row:2;width:100%;min-width:0;height:24px;margin:0;accent-color:#173f39;touch-action:pan-x}
@@ -289,7 +292,7 @@ updateCurrentSection();
  positionPlayer();
  const controls = document.createElement('div');
  controls.className = 'mobile-player';
- controls.innerHTML = `<div class="mobile-transport"><button type="button" class="mobile-back" aria-label="Назад на 10 секунд">↶ 10</button><button type="button" class="mobile-play" aria-label="Воспроизвести">▶</button><button type="button" class="mobile-forward" aria-label="Вперёд на 10 секунд">10 ↷</button></div><div class="mobile-seek-row"><span class="mobile-elapsed">0:00</span><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения" disabled><span class="mobile-duration">0:00</span></div>`;
+ controls.innerHTML = `<div class="mobile-transport"><button type="button" class="mobile-back" aria-label="Назад на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button><button type="button" class="mobile-play" aria-label="Воспроизвести">▶</button><button type="button" class="mobile-forward" aria-label="Вперёд на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g transform="translate(32 0) scale(-1 1)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button></div><div class="mobile-seek-row"><span class="mobile-elapsed">0:00</span><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения" disabled><span class="mobile-duration">0:00</span></div>`;
  dock.append(controls);
  const play = controls.querySelector('.mobile-play');
  const seek = controls.querySelector('input');
@@ -312,8 +315,8 @@ updateCurrentSection();
   else audio.pause();
  });
  const skip = seconds => { if (Number.isFinite(audio.duration)) audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + seconds)); refresh(); };
- controls.querySelector('.mobile-back').addEventListener('click', () => skip(-10));
- controls.querySelector('.mobile-forward').addEventListener('click', () => skip(10));
+ controls.querySelector('.mobile-back').addEventListener('click', () => skip(-3));
+ controls.querySelector('.mobile-forward').addEventListener('click', () => skip(3));
  seek.addEventListener('input', () => { audio.currentTime = Number(seek.value); refresh(); });
  ['play','pause','ended','timeupdate','loadedmetadata','durationchange','emptied'].forEach(event => audio.addEventListener(event, refresh));
  refresh();
