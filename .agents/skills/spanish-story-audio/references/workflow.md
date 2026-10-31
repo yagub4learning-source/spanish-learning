@@ -4,7 +4,7 @@ Use `split_story_audio.py` for this project. It reproduces the method used for t
 
 ## Files and naming
 
-- The only HTML source is `github-pages/index.html`; its `storyData` contains each story's `sentences` array and full recording in `audio.src`.
+- The only HTML source is `github-pages/index.html`; the adjacent `content.json` file contains each story's `sentences` array and full recording in `audio.src`.
 - Resolve a requested story by title, not the displayed number: page numbering includes the two learning sections and differs from internal story IDs.
 - Full recording: `<spanish-title-slug>.mp3`, lower case, hyphens, no accents (e.g. `un-cafe-con-ana.mp3`).
 - Sentence clips: `sentence-audio/<same-title-slug>/01.mp3`, `02.mp3`, etc., in the order of `sentences`. Do not use `story-2` folder names.
@@ -48,7 +48,7 @@ The script preserves completed stories by default. To intentionally rebuild a se
 4. Require the first and last word of every sentence to match. If a boundary does not match, stop, inspect the cached transcript and listen around that point. Correct a transcription error only after verifying it against the recording; if speech differs from the story, resolve that discrepancy explicitly. Never guess timings from text length or divide the recording into equal parts. Internal recognition errors can be harmless when both boundaries match; inspect them as needed.
 5. Take the first word's start and last word's end. Add up to 90 ms before and 120 ms after, bounded by half the available gap to the adjacent word. Never extend beyond the recording. Reject clips of 120 ms or less, reversed boundaries, and overlapping sentence timings.
 6. Decode the original with PyAV to mono float audio at 44,100 Hz. Slice the samples using those timestamps, then encode MP3 using `libmp3lame`, 96 kbit/s. Keep the original full recording untouched.
-7. Write each sentence's relative clip path into `storyData`, leaving the rest of the page unchanged. Save the timing manifest for review.
+7. Write each sentence's relative clip path into `content.json`, leaving the rest of the page unchanged. Save the timing manifest for review.
 
 ## Verification and publishing
 

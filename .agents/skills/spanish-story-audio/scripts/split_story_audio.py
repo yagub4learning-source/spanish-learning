@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create sentence clips from storyData; see ../references/workflow.md."""
+"""Create sentence clips from content.json; see ../references/workflow.md."""
 import argparse
 import difflib
 import hashlib
@@ -10,7 +10,6 @@ import unicodedata
 
 SITE = next(parent for parent in Path(__file__).resolve().parents
             if (parent / 'index.html').is_file())
-DATA_RE = re.compile(r'const storyData = (.*?);\n')
 
 
 def normalize(text):
@@ -65,12 +64,9 @@ def main():
     parser.add_argument('--cache-dir', type=Path, default=Path('/private/tmp/spanish-audio-cache'))
     parser.add_argument('--model-dir', type=Path, default=Path('/private/tmp/spanish-whisper-model'))
     args = parser.parse_args()
-    page = SITE / 'index.html'
-    html = page.read_text()
-    match = DATA_RE.search(html)
-    if not match:
-        raise ValueError('Cannot find storyData JSON in index.html')
-    data = json.loads(match.group(1))
+    content_path = SITE / 'content.json'
+    content = json.loads(content_path.read_text())
+    data = content['stories']
     if args.check:
         check(data)
         return
@@ -146,7 +142,7 @@ def main():
             manifest.append(dict(story=story['title'], sentence=i + 1, text=pair['es'],
                                  start=round(left, 3), end=round(right, 3), audio=pair['audio']))
         print(f"Created {len(ranges)} clips: {folder.name}")
-    page.write_text(html[:match.start(1)] + json.dumps(data, ensure_ascii=False) + html[match.end(1):])
+    content_path.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n')
     (args.cache_dir / 'last-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
     check(data)
 
