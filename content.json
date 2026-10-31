@@ -3755,6 +3755,471 @@
         "src": "un-sabado-lleno-de-sorpresas.mp3",
         "available": true
       }
+    },
+    {
+      "id": "story-14",
+      "title": "Una habitación en Sevilla",
+      "level": "A1",
+      "es": [
+        "Lola llega a Sevilla el viernes por la tarde. Quiere pasar el fin de semana allí, pero todavía no tiene habitación. Entra en un hotel pequeño.",
+        "—Buenas tardes. Quería reservar una habitación para dos noches.",
+        "—Claro, tenemos una libre —dice el recepcionista—. Son sesenta euros por noche, con desayuno.",
+        "A Lola le parece bien el precio.",
+        "—Perfecto, me quedo aquí.",
+        "—¿Puede darme su documento de identidad, por favor?",
+        "Lola le da el documento y el recepcionista apunta sus datos.",
+        "—Bienvenida, Lola. El desayuno es de ocho a diez.",
+        "—¿Puede escribirlo, por favor?",
+        "—Por supuesto. Toma, aquí tienes los horarios y la llave. Tu habitación está al final del pasillo, a la izquierda.",
+        "Lola deja la maleta en la habitación y baja al patio del hotel. Una mujer está sentada junto a unas flores.",
+        "—Buenas, ¿puedo sentarme en esa silla? —pregunta Lola.",
+        "—Sí, claro. Me llamo Pepa. ¿Cómo te llamas?",
+        "—Mi nombre es Lola. Encantada de conocerte.",
+        "—Igualmente. ¿De dónde eres?",
+        "—Soy de Estados Unidos, pero vivo en Madrid. ¿Y tú?",
+        "—Soy de aquí, de Sevilla. Trabajo en el hotel con mi hermano. ¿A qué te dedicas?",
+        "—Soy estudiante. Estudio español y me gusta hablar con la gente para practicar.",
+        "Pepa le habla de un cine de verano que hay cerca. Lola no conoce la expresión.",
+        "—Perdona, no entiendo. ¿Qué es un cine de verano?",
+        "—Es un cine al aire libre. Vemos la película en un patio, bajo las estrellas.",
+        "—¡Qué buena idea! ¿Vamos esta noche?",
+        "—Hoy no puedo, estoy ocupada. Pero mañana estoy libre.",
+        "—Vale, nos vemos mañana. ¿A las ocho aquí, en el patio?",
+        "—Perfecto. ¡Hasta mañana!",
+        "Lola sube a su habitación y abre la ventana. Ahora tiene una habitación, una nueva amiga y un plan para el sábado."
+      ],
+      "ru": [
+        "Лола приезжает в Севилью в пятницу вечером. Она хочет провести там выходные, но у неё пока нет номера. Она заходит в небольшой отель.",
+        "— Добрый вечер. Я хотела бы забронировать номер на две ночи.",
+        "— Конечно, у нас есть свободный номер, — говорит администратор. Шестьдесят евро за ночь, с завтраком.",
+        "Лолу устраивает цена.",
+        "— Отлично, я остановлюсь здесь.",
+        "— Дайте, пожалуйста, ваш документ, удостоверяющий личность.",
+        "Лола даёт ему документ, и администратор записывает её данные.",
+        "— Добро пожаловать, Лола. Завтрак с восьми до десяти.",
+        "— Можете это записать, пожалуйста?",
+        "— Конечно. Вот, держи расписание и ключ. Твой номер в конце коридора налево.",
+        "Лола оставляет чемодан в номере и спускается во внутренний дворик отеля. Рядом с цветами сидит женщина.",
+        "— Привет, можно сесть на этот стул? — спрашивает Лола.",
+        "— Да, конечно. Меня зовут Пепа. Как тебя зовут?",
+        "— Меня зовут Лола. Рада познакомиться.",
+        "— Взаимно. Откуда ты?",
+        "— Я из США, но живу в Мадриде. А ты?",
+        "— Я местная, из Севильи. Я работаю в отеле вместе с братом. Чем ты занимаешься?",
+        "— Я студентка. Я учу испанский и люблю разговаривать с людьми, чтобы практиковаться.",
+        "Пепа рассказывает ей о летнем кинотеатре поблизости. Лола не знает этого выражения.",
+        "— Извини, я не понимаю. Что такое летний кинотеатр?",
+        "— Это кинотеатр под открытым небом. Мы смотрим фильм во дворике, под звёздами.",
+        "— Какая хорошая идея! Пойдём сегодня вечером?",
+        "— Сегодня не могу, я занята. Но завтра я свободна.",
+        "— Хорошо, увидимся завтра. В восемь здесь, во дворике?",
+        "— Отлично. До завтра!",
+        "Лола поднимается в номер и открывает окно. Теперь у неё есть номер, новая подруга и планы на субботу."
+      ],
+      "vocab": [
+        [
+          "Quería reservar una habitación.",
+          "Я хотела бы забронировать номер."
+        ],
+        [
+          "por noche",
+          "за ночь"
+        ],
+        [
+          "con desayuno",
+          "с завтраком"
+        ],
+        [
+          "Me quedo aquí.",
+          "Я остановлюсь здесь."
+        ],
+        [
+          "el documento de identidad",
+          "документ, удостоверяющий личность"
+        ],
+        [
+          "¿Puede escribirlo, por favor?",
+          "Можете это записать, пожалуйста?"
+        ],
+        [
+          "los horarios",
+          "расписание"
+        ],
+        [
+          "al final del pasillo",
+          "в конце коридора"
+        ],
+        [
+          "Encantada de conocerte.",
+          "Рада познакомиться."
+        ],
+        [
+          "Igualmente.",
+          "Взаимно."
+        ],
+        [
+          "¿De dónde eres?",
+          "Откуда ты?"
+        ],
+        [
+          "¿A qué te dedicas?",
+          "Чем ты занимаешься?"
+        ],
+        [
+          "al aire libre",
+          "на открытом воздухе"
+        ],
+        [
+          "Estoy ocupada.",
+          "Я занята."
+        ],
+        [
+          "Estoy libre.",
+          "Я свободна."
+        ]
+      ],
+      "full_text": {
+        "es": "Lola llega a Sevilla el viernes por la tarde. Quiere pasar el fin de semana allí, pero todavía no tiene habitación. Entra en un hotel pequeño.\n\n—Buenas tardes. Quería reservar una habitación para dos noches.\n\n—Claro, tenemos una libre —dice el recepcionista—. Son sesenta euros por noche, con desayuno.\n\nA Lola le parece bien el precio.\n\n—Perfecto, me quedo aquí.\n\n—¿Puede darme su documento de identidad, por favor?\n\nLola le da el documento y el recepcionista apunta sus datos.\n\n—Bienvenida, Lola. El desayuno es de ocho a diez.\n\n—¿Puede escribirlo, por favor?\n\n—Por supuesto. Toma, aquí tienes los horarios y la llave. Tu habitación está al final del pasillo, a la izquierda.\n\nLola deja la maleta en la habitación y baja al patio del hotel. Una mujer está sentada junto a unas flores.\n\n—Buenas, ¿puedo sentarme en esa silla? —pregunta Lola.\n\n—Sí, claro. Me llamo Pepa. ¿Cómo te llamas?\n\n—Mi nombre es Lola. Encantada de conocerte.\n\n—Igualmente. ¿De dónde eres?\n\n—Soy de Estados Unidos, pero vivo en Madrid. ¿Y tú?\n\n—Soy de aquí, de Sevilla. Trabajo en el hotel con mi hermano. ¿A qué te dedicas?\n\n—Soy estudiante. Estudio español y me gusta hablar con la gente para practicar.\n\nPepa le habla de un cine de verano que hay cerca. Lola no conoce la expresión.\n\n—Perdona, no entiendo. ¿Qué es un cine de verano?\n\n—Es un cine al aire libre. Vemos la película en un patio, bajo las estrellas.\n\n—¡Qué buena idea! ¿Vamos esta noche?\n\n—Hoy no puedo, estoy ocupada. Pero mañana estoy libre.\n\n—Vale, nos vemos mañana. ¿A las ocho aquí, en el patio?\n\n—Perfecto. ¡Hasta mañana!\n\nLola sube a su habitación y abre la ventana. Ahora tiene una habitación, una nueva amiga y un plan para el sábado.",
+        "ru": "Лола приезжает в Севилью в пятницу вечером. Она хочет провести там выходные, но у неё пока нет номера. Она заходит в небольшой отель.\n\n— Добрый вечер. Я хотела бы забронировать номер на две ночи.\n\n— Конечно, у нас есть свободный номер, — говорит администратор. Шестьдесят евро за ночь, с завтраком.\n\nЛолу устраивает цена.\n\n— Отлично, я остановлюсь здесь.\n\n— Дайте, пожалуйста, ваш документ, удостоверяющий личность.\n\nЛола даёт ему документ, и администратор записывает её данные.\n\n— Добро пожаловать, Лола. Завтрак с восьми до десяти.\n\n— Можете это записать, пожалуйста?\n\n— Конечно. Вот, держи расписание и ключ. Твой номер в конце коридора налево.\n\nЛола оставляет чемодан в номере и спускается во внутренний дворик отеля. Рядом с цветами сидит женщина.\n\n— Привет, можно сесть на этот стул? — спрашивает Лола.\n\n— Да, конечно. Меня зовут Пепа. Как тебя зовут?\n\n— Меня зовут Лола. Рада познакомиться.\n\n— Взаимно. Откуда ты?\n\n— Я из США, но живу в Мадриде. А ты?\n\n— Я местная, из Севильи. Я работаю в отеле вместе с братом. Чем ты занимаешься?\n\n— Я студентка. Я учу испанский и люблю разговаривать с людьми, чтобы практиковаться.\n\nПепа рассказывает ей о летнем кинотеатре поблизости. Лола не знает этого выражения.\n\n— Извини, я не понимаю. Что такое летний кинотеатр?\n\n— Это кинотеатр под открытым небом. Мы смотрим фильм во дворике, под звёздами.\n\n— Какая хорошая идея! Пойдём сегодня вечером?\n\n— Сегодня не могу, я занята. Но завтра я свободна.\n\n— Хорошо, увидимся завтра. В восемь здесь, во дворике?\n\n— Отлично. До завтра!\n\nЛола поднимается в номер и открывает окно. Теперь у неё есть номер, новая подруга и планы на субботу."
+      },
+      "sentences": [
+        {
+          "es": "Lola llega a Sevilla el viernes por la tarde.",
+          "ru": "Лола приезжает в Севилью в пятницу вечером.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/01.mp3"
+        },
+        {
+          "es": "Quiere pasar el fin de semana allí, pero todavía no tiene habitación.",
+          "ru": "Она хочет провести там выходные, но у неё пока нет номера.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/02.mp3"
+        },
+        {
+          "es": "Entra en un hotel pequeño.",
+          "ru": "Она заходит в небольшой отель.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/03.mp3"
+        },
+        {
+          "es": "—Buenas tardes.",
+          "ru": "— Добрый вечер.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/04.mp3"
+        },
+        {
+          "es": "Quería reservar una habitación para dos noches.",
+          "ru": "Я хотела бы забронировать номер на две ночи.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/05.mp3"
+        },
+        {
+          "es": "—Claro, tenemos una libre —dice el recepcionista—.",
+          "ru": "— Конечно, у нас есть свободный номер, — говорит администратор.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/06.mp3"
+        },
+        {
+          "es": "Son sesenta euros por noche, con desayuno.",
+          "ru": "Шестьдесят евро за ночь, с завтраком.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/07.mp3"
+        },
+        {
+          "es": "A Lola le parece bien el precio.",
+          "ru": "Лолу устраивает цена.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/08.mp3"
+        },
+        {
+          "es": "—Perfecto, me quedo aquí.",
+          "ru": "— Отлично, я остановлюсь здесь.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/09.mp3"
+        },
+        {
+          "es": "—¿Puede darme su documento de identidad, por favor?",
+          "ru": "— Дайте, пожалуйста, ваш документ, удостоверяющий личность.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/10.mp3"
+        },
+        {
+          "es": "Lola le da el documento y el recepcionista apunta sus datos.",
+          "ru": "Лола даёт ему документ, и администратор записывает её данные.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/11.mp3"
+        },
+        {
+          "es": "—Bienvenida, Lola.",
+          "ru": "— Добро пожаловать, Лола.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/12.mp3"
+        },
+        {
+          "es": "El desayuno es de ocho a diez.",
+          "ru": "Завтрак с восьми до десяти.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/13.mp3"
+        },
+        {
+          "es": "—¿Puede escribirlo, por favor?",
+          "ru": "— Можете это записать, пожалуйста?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/14.mp3"
+        },
+        {
+          "es": "—Por supuesto.",
+          "ru": "— Конечно.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/15.mp3"
+        },
+        {
+          "es": "Toma, aquí tienes los horarios y la llave.",
+          "ru": "Вот, держи расписание и ключ.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/16.mp3"
+        },
+        {
+          "es": "Tu habitación está al final del pasillo, a la izquierda.",
+          "ru": "Твой номер в конце коридора налево.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/17.mp3"
+        },
+        {
+          "es": "Lola deja la maleta en la habitación y baja al patio del hotel.",
+          "ru": "Лола оставляет чемодан в номере и спускается во внутренний дворик отеля.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/18.mp3"
+        },
+        {
+          "es": "Una mujer está sentada junto a unas flores.",
+          "ru": "Рядом с цветами сидит женщина.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/19.mp3"
+        },
+        {
+          "es": "—Buenas, ¿puedo sentarme en esa silla? —pregunta Lola.",
+          "ru": "— Привет, можно сесть на этот стул? — спрашивает Лола.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/20.mp3"
+        },
+        {
+          "es": "—Sí, claro.",
+          "ru": "— Да, конечно.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/21.mp3"
+        },
+        {
+          "es": "Me llamo Pepa.",
+          "ru": "Меня зовут Пепа.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/22.mp3"
+        },
+        {
+          "es": "¿Cómo te llamas?",
+          "ru": "Как тебя зовут?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/23.mp3"
+        },
+        {
+          "es": "—Mi nombre es Lola.",
+          "ru": "— Меня зовут Лола.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/24.mp3"
+        },
+        {
+          "es": "Encantada de conocerte.",
+          "ru": "Рада познакомиться.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/25.mp3"
+        },
+        {
+          "es": "—Igualmente.",
+          "ru": "— Взаимно.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/26.mp3"
+        },
+        {
+          "es": "¿De dónde eres?",
+          "ru": "Откуда ты?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/27.mp3"
+        },
+        {
+          "es": "—Soy de Estados Unidos, pero vivo en Madrid.",
+          "ru": "— Я из США, но живу в Мадриде.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/28.mp3"
+        },
+        {
+          "es": "¿Y tú?",
+          "ru": "А ты?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/29.mp3"
+        },
+        {
+          "es": "—Soy de aquí, de Sevilla.",
+          "ru": "— Я местная, из Севильи.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/30.mp3"
+        },
+        {
+          "es": "Trabajo en el hotel con mi hermano.",
+          "ru": "Я работаю в отеле вместе с братом.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/31.mp3"
+        },
+        {
+          "es": "¿A qué te dedicas?",
+          "ru": "Чем ты занимаешься?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/32.mp3"
+        },
+        {
+          "es": "—Soy estudiante.",
+          "ru": "— Я студентка.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/33.mp3"
+        },
+        {
+          "es": "Estudio español y me gusta hablar con la gente para practicar.",
+          "ru": "Я учу испанский и люблю разговаривать с людьми, чтобы практиковаться.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/34.mp3"
+        },
+        {
+          "es": "Pepa le habla de un cine de verano que hay cerca.",
+          "ru": "Пепа рассказывает ей о летнем кинотеатре поблизости.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/35.mp3"
+        },
+        {
+          "es": "Lola no conoce la expresión.",
+          "ru": "Лола не знает этого выражения.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/36.mp3"
+        },
+        {
+          "es": "—Perdona, no entiendo.",
+          "ru": "— Извини, я не понимаю.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/37.mp3"
+        },
+        {
+          "es": "¿Qué es un cine de verano?",
+          "ru": "Что такое летний кинотеатр?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/38.mp3"
+        },
+        {
+          "es": "—Es un cine al aire libre.",
+          "ru": "— Это кинотеатр под открытым небом.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/39.mp3"
+        },
+        {
+          "es": "Vemos la película en un patio, bajo las estrellas.",
+          "ru": "Мы смотрим фильм во дворике, под звёздами.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/40.mp3"
+        },
+        {
+          "es": "—¡Qué buena idea!",
+          "ru": "— Какая хорошая идея!",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/41.mp3"
+        },
+        {
+          "es": "¿Vamos esta noche?",
+          "ru": "Пойдём сегодня вечером?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/42.mp3"
+        },
+        {
+          "es": "—Hoy no puedo, estoy ocupada.",
+          "ru": "— Сегодня не могу, я занята.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/43.mp3"
+        },
+        {
+          "es": "Pero mañana estoy libre.",
+          "ru": "Но завтра я свободна.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/44.mp3"
+        },
+        {
+          "es": "—Vale, nos vemos mañana.",
+          "ru": "— Хорошо, увидимся завтра.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/45.mp3"
+        },
+        {
+          "es": "¿A las ocho aquí, en el patio?",
+          "ru": "В восемь здесь, во дворике?",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/46.mp3"
+        },
+        {
+          "es": "—Perfecto.",
+          "ru": "— Отлично.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/47.mp3"
+        },
+        {
+          "es": "¡Hasta mañana!",
+          "ru": "До завтра!",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/48.mp3"
+        },
+        {
+          "es": "Lola sube a su habitación y abre la ventana.",
+          "ru": "Лола поднимается в номер и открывает окно.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/49.mp3"
+        },
+        {
+          "es": "Ahora tiene una habitación, una nueva amiga y un plan para el sábado.",
+          "ru": "Теперь у неё есть номер, новая подруга и планы на субботу.",
+          "audio": "sentence-audio/una-habitacion-en-sevilla/50.mp3"
+        }
+      ],
+      "dialogue_turns": [
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          46,
+          47
+        ]
+      ],
+      "audio": {
+        "src": "una-habitacion-en-sevilla.mp3",
+        "available": true
+      }
     }
   ],
   "numbers": {
