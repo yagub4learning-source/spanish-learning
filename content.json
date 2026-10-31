@@ -3306,291 +3306,363 @@
       "sentences": [
         {
           "es": "Es sábado por la mañana.",
-          "ru": "Субботнее утро."
+          "ru": "Субботнее утро.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/01.mp3"
         },
         {
           "es": "Laura es una chica de 24 años que vive en Madrid.",
-          "ru": "Лаура — девушка 24 лет, которая живёт в Мадриде."
+          "ru": "Лаура — девушка 24 лет, которая живёт в Мадриде.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/02.mp3"
         },
         {
           "es": "Es estudiante de medicina y le gusta la música.",
-          "ru": "Она студентка медицинского факультета и любит музыку."
+          "ru": "Она студентка медицинского факультета и любит музыку.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/03.mp3"
         },
         {
           "es": "Normalmente, los fines de semana estudia en casa, pero hoy quiere salir con su amigo Carlos.",
-          "ru": "Обычно по выходным она занимается дома, но сегодня хочет погулять со своим другом Карлосом."
+          "ru": "Обычно по выходным она занимается дома, но сегодня хочет погулять со своим другом Карлосом.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/04.mp3"
         },
         {
           "es": "Fuera hace mal tiempo.",
-          "ru": "На улице плохая погода."
+          "ru": "На улице плохая погода.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/05.mp3"
         },
         {
           "es": "Está nublado y hace un poco de frío.",
-          "ru": "Облачно и немного холодно."
+          "ru": "Облачно и немного холодно.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/06.mp3"
         },
         {
           "es": "Sin embargo, Laura quiere visitar el centro de la ciudad.",
-          "ru": "Несмотря на это, Лаура хочет посетить центр города."
+          "ru": "Несмотря на это, Лаура хочет посетить центр города.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/07.mp3"
         },
         {
           "es": "A las diez, Laura llega a la estación de metro.",
-          "ru": "В десять часов Лаура приходит на станцию метро."
+          "ru": "В десять часов Лаура приходит на станцию метро.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/08.mp3"
         },
         {
           "es": "Busca a Carlos, pero no lo ve.",
-          "ru": "Она ищет Карлоса, но не видит его."
+          "ru": "Она ищет Карлоса, но не видит его.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/09.mp3"
         },
         {
           "es": "Entonces lo llama por teléfono.",
-          "ru": "Тогда звонит ему по телефону."
+          "ru": "Тогда звонит ему по телефону.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/10.mp3"
         },
         {
           "es": "—Carlos, ¿dónde estás?",
-          "ru": "— Карлос, где ты?"
+          "ru": "— Карлос, где ты?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/11.mp3"
         },
         {
           "es": "—¡Detrás de ti! —responde Carlos.",
-          "ru": "— За тобой! — отвечает Карлос."
+          "ru": "— За тобой! — отвечает Карлос.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/12.mp3"
         },
         {
           "es": "Laura se da la vuelta y ve a su amigo.",
-          "ru": "Лаура оборачивается и видит друга."
+          "ru": "Лаура оборачивается и видит друга.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/13.mp3"
         },
         {
           "es": "Los dos se ríen.",
-          "ru": "Оба смеются."
+          "ru": "Оба смеются.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/14.mp3"
         },
         {
           "es": "—¿Qué quieres hacer hoy? —pregunta Carlos.",
-          "ru": "— Что ты хочешь сегодня делать? — спрашивает Карлос."
+          "ru": "— Что ты хочешь сегодня делать? — спрашивает Карлос.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/15.mp3"
         },
         {
           "es": "—Primero quiero visitar una tienda de libros.",
-          "ru": "— Сначала хочу посетить книжный магазин."
+          "ru": "— Сначала хочу посетить книжный магазин.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/16.mp3"
         },
         {
           "es": "Después quiero comerme un helado.",
-          "ru": "Потом хочу съесть мороженое."
+          "ru": "Потом хочу съесть мороженое.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/17.mp3"
         },
         {
           "es": "—¡Venga!",
-          "ru": "— Давай!"
+          "ru": "— Давай!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/18.mp3"
         },
         {
           "es": "Vamos.",
-          "ru": "Пошли."
+          "ru": "Пошли.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/19.mp3"
         },
         {
           "es": "Pero cuando llegan a la entrada del metro, ven un cartel: «El metro está cerrado».",
-          "ru": "Но когда они подходят ко входу в метро, видят табличку: «Метро закрыто»."
+          "ru": "Но когда они подходят ко входу в метро, видят табличку: «Метро закрыто».",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/20.mp3"
         },
         {
           "es": "—¡Qué raro! —dice Carlos—.",
-          "ru": "— Как странно! — говорит Карлос."
+          "ru": "— Как странно! — говорит Карлос.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/21.mp3"
         },
         {
           "es": "Normalmente está abierto los sábados.",
-          "ru": "— Обычно по субботам оно открыто."
+          "ru": "— Обычно по субботам оно открыто.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/22.mp3"
         },
         {
           "es": "Deciden ir andando, pero después de veinte minutos se pierden.",
-          "ru": "Они решают пойти пешком, но через двадцать минут теряются."
+          "ru": "Они решают пойти пешком, но через двадцать минут теряются.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/23.mp3"
         },
         {
           "es": "Laura pregunta a una mujer por la dirección.",
-          "ru": "Лаура спрашивает дорогу у женщины."
+          "ru": "Лаура спрашивает дорогу у женщины.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/24.mp3"
         },
         {
           "es": "La mujer les explica que tienen que seguir por la calle principal y girar en la siguiente calle a la derecha.",
-          "ru": "Женщина объясняет, что им нужно идти по главной улице и повернуть на следующем повороте направо."
+          "ru": "Женщина объясняет, что им нужно идти по главной улице и повернуть на следующем повороте направо.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/25.mp3"
         },
         {
           "es": "Habla muy rápido y Laura no comprende todo.",
-          "ru": "Она говорит очень быстро, и Лаура понимает не всё."
+          "ru": "Она говорит очень быстро, и Лаура понимает не всё.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/26.mp3"
         },
         {
           "es": "—¿Puedes repetirlo, por favor?",
-          "ru": "— Можете повторить, пожалуйста?"
+          "ru": "— Можете повторить, пожалуйста?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/27.mp3"
         },
         {
           "es": "Habla más despacio, por favor.",
-          "ru": "Говорите медленнее, пожалуйста."
+          "ru": "Говорите медленнее, пожалуйста.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/28.mp3"
         },
         {
           "es": "—Claro —responde la mujer y repite las instrucciones.",
-          "ru": "— Конечно, — отвечает женщина и повторяет объяснение."
+          "ru": "— Конечно, — отвечает женщина и повторяет объяснение.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/29.mp3"
         },
         {
           "es": "Finalmente, los dos amigos encuentran la librería.",
-          "ru": "Наконец друзья находят книжный магазин."
+          "ru": "Наконец друзья находят книжный магазин.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/30.mp3"
         },
         {
           "es": "Laura compra un libro de historia y Carlos compra una revista.",
-          "ru": "Лаура покупает книгу по истории, а Карлос — журнал."
+          "ru": "Лаура покупает книгу по истории, а Карлос — журнал.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/31.mp3"
         },
         {
           "es": "Cuando salen, escuchan a un hombre que grita:",
-          "ru": "Когда они выходят, слышат, как мужчина кричит:"
+          "ru": "Когда они выходят, слышат, как мужчина кричит:",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/32.mp3"
         },
         {
           "es": "—¡Socorro!",
-          "ru": "— На помощь!"
+          "ru": "— На помощь!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/33.mp3"
         },
         {
           "es": "¡Ayúdame!",
-          "ru": "Помогите мне!"
+          "ru": "Помогите мне!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/34.mp3"
         },
         {
           "es": "Laura se asusta un poco.",
-          "ru": "Лаура немного пугается."
+          "ru": "Лаура немного пугается.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/35.mp3"
         },
         {
           "es": "—¿Qué pasa? —pregunta.",
-          "ru": "— Что случилось? — спрашивает она."
+          "ru": "— Что случилось? — спрашивает она.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/36.mp3"
         },
         {
           "es": "El hombre explica que su perro se ha escapado.",
-          "ru": "Мужчина объясняет, что его собака убежала."
+          "ru": "Мужчина объясняет, что его собака убежала.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/37.mp3"
         },
         {
           "es": "Es pequeño, blanco y se llama Coco.",
-          "ru": "Она маленькая, белая, и её зовут Коко."
+          "ru": "Она маленькая, белая, и её зовут Коко.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/38.mp3"
         },
         {
           "es": "Carlos mira alrededor y ve un perro blanco detrás de un árbol.",
-          "ru": "Карлос оглядывается и видит белую собаку за деревом."
+          "ru": "Карлос оглядывается и видит белую собаку за деревом.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/39.mp3"
         },
         {
           "es": "—Laura, mira.",
-          "ru": "— Лаура, смотри."
+          "ru": "— Лаура, смотри.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/40.mp3"
         },
         {
           "es": "¿Quién es ese hombre?",
-          "ru": "Кто этот мужчина?"
+          "ru": "Кто этот мужчина?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/41.mp3"
         },
         {
           "es": "¿Es el dueño de ese perro?",
-          "ru": "Он хозяин этой собаки?"
+          "ru": "Он хозяин этой собаки?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/42.mp3"
         },
         {
           "es": "Laura no está segura.",
-          "ru": "Лаура не уверена."
+          "ru": "Лаура не уверена.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/43.mp3"
         },
         {
           "es": "Los dos se acercan al perro y ven que lleva un collar con el nombre Coco.",
-          "ru": "Они подходят к собаке и видят, что на её ошейнике написано имя Коко."
+          "ru": "Они подходят к собаке и видят, что на её ошейнике написано имя Коко.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/44.mp3"
         },
         {
           "es": "Es el perro perdido.",
-          "ru": "Это пропавшая собака."
+          "ru": "Это пропавшая собака.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/45.mp3"
         },
         {
           "es": "El hombre está muy contento cuando recupera a Coco.",
-          "ru": "Мужчина очень рад, когда Коко возвращается к нему."
+          "ru": "Мужчина очень рад, когда Коко возвращается к нему.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/46.mp3"
         },
         {
           "es": "—¡Muchas gracias por vuestra ayuda!",
-          "ru": "— Большое спасибо за вашу помощь!"
+          "ru": "— Большое спасибо за вашу помощь!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/47.mp3"
         },
         {
           "es": "—De nada —responde Carlos.",
-          "ru": "— Не за что, — отвечает Карлос."
+          "ru": "— Не за что, — отвечает Карлос.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/48.mp3"
         },
         {
           "es": "Después de esta pequeña aventura, Laura y Carlos deciden comer en un restaurante.",
-          "ru": "После этого небольшого приключения Лаура и Карлос решают поесть в ресторане."
+          "ru": "После этого небольшого приключения Лаура и Карлос решают поесть в ресторане.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/49.mp3"
         },
         {
           "es": "El camarero les da la carta y Carlos pregunta:",
-          "ru": "Официант даёт им меню, и Карлос спрашивает:"
+          "ru": "Официант даёт им меню, и Карлос спрашивает:",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/50.mp3"
         },
         {
           "es": "—¿Qué me recomiendas?",
-          "ru": "— Что вы порекомендуете?"
+          "ru": "— Что вы порекомендуете?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/51.mp3"
         },
         {
           "es": "—La especialidad de la casa son las gambas al ajillo —responde el camarero.",
-          "ru": "— Фирменное блюдо нашего ресторана — креветки с чесноком, — отвечает официант."
+          "ru": "— Фирменное блюдо нашего ресторана — креветки с чесноком, — отвечает официант.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/52.mp3"
         },
         {
           "es": "Carlos pide las gambas, pero Laura prefiere una ensalada y pollo.",
-          "ru": "Карлос заказывает креветки, но Лаура предпочитает салат и курицу."
+          "ru": "Карлос заказывает креветки, но Лаура предпочитает салат и курицу.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/53.mp3"
         },
         {
           "es": "Antes de pedir, explica que es alérgica a los cacahuetes.",
-          "ru": "Перед заказом она объясняет, что у неё аллергия на арахис."
+          "ru": "Перед заказом она объясняет, что у неё аллергия на арахис.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/54.mp3"
         },
         {
           "es": "El camarero consulta con la cocina y le ayuda a elegir un plato adecuado.",
-          "ru": "Официант уточняет информацию на кухне и помогает ей выбрать подходящее блюдо."
+          "ru": "Официант уточняет информацию на кухне и помогает ей выбрать подходящее блюдо.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/55.mp3"
         },
         {
           "es": "Cuando llega la comida, el camarero dice:",
-          "ru": "Когда приносят еду, официант говорит:"
+          "ru": "Когда приносят еду, официант говорит:",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/56.mp3"
         },
         {
           "es": "—¡Que aproveche!",
-          "ru": "— Приятного аппетита!"
+          "ru": "— Приятного аппетита!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/57.mp3"
         },
         {
           "es": "La comida está deliciosa.",
-          "ru": "Еда очень вкусная."
+          "ru": "Еда очень вкусная.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/58.mp3"
         },
         {
           "es": "Después, Carlos pide:",
-          "ru": "После этого Карлос просит:"
+          "ru": "После этого Карлос просит:",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/59.mp3"
         },
         {
           "es": "—La cuenta cuando pueda, por favor.",
-          "ru": "— Счёт, когда сможете, пожалуйста."
+          "ru": "— Счёт, когда сможете, пожалуйста.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/60.mp3"
         },
         {
           "es": "Mientras salen del restaurante, Laura mira el cielo.",
-          "ru": "Выходя из ресторана, Лаура смотрит на небо."
+          "ru": "Выходя из ресторана, Лаура смотрит на небо.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/61.mp3"
         },
         {
           "es": "Ya no llueve y empieza a salir el sol.",
-          "ru": "Дождь уже закончился, и начинает выглядывать солнце."
+          "ru": "Дождь уже закончился, и начинает выглядывать солнце.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/62.mp3"
         },
         {
           "es": "—Ha sido un día muy interesante —dice Laura—.",
-          "ru": "— Это был очень интересный день, — говорит Лаура."
+          "ru": "— Это был очень интересный день, — говорит Лаура.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/63.mp3"
         },
         {
           "es": "¿Cuándo tienes tiempo para volver a salir?",
-          "ru": "— Когда у тебя будет время снова погулять?"
+          "ru": "— Когда у тебя будет время снова погулять?",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/64.mp3"
         },
         {
           "es": "—El martes que viene estoy libre —responde Carlos.",
-          "ru": "— В следующий вторник я свободен, — отвечает Карлос."
+          "ru": "— В следующий вторник я свободен, — отвечает Карлос.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/65.mp3"
         },
         {
           "es": "—¡Perfecto!",
-          "ru": "— Отлично!"
+          "ru": "— Отлично!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/66.mp3"
         },
         {
           "es": "Podemos visitar otro lugar.",
-          "ru": "Можем посетить ещё какое-нибудь место."
+          "ru": "Можем посетить ещё какое-нибудь место.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/67.mp3"
         },
         {
           "es": "Se despiden con una sonrisa.",
-          "ru": "Они прощаются с улыбкой."
+          "ru": "Они прощаются с улыбкой.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/68.mp3"
         },
         {
           "es": "—¡Hasta pronto!",
-          "ru": "— До скорого!"
+          "ru": "— До скорого!",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/69.mp3"
         },
         {
           "es": "Laura vuelve a casa pensando en todo lo que ha pasado.",
-          "ru": "Лаура возвращается домой, думая обо всём, что произошло."
+          "ru": "Лаура возвращается домой, думая обо всём, что произошло.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/70.mp3"
         },
         {
           "es": "No ha sido el día que esperaba, pero ha conocido lugares nuevos, ha ayudado a un hombre y ha pasado un buen rato con su amigo.",
-          "ru": "День оказался не таким, как она ожидала, но она увидела новые места, помогла мужчине и хорошо провела время со своим другом."
+          "ru": "День оказался не таким, как она ожидала, но она увидела новые места, помогла мужчине и хорошо провела время со своим другом.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/71.mp3"
         },
         {
           "es": "A veces, los mejores días son los que no se pueden planear.",
-          "ru": "Иногда лучшие дни — те, которые невозможно спланировать."
+          "ru": "Иногда лучшие дни — те, которые невозможно спланировать.",
+          "audio": "sentence-audio/un-sabado-lleno-de-sorpresas/72.mp3"
         }
       ],
       "dialogue_turns": [
@@ -3681,7 +3753,7 @@
       ],
       "audio": {
         "src": "un-sabado-lleno-de-sorpresas.mp3",
-        "available": false
+        "available": true
       }
     }
   ],
