@@ -3122,6 +3122,567 @@
         "src": "una-sorpresa-para-mi-hermana.mp3",
         "available": true
       }
+    },
+    {
+      "id": "story-13",
+      "title": "Un sábado lleno de sorpresas",
+      "level": "A2",
+      "es": [
+        "Es sábado por la mañana. Laura es una chica de 24 años que vive en Madrid. Es estudiante de medicina y le gusta la música. Normalmente, los fines de semana estudia en casa, pero hoy quiere salir con su amigo Carlos.",
+        "Fuera hace mal tiempo. Está nublado y hace un poco de frío. Sin embargo, Laura quiere visitar el centro de la ciudad.",
+        "A las diez, Laura llega a la estación de metro. Busca a Carlos, pero no lo ve. Entonces lo llama por teléfono.",
+        "—Carlos, ¿dónde estás?",
+        "—¡Detrás de ti! —responde Carlos.",
+        "Laura se da la vuelta y ve a su amigo. Los dos se ríen.",
+        "—¿Qué quieres hacer hoy? —pregunta Carlos.",
+        "—Primero quiero visitar una tienda de libros. Después quiero comerme un helado.",
+        "—¡Venga! Vamos.",
+        "Pero cuando llegan a la entrada del metro, ven un cartel: «El metro está cerrado».",
+        "—¡Qué raro! —dice Carlos—. Normalmente está abierto los sábados.",
+        "Deciden ir andando, pero después de veinte minutos se pierden. Laura pregunta a una mujer por la dirección.",
+        "La mujer les explica que tienen que seguir por la calle principal y girar en la siguiente calle a la derecha. Habla muy rápido y Laura no comprende todo.",
+        "—¿Puedes repetirlo, por favor? Habla más despacio, por favor.",
+        "—Claro —responde la mujer y repite las instrucciones.",
+        "Finalmente, los dos amigos encuentran la librería. Laura compra un libro de historia y Carlos compra una revista.",
+        "Cuando salen, escuchan a un hombre que grita:",
+        "—¡Socorro! ¡Ayúdame!",
+        "Laura se asusta un poco.",
+        "—¿Qué pasa? —pregunta.",
+        "El hombre explica que su perro se ha escapado. Es pequeño, blanco y se llama Coco. Carlos mira alrededor y ve un perro blanco detrás de un árbol.",
+        "—Laura, mira. ¿Quién es ese hombre? ¿Es el dueño de ese perro?",
+        "Laura no está segura. Los dos se acercan al perro y ven que lleva un collar con el nombre Coco. Es el perro perdido.",
+        "El hombre está muy contento cuando recupera a Coco.",
+        "—¡Muchas gracias por vuestra ayuda!",
+        "—De nada —responde Carlos.",
+        "Después de esta pequeña aventura, Laura y Carlos deciden comer en un restaurante.",
+        "El camarero les da la carta y Carlos pregunta:",
+        "—¿Qué me recomiendas?",
+        "—La especialidad de la casa son las gambas al ajillo —responde el camarero.",
+        "Carlos pide las gambas, pero Laura prefiere una ensalada y pollo. Antes de pedir, explica que es alérgica a los cacahuetes. El camarero consulta con la cocina y le ayuda a elegir un plato adecuado.",
+        "Cuando llega la comida, el camarero dice:",
+        "—¡Que aproveche!",
+        "La comida está deliciosa. Después, Carlos pide:",
+        "—La cuenta cuando pueda, por favor.",
+        "Mientras salen del restaurante, Laura mira el cielo. Ya no llueve y empieza a salir el sol.",
+        "—Ha sido un día muy interesante —dice Laura—. ¿Cuándo tienes tiempo para volver a salir?",
+        "—El martes que viene estoy libre —responde Carlos.",
+        "—¡Perfecto! Podemos visitar otro lugar.",
+        "Se despiden con una sonrisa.",
+        "—¡Hasta pronto!",
+        "Laura vuelve a casa pensando en todo lo que ha pasado. No ha sido el día que esperaba, pero ha conocido lugares nuevos, ha ayudado a un hombre y ha pasado un buen rato con su amigo.",
+        "A veces, los mejores días son los que no se pueden planear."
+      ],
+      "ru": [
+        "Субботнее утро. Лаура — девушка 24 лет, которая живёт в Мадриде. Она студентка медицинского факультета и любит музыку. Обычно по выходным она занимается дома, но сегодня хочет погулять со своим другом Карлосом.",
+        "На улице плохая погода. Облачно и немного холодно. Несмотря на это, Лаура хочет посетить центр города.",
+        "В десять часов Лаура приходит на станцию метро. Она ищет Карлоса, но не видит его. Тогда звонит ему по телефону.",
+        "— Карлос, где ты?",
+        "— За тобой! — отвечает Карлос.",
+        "Лаура оборачивается и видит друга. Оба смеются.",
+        "— Что ты хочешь сегодня делать? — спрашивает Карлос.",
+        "— Сначала хочу посетить книжный магазин. Потом хочу съесть мороженое.",
+        "— Давай! Пошли.",
+        "Но когда они подходят ко входу в метро, видят табличку: «Метро закрыто».",
+        "— Как странно! — говорит Карлос. — Обычно по субботам оно открыто.",
+        "Они решают пойти пешком, но через двадцать минут теряются. Лаура спрашивает дорогу у женщины.",
+        "Женщина объясняет, что им нужно идти по главной улице и повернуть на следующем повороте направо. Она говорит очень быстро, и Лаура понимает не всё.",
+        "— Можете повторить, пожалуйста? Говорите медленнее, пожалуйста.",
+        "— Конечно, — отвечает женщина и повторяет объяснение.",
+        "Наконец друзья находят книжный магазин. Лаура покупает книгу по истории, а Карлос — журнал.",
+        "Когда они выходят, слышат, как мужчина кричит:",
+        "— На помощь! Помогите мне!",
+        "Лаура немного пугается.",
+        "— Что случилось? — спрашивает она.",
+        "Мужчина объясняет, что его собака убежала. Она маленькая, белая, и её зовут Коко. Карлос оглядывается и видит белую собаку за деревом.",
+        "— Лаура, смотри. Кто этот мужчина? Он хозяин этой собаки?",
+        "Лаура не уверена. Они подходят к собаке и видят, что на её ошейнике написано имя Коко. Это пропавшая собака.",
+        "Мужчина очень рад, когда Коко возвращается к нему.",
+        "— Большое спасибо за вашу помощь!",
+        "— Не за что, — отвечает Карлос.",
+        "После этого небольшого приключения Лаура и Карлос решают поесть в ресторане.",
+        "Официант даёт им меню, и Карлос спрашивает:",
+        "— Что вы порекомендуете?",
+        "— Фирменное блюдо нашего ресторана — креветки с чесноком, — отвечает официант.",
+        "Карлос заказывает креветки, но Лаура предпочитает салат и курицу. Перед заказом она объясняет, что у неё аллергия на арахис. Официант уточняет информацию на кухне и помогает ей выбрать подходящее блюдо.",
+        "Когда приносят еду, официант говорит:",
+        "— Приятного аппетита!",
+        "Еда очень вкусная. После этого Карлос просит:",
+        "— Счёт, когда сможете, пожалуйста.",
+        "Выходя из ресторана, Лаура смотрит на небо. Дождь уже закончился, и начинает выглядывать солнце.",
+        "— Это был очень интересный день, — говорит Лаура. — Когда у тебя будет время снова погулять?",
+        "— В следующий вторник я свободен, — отвечает Карлос.",
+        "— Отлично! Можем посетить ещё какое-нибудь место.",
+        "Они прощаются с улыбкой.",
+        "— До скорого!",
+        "Лаура возвращается домой, думая обо всём, что произошло. День оказался не таким, как она ожидала, но она увидела новые места, помогла мужчине и хорошо провела время со своим другом.",
+        "Иногда лучшие дни — те, которые невозможно спланировать."
+      ],
+      "vocab": [
+        [
+          "los fines de semana",
+          "по выходным"
+        ],
+        [
+          "Está nublado.",
+          "Облачно."
+        ],
+        [
+          "sin embargo",
+          "однако, несмотря на это"
+        ],
+        [
+          "darse la vuelta",
+          "обернуться"
+        ],
+        [
+          "¡Venga!",
+          "Давай!"
+        ],
+        [
+          "ir andando",
+          "идти пешком"
+        ],
+        [
+          "perderse",
+          "заблудиться"
+        ],
+        [
+          "girar en la siguiente calle",
+          "повернуть на следующую улицу"
+        ],
+        [
+          "¿Puedes repetirlo, por favor?",
+          "Можете повторить, пожалуйста?"
+        ],
+        [
+          "Habla más despacio, por favor.",
+          "Говорите медленнее, пожалуйста."
+        ],
+        [
+          "¡Socorro! ¡Ayúdame!",
+          "На помощь! Помогите мне!"
+        ],
+        [
+          "el dueño",
+          "хозяин"
+        ],
+        [
+          "el collar",
+          "ошейник"
+        ],
+        [
+          "¿Qué me recomiendas?",
+          "Что вы порекомендуете?"
+        ],
+        [
+          "las gambas al ajillo",
+          "креветки с чесноком"
+        ],
+        [
+          "ser alérgico/a a los cacahuetes",
+          "иметь аллергию на арахис"
+        ],
+        [
+          "¡Que aproveche!",
+          "Приятного аппетита!"
+        ],
+        [
+          "La cuenta cuando pueda, por favor.",
+          "Счёт, когда сможете, пожалуйста."
+        ],
+        [
+          "el martes que viene",
+          "в следующий вторник"
+        ],
+        [
+          "pasar un buen rato",
+          "хорошо провести время"
+        ]
+      ],
+      "full_text": {
+        "es": "Es sábado por la mañana. Laura es una chica de 24 años que vive en Madrid. Es estudiante de medicina y le gusta la música. Normalmente, los fines de semana estudia en casa, pero hoy quiere salir con su amigo Carlos.\\n\\nFuera hace mal tiempo. Está nublado y hace un poco de frío. Sin embargo, Laura quiere visitar el centro de la ciudad.\\n\\nA las diez, Laura llega a la estación de metro. Busca a Carlos, pero no lo ve. Entonces lo llama por teléfono.\\n\\n—Carlos, ¿dónde estás?\\n\\n—¡Detrás de ti! —responde Carlos.\\n\\nLaura se da la vuelta y ve a su amigo. Los dos se ríen.\\n\\n—¿Qué quieres hacer hoy? —pregunta Carlos.\\n\\n—Primero quiero visitar una tienda de libros. Después quiero comerme un helado.\\n\\n—¡Venga! Vamos.\\n\\nPero cuando llegan a la entrada del metro, ven un cartel: «El metro está cerrado».\\n\\n—¡Qué raro! —dice Carlos—. Normalmente está abierto los sábados.\\n\\nDeciden ir andando, pero después de veinte minutos se pierden. Laura pregunta a una mujer por la dirección.\\n\\nLa mujer les explica que tienen que seguir por la calle principal y girar en la siguiente calle a la derecha. Habla muy rápido y Laura no comprende todo.\\n\\n—¿Puedes repetirlo, por favor? Habla más despacio, por favor.\\n\\n—Claro —responde la mujer y repite las instrucciones.\\n\\nFinalmente, los dos amigos encuentran la librería. Laura compra un libro de historia y Carlos compra una revista.\\n\\nCuando salen, escuchan a un hombre que grita:\\n\\n—¡Socorro! ¡Ayúdame!\\n\\nLaura se asusta un poco.\\n\\n—¿Qué pasa? —pregunta.\\n\\nEl hombre explica que su perro se ha escapado. Es pequeño, blanco y se llama Coco. Carlos mira alrededor y ve un perro blanco detrás de un árbol.\\n\\n—Laura, mira. ¿Quién es ese hombre? ¿Es el dueño de ese perro?\\n\\nLaura no está segura. Los dos se acercan al perro y ven que lleva un collar con el nombre Coco. Es el perro perdido.\\n\\nEl hombre está muy contento cuando recupera a Coco.\\n\\n—¡Muchas gracias por vuestra ayuda!\\n\\n—De nada —responde Carlos.\\n\\nDespués de esta pequeña aventura, Laura y Carlos deciden comer en un restaurante.\\n\\nEl camarero les da la carta y Carlos pregunta:\\n\\n—¿Qué me recomiendas?\\n\\n—La especialidad de la casa son las gambas al ajillo —responde el camarero.\\n\\nCarlos pide las gambas, pero Laura prefiere una ensalada y pollo. Antes de pedir, explica que es alérgica a los cacahuetes. El camarero consulta con la cocina y le ayuda a elegir un plato adecuado.\\n\\nCuando llega la comida, el camarero dice:\\n\\n—¡Que aproveche!\\n\\nLa comida está deliciosa. Después, Carlos pide:\\n\\n—La cuenta cuando pueda, por favor.\\n\\nMientras salen del restaurante, Laura mira el cielo. Ya no llueve y empieza a salir el sol.\\n\\n—Ha sido un día muy interesante —dice Laura—. ¿Cuándo tienes tiempo para volver a salir?\\n\\n—El martes que viene estoy libre —responde Carlos.\\n\\n—¡Perfecto! Podemos visitar otro lugar.\\n\\nSe despiden con una sonrisa.\\n\\n—¡Hasta pronto!\\n\\nLaura vuelve a casa pensando en todo lo que ha pasado. No ha sido el día que esperaba, pero ha conocido lugares nuevos, ha ayudado a un hombre y ha pasado un buen rato con su amigo.\\n\\nA veces, los mejores días son los que no se pueden planear.",
+        "ru": "Субботнее утро. Лаура — девушка 24 лет, которая живёт в Мадриде. Она студентка медицинского факультета и любит музыку. Обычно по выходным она занимается дома, но сегодня хочет погулять со своим другом Карлосом.\\n\\nНа улице плохая погода. Облачно и немного холодно. Несмотря на это, Лаура хочет посетить центр города.\\n\\nВ десять часов Лаура приходит на станцию метро. Она ищет Карлоса, но не видит его. Тогда звонит ему по телефону.\\n\\n— Карлос, где ты?\\n\\n— За тобой! — отвечает Карлос.\\n\\nЛаура оборачивается и видит друга. Оба смеются.\\n\\n— Что ты хочешь сегодня делать? — спрашивает Карлос.\\n\\n— Сначала хочу посетить книжный магазин. Потом хочу съесть мороженое.\\n\\n— Давай! Пошли.\\n\\nНо когда они подходят ко входу в метро, видят табличку: «Метро закрыто».\\n\\n— Как странно! — говорит Карлос. — Обычно по субботам оно открыто.\\n\\nОни решают пойти пешком, но через двадцать минут теряются. Лаура спрашивает дорогу у женщины.\\n\\nЖенщина объясняет, что им нужно идти по главной улице и повернуть на следующем повороте направо. Она говорит очень быстро, и Лаура понимает не всё.\\n\\n— Можете повторить, пожалуйста? Говорите медленнее, пожалуйста.\\n\\n— Конечно, — отвечает женщина и повторяет объяснение.\\n\\nНаконец друзья находят книжный магазин. Лаура покупает книгу по истории, а Карлос — журнал.\\n\\nКогда они выходят, слышат, как мужчина кричит:\\n\\n— На помощь! Помогите мне!\\n\\nЛаура немного пугается.\\n\\n— Что случилось? — спрашивает она.\\n\\nМужчина объясняет, что его собака убежала. Она маленькая, белая, и её зовут Коко. Карлос оглядывается и видит белую собаку за деревом.\\n\\n— Лаура, смотри. Кто этот мужчина? Он хозяин этой собаки?\\n\\nЛаура не уверена. Они подходят к собаке и видят, что на её ошейнике написано имя Коко. Это пропавшая собака.\\n\\nМужчина очень рад, когда Коко возвращается к нему.\\n\\n— Большое спасибо за вашу помощь!\\n\\n— Не за что, — отвечает Карлос.\\n\\nПосле этого небольшого приключения Лаура и Карлос решают поесть в ресторане.\\n\\nОфициант даёт им меню, и Карлос спрашивает:\\n\\n— Что вы порекомендуете?\\n\\n— Фирменное блюдо нашего ресторана — креветки с чесноком, — отвечает официант.\\n\\nКарлос заказывает креветки, но Лаура предпочитает салат и курицу. Перед заказом она объясняет, что у неё аллергия на арахис. Официант уточняет информацию на кухне и помогает ей выбрать подходящее блюдо.\\n\\nКогда приносят еду, официант говорит:\\n\\n— Приятного аппетита!\\n\\nЕда очень вкусная. После этого Карлос просит:\\n\\n— Счёт, когда сможете, пожалуйста.\\n\\nВыходя из ресторана, Лаура смотрит на небо. Дождь уже закончился, и начинает выглядывать солнце.\\n\\n— Это был очень интересный день, — говорит Лаура. — Когда у тебя будет время снова погулять?\\n\\n— В следующий вторник я свободен, — отвечает Карлос.\\n\\n— Отлично! Можем посетить ещё какое-нибудь место.\\n\\nОни прощаются с улыбкой.\\n\\n— До скорого!\\n\\nЛаура возвращается домой, думая обо всём, что произошло. День оказался не таким, как она ожидала, но она увидела новые места, помогла мужчине и хорошо провела время со своим другом.\\n\\nИногда лучшие дни — те, которые невозможно спланировать."
+      },
+      "sentences": [
+        {
+          "es": "Es sábado por la mañana.",
+          "ru": "Субботнее утро."
+        },
+        {
+          "es": "Laura es una chica de 24 años que vive en Madrid.",
+          "ru": "Лаура — девушка 24 лет, которая живёт в Мадриде."
+        },
+        {
+          "es": "Es estudiante de medicina y le gusta la música.",
+          "ru": "Она студентка медицинского факультета и любит музыку."
+        },
+        {
+          "es": "Normalmente, los fines de semana estudia en casa, pero hoy quiere salir con su amigo Carlos.",
+          "ru": "Обычно по выходным она занимается дома, но сегодня хочет погулять со своим другом Карлосом."
+        },
+        {
+          "es": "Fuera hace mal tiempo.",
+          "ru": "На улице плохая погода."
+        },
+        {
+          "es": "Está nublado y hace un poco de frío.",
+          "ru": "Облачно и немного холодно."
+        },
+        {
+          "es": "Sin embargo, Laura quiere visitar el centro de la ciudad.",
+          "ru": "Несмотря на это, Лаура хочет посетить центр города."
+        },
+        {
+          "es": "A las diez, Laura llega a la estación de metro.",
+          "ru": "В десять часов Лаура приходит на станцию метро."
+        },
+        {
+          "es": "Busca a Carlos, pero no lo ve.",
+          "ru": "Она ищет Карлоса, но не видит его."
+        },
+        {
+          "es": "Entonces lo llama por teléfono.",
+          "ru": "Тогда звонит ему по телефону."
+        },
+        {
+          "es": "—Carlos, ¿dónde estás?",
+          "ru": "— Карлос, где ты?"
+        },
+        {
+          "es": "—¡Detrás de ti! —responde Carlos.",
+          "ru": "— За тобой! — отвечает Карлос."
+        },
+        {
+          "es": "Laura se da la vuelta y ve a su amigo.",
+          "ru": "Лаура оборачивается и видит друга."
+        },
+        {
+          "es": "Los dos se ríen.",
+          "ru": "Оба смеются."
+        },
+        {
+          "es": "—¿Qué quieres hacer hoy? —pregunta Carlos.",
+          "ru": "— Что ты хочешь сегодня делать? — спрашивает Карлос."
+        },
+        {
+          "es": "—Primero quiero visitar una tienda de libros.",
+          "ru": "— Сначала хочу посетить книжный магазин."
+        },
+        {
+          "es": "Después quiero comerme un helado.",
+          "ru": "Потом хочу съесть мороженое."
+        },
+        {
+          "es": "—¡Venga!",
+          "ru": "— Давай!"
+        },
+        {
+          "es": "Vamos.",
+          "ru": "Пошли."
+        },
+        {
+          "es": "Pero cuando llegan a la entrada del metro, ven un cartel: «El metro está cerrado».",
+          "ru": "Но когда они подходят ко входу в метро, видят табличку: «Метро закрыто»."
+        },
+        {
+          "es": "—¡Qué raro! —dice Carlos—.",
+          "ru": "— Как странно! — говорит Карлос."
+        },
+        {
+          "es": "Normalmente está abierto los sábados.",
+          "ru": "— Обычно по субботам оно открыто."
+        },
+        {
+          "es": "Deciden ir andando, pero después de veinte minutos se pierden.",
+          "ru": "Они решают пойти пешком, но через двадцать минут теряются."
+        },
+        {
+          "es": "Laura pregunta a una mujer por la dirección.",
+          "ru": "Лаура спрашивает дорогу у женщины."
+        },
+        {
+          "es": "La mujer les explica que tienen que seguir por la calle principal y girar en la siguiente calle a la derecha.",
+          "ru": "Женщина объясняет, что им нужно идти по главной улице и повернуть на следующем повороте направо."
+        },
+        {
+          "es": "Habla muy rápido y Laura no comprende todo.",
+          "ru": "Она говорит очень быстро, и Лаура понимает не всё."
+        },
+        {
+          "es": "—¿Puedes repetirlo, por favor?",
+          "ru": "— Можете повторить, пожалуйста?"
+        },
+        {
+          "es": "Habla más despacio, por favor.",
+          "ru": "Говорите медленнее, пожалуйста."
+        },
+        {
+          "es": "—Claro —responde la mujer y repite las instrucciones.",
+          "ru": "— Конечно, — отвечает женщина и повторяет объяснение."
+        },
+        {
+          "es": "Finalmente, los dos amigos encuentran la librería.",
+          "ru": "Наконец друзья находят книжный магазин."
+        },
+        {
+          "es": "Laura compra un libro de historia y Carlos compra una revista.",
+          "ru": "Лаура покупает книгу по истории, а Карлос — журнал."
+        },
+        {
+          "es": "Cuando salen, escuchan a un hombre que grita:",
+          "ru": "Когда они выходят, слышат, как мужчина кричит:"
+        },
+        {
+          "es": "—¡Socorro!",
+          "ru": "— На помощь!"
+        },
+        {
+          "es": "¡Ayúdame!",
+          "ru": "Помогите мне!"
+        },
+        {
+          "es": "Laura se asusta un poco.",
+          "ru": "Лаура немного пугается."
+        },
+        {
+          "es": "—¿Qué pasa? —pregunta.",
+          "ru": "— Что случилось? — спрашивает она."
+        },
+        {
+          "es": "El hombre explica que su perro se ha escapado.",
+          "ru": "Мужчина объясняет, что его собака убежала."
+        },
+        {
+          "es": "Es pequeño, blanco y se llama Coco.",
+          "ru": "Она маленькая, белая, и её зовут Коко."
+        },
+        {
+          "es": "Carlos mira alrededor y ve un perro blanco detrás de un árbol.",
+          "ru": "Карлос оглядывается и видит белую собаку за деревом."
+        },
+        {
+          "es": "—Laura, mira.",
+          "ru": "— Лаура, смотри."
+        },
+        {
+          "es": "¿Quién es ese hombre?",
+          "ru": "Кто этот мужчина?"
+        },
+        {
+          "es": "¿Es el dueño de ese perro?",
+          "ru": "Он хозяин этой собаки?"
+        },
+        {
+          "es": "Laura no está segura.",
+          "ru": "Лаура не уверена."
+        },
+        {
+          "es": "Los dos se acercan al perro y ven que lleva un collar con el nombre Coco.",
+          "ru": "Они подходят к собаке и видят, что на её ошейнике написано имя Коко."
+        },
+        {
+          "es": "Es el perro perdido.",
+          "ru": "Это пропавшая собака."
+        },
+        {
+          "es": "El hombre está muy contento cuando recupera a Coco.",
+          "ru": "Мужчина очень рад, когда Коко возвращается к нему."
+        },
+        {
+          "es": "—¡Muchas gracias por vuestra ayuda!",
+          "ru": "— Большое спасибо за вашу помощь!"
+        },
+        {
+          "es": "—De nada —responde Carlos.",
+          "ru": "— Не за что, — отвечает Карлос."
+        },
+        {
+          "es": "Después de esta pequeña aventura, Laura y Carlos deciden comer en un restaurante.",
+          "ru": "После этого небольшого приключения Лаура и Карлос решают поесть в ресторане."
+        },
+        {
+          "es": "El camarero les da la carta y Carlos pregunta:",
+          "ru": "Официант даёт им меню, и Карлос спрашивает:"
+        },
+        {
+          "es": "—¿Qué me recomiendas?",
+          "ru": "— Что вы порекомендуете?"
+        },
+        {
+          "es": "—La especialidad de la casa son las gambas al ajillo —responde el camarero.",
+          "ru": "— Фирменное блюдо нашего ресторана — креветки с чесноком, — отвечает официант."
+        },
+        {
+          "es": "Carlos pide las gambas, pero Laura prefiere una ensalada y pollo.",
+          "ru": "Карлос заказывает креветки, но Лаура предпочитает салат и курицу."
+        },
+        {
+          "es": "Antes de pedir, explica que es alérgica a los cacahuetes.",
+          "ru": "Перед заказом она объясняет, что у неё аллергия на арахис."
+        },
+        {
+          "es": "El camarero consulta con la cocina y le ayuda a elegir un plato adecuado.",
+          "ru": "Официант уточняет информацию на кухне и помогает ей выбрать подходящее блюдо."
+        },
+        {
+          "es": "Cuando llega la comida, el camarero dice:",
+          "ru": "Когда приносят еду, официант говорит:"
+        },
+        {
+          "es": "—¡Que aproveche!",
+          "ru": "— Приятного аппетита!"
+        },
+        {
+          "es": "La comida está deliciosa.",
+          "ru": "Еда очень вкусная."
+        },
+        {
+          "es": "Después, Carlos pide:",
+          "ru": "После этого Карлос просит:"
+        },
+        {
+          "es": "—La cuenta cuando pueda, por favor.",
+          "ru": "— Счёт, когда сможете, пожалуйста."
+        },
+        {
+          "es": "Mientras salen del restaurante, Laura mira el cielo.",
+          "ru": "Выходя из ресторана, Лаура смотрит на небо."
+        },
+        {
+          "es": "Ya no llueve y empieza a salir el sol.",
+          "ru": "Дождь уже закончился, и начинает выглядывать солнце."
+        },
+        {
+          "es": "—Ha sido un día muy interesante —dice Laura—.",
+          "ru": "— Это был очень интересный день, — говорит Лаура."
+        },
+        {
+          "es": "¿Cuándo tienes tiempo para volver a salir?",
+          "ru": "— Когда у тебя будет время снова погулять?"
+        },
+        {
+          "es": "—El martes que viene estoy libre —responde Carlos.",
+          "ru": "— В следующий вторник я свободен, — отвечает Карлос."
+        },
+        {
+          "es": "—¡Perfecto!",
+          "ru": "— Отлично!"
+        },
+        {
+          "es": "Podemos visitar otro lugar.",
+          "ru": "Можем посетить ещё какое-нибудь место."
+        },
+        {
+          "es": "Se despiden con una sonrisa.",
+          "ru": "Они прощаются с улыбкой."
+        },
+        {
+          "es": "—¡Hasta pronto!",
+          "ru": "— До скорого!"
+        },
+        {
+          "es": "Laura vuelve a casa pensando en todo lo que ha pasado.",
+          "ru": "Лаура возвращается домой, думая обо всём, что произошло."
+        },
+        {
+          "es": "No ha sido el día que esperaba, pero ha conocido lugares nuevos, ha ayudado a un hombre y ha pasado un buen rato con su amigo.",
+          "ru": "День оказался не таким, как она ожидала, но она увидела новые места, помогла мужчине и хорошо провела время со своим другом."
+        },
+        {
+          "es": "A veces, los mejores días son los que no se pueden planear.",
+          "ru": "Иногда лучшие дни — те, которые невозможно спланировать."
+        }
+      ],
+      "dialogue_turns": [
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          28,
+          28
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          35,
+          35
+        ],
+        [
+          39,
+          41
+        ],
+        [
+          46,
+          46
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          50,
+          50
+        ],
+        [
+          51,
+          51
+        ],
+        [
+          56,
+          56
+        ],
+        [
+          59,
+          59
+        ],
+        [
+          62,
+          63
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          68,
+          68
+        ]
+      ],
+      "audio": {
+        "src": "un-sabado-lleno-de-sorpresas.mp3",
+        "available": false
+      }
     }
   ],
   "numbers": {
