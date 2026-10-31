@@ -2590,6 +2590,538 @@
         "src": "un-dia-especial-en-bilbao.mp3",
         "available": true
       }
+    },
+    {
+      "id": "story-12",
+      "title": "Una sorpresa para mi hermana",
+      "level": "A1",
+      "es": [
+        "Me llamo Daniel, tengo 28 años y vivo en Madrid. Tengo una hermana que se llama Lucía. Ella vive en Sevilla y trabaja como profesora.",
+        "Hoy es un día especial porque es su cumpleaños. Quiero preparar una sorpresa para ella.",
+        "Son las nueve de la mañana. Es muy temprano, pero tengo muchas cosas que hacer.",
+        "Primero voy a una tienda para comprar un regalo. Veo una chaqueta muy bonita y pregunto: «¿Cuánto cuesta esto?». La dependienta me dice que cuesta 180 euros.",
+        "¡180 euros! Es muy cara. No me puedo comprar esa chaqueta porque no tengo dinero suficiente. Decido buscar otro regalo.",
+        "Al final encuentro un bolso bonito. Es barato, solo cuesta 25 euros. Lo compro y salgo de la tienda.",
+        "Después voy al supermercado. El supermercado está cerca de mi casa. Quiero preparar una comida especial para Lucía.",
+        "A Lucía le encantan los plátanos y le gustan las fresas, pero no le gustan las manzanas. Por eso compro fresas, plátanos y una tarta de chocolate.",
+        "También quiero preparar una tortilla de patatas. A veces cocino, pero no soy un gran cocinero. Quizás hoy todo salga bien.",
+        "A las doce recibo un mensaje de mi amigo Pablo. Me dice que quiere ayudarme con la fiesta, pero va a llegar 15 minutos tarde.",
+        "Le escribo: «No te preocupes. Todavía tenemos tiempo».",
+        "Cuando Pablo llega, empezamos a preparar la casa. Ponemos la comida en la mesa y decoramos el salón con flores.",
+        "A las dos, miro el reloj. ¿Qué hora es? Son las dos y cuarto. Lucía llega a las tres. ¡Tenemos poco tiempo!",
+        "De repente, me duele la cabeza. Estoy cansado porque tengo muchas cosas que hacer. Pablo me dice que descanse un poco.",
+        "A las tres llega Lucía. Abro la puerta y digo:",
+        "—¡Buenas tardes! ¡Bienvenida a mi casa! ¡Feliz cumpleaños!",
+        "Lucía está muy sorprendida. No sabe qué decir.",
+        "—¿De verdad? ¿Lo dices en serio? —pregunta.",
+        "—¡Por supuesto que sí! Hoy es tu día especial.",
+        "Le doy su regalo y digo: «Esto es para ti».",
+        "Lucía abre el regalo y sonríe.",
+        "—¡Muchas gracias! ¡Me encanta!",
+        "Después nos sentamos a comer. La tortilla está buena, pero la tarta de chocolate está todavía mejor.",
+        "Lucía prueba la tarta y dice:",
+        "—¡La tarta está muy rica! ¡Quiero más!",
+        "Todos nos reímos. Después de comer, escuchamos música y hablamos de nuestros planes.",
+        "Por la noche, Lucía tiene que volver a su hotel. Antes de salir, me abraza y dice:",
+        "—Te quiero mucho, Daniel. Gracias por este día tan bonito.",
+        "—Yo también te quiero. Hasta mañana.",
+        "Cuando Lucía se va, me siento en el sofá. Estoy cansado, pero muy contento.",
+        "Pienso que los mejores regalos no siempre son caros. A veces, pasar tiempo con las personas que queremos es el mejor regalo."
+      ],
+      "ru": [
+        "Меня зовут Даниэль, мне 28 лет, и я живу в Мадриде. У меня есть сестра по имени Лусия. Она живёт в Севилье и работает преподавателем.",
+        "Сегодня особенный день, потому что у неё день рождения. Я хочу приготовить для неё сюрприз.",
+        "Сейчас девять утра. Ещё очень рано, но у меня много дел.",
+        "Сначала я иду в магазин, чтобы купить подарок. Я вижу очень красивую куртку и спрашиваю: «Сколько это стоит?» Продавщица говорит, что она стоит 180 евро.",
+        "180 евро! Это очень дорого. Я не могу купить эту куртку, потому что у меня недостаточно денег. Решаю поискать другой подарок.",
+        "В конце концов нахожу красивую сумку. Она недорогая, стоит всего 25 евро. Я покупаю её и выхожу из магазина.",
+        "Затем иду в супермаркет. Супермаркет находится недалеко от моего дома. Я хочу приготовить для Лусии особенный обед.",
+        "Лусия обожает бананы и любит клубнику, но не любит яблоки. Поэтому я покупаю клубнику, бананы и шоколадный торт.",
+        "Я также хочу приготовить картофельную тортилью. Иногда я готовлю, но я не очень хороший повар. Возможно, сегодня всё получится хорошо.",
+        "В двенадцать я получаю сообщение от моего друга Пабло. Он говорит, что хочет помочь мне с праздником, но опоздает на 15 минут.",
+        "Я пишу ему: «Не переживай. У нас ещё есть время».",
+        "Когда Пабло приходит, мы начинаем готовить дом. Ставим еду на стол и украшаем гостиную цветами.",
+        "В два часа я смотрю на часы. Который час? Сейчас два пятнадцать. Лусия приезжает в три. У нас мало времени!",
+        "Вдруг у меня начинает болеть голова. Я устал, потому что у меня много дел. Пабло говорит мне немного отдохнуть.",
+        "В три часа приезжает Лусия. Я открываю дверь и говорю:",
+        "— Добрый день! Добро пожаловать ко мне домой! С днём рождения!",
+        "Лусия очень удивлена. Она не знает, что сказать.",
+        "— Правда? Ты серьёзно? — спрашивает она.",
+        "— Конечно да! Сегодня твой особенный день.",
+        "Я даю ей подарок и говорю: «Это для тебя».",
+        "Лусия открывает подарок и улыбается.",
+        "— Большое спасибо! Мне очень нравится!",
+        "Затем мы садимся есть. Тортилья вкусная, но шоколадный торт ещё вкуснее.",
+        "Лусия пробует торт и говорит:",
+        "— Торт очень вкусный! Хочу ещё!",
+        "Мы все смеёмся. После еды слушаем музыку и разговариваем о наших планах.",
+        "Вечером Лусии нужно вернуться в отель. Перед уходом она обнимает меня и говорит:",
+        "— Я тебя очень люблю, Даниэль. Спасибо за такой прекрасный день.",
+        "— Я тоже тебя люблю. До завтра.",
+        "Когда Лусия уходит, я сажусь на диван. Я устал, но очень доволен.",
+        "Я думаю, что лучшие подарки не всегда дорогие. Иногда проводить время с людьми, которых мы любим, — это лучший подарок."
+      ],
+      "vocab": [
+        [
+          "el cumpleaños",
+          "день рождения"
+        ],
+        [
+          "preparar una sorpresa",
+          "приготовить сюрприз"
+        ],
+        [
+          "tener muchas cosas que hacer",
+          "иметь много дел"
+        ],
+        [
+          "¿Cuánto cuesta esto?",
+          "Сколько это стоит?"
+        ],
+        [
+          "dinero suficiente",
+          "достаточно денег"
+        ],
+        [
+          "al final",
+          "в конце концов"
+        ],
+        [
+          "por eso",
+          "поэтому"
+        ],
+        [
+          "a veces",
+          "иногда"
+        ],
+        [
+          "llegar tarde",
+          "опаздывать"
+        ],
+        [
+          "No te preocupes.",
+          "Не переживай."
+        ],
+        [
+          "Todavía tenemos tiempo.",
+          "У нас ещё есть время."
+        ],
+        [
+          "Son las dos y cuarto.",
+          "Сейчас два пятнадцать."
+        ],
+        [
+          "¡Feliz cumpleaños!",
+          "С днём рождения!"
+        ],
+        [
+          "¿Lo dices en serio?",
+          "Ты серьёзно?"
+        ],
+        [
+          "¡Por supuesto que sí!",
+          "Конечно да!"
+        ],
+        [
+          "pasar tiempo con alguien",
+          "проводить время с кем-то"
+        ]
+      ],
+      "full_text": {
+        "es": "Me llamo Daniel, tengo 28 años y vivo en Madrid. Tengo una hermana que se llama Lucía. Ella vive en Sevilla y trabaja como profesora.\\n\\nHoy es un día especial porque es su cumpleaños. Quiero preparar una sorpresa para ella.\\n\\nSon las nueve de la mañana. Es muy temprano, pero tengo muchas cosas que hacer.\\n\\nPrimero voy a una tienda para comprar un regalo. Veo una chaqueta muy bonita y pregunto: «¿Cuánto cuesta esto?». La dependienta me dice que cuesta 180 euros.\\n\\n¡180 euros! Es muy cara. No me puedo comprar esa chaqueta porque no tengo dinero suficiente. Decido buscar otro regalo.\\n\\nAl final encuentro un bolso bonito. Es barato, solo cuesta 25 euros. Lo compro y salgo de la tienda.\\n\\nDespués voy al supermercado. El supermercado está cerca de mi casa. Quiero preparar una comida especial para Lucía.\\n\\nA Lucía le encantan los plátanos y le gustan las fresas, pero no le gustan las manzanas. Por eso compro fresas, plátanos y una tarta de chocolate.\\n\\nTambién quiero preparar una tortilla de patatas. A veces cocino, pero no soy un gran cocinero. Quizás hoy todo salga bien.\\n\\nA las doce recibo un mensaje de mi amigo Pablo. Me dice que quiere ayudarme con la fiesta, pero va a llegar 15 minutos tarde.\\n\\nLe escribo: «No te preocupes. Todavía tenemos tiempo».\\n\\nCuando Pablo llega, empezamos a preparar la casa. Ponemos la comida en la mesa y decoramos el salón con flores.\\n\\nA las dos, miro el reloj. ¿Qué hora es? Son las dos y cuarto. Lucía llega a las tres. ¡Tenemos poco tiempo!\\n\\nDe repente, me duele la cabeza. Estoy cansado porque tengo muchas cosas que hacer. Pablo me dice que descanse un poco.\\n\\nA las tres llega Lucía. Abro la puerta y digo:\\n\\n—¡Buenas tardes! ¡Bienvenida a mi casa! ¡Feliz cumpleaños!\\n\\nLucía está muy sorprendida. No sabe qué decir.\\n\\n—¿De verdad? ¿Lo dices en serio? —pregunta.\\n\\n—¡Por supuesto que sí! Hoy es tu día especial.\\n\\nLe doy su regalo y digo: «Esto es para ti».\\n\\nLucía abre el regalo y sonríe.\\n\\n—¡Muchas gracias! ¡Me encanta!\\n\\nDespués nos sentamos a comer. La tortilla está buena, pero la tarta de chocolate está todavía mejor.\\n\\nLucía prueba la tarta y dice:\\n\\n—¡La tarta está muy rica! ¡Quiero más!\\n\\nTodos nos reímos. Después de comer, escuchamos música y hablamos de nuestros planes.\\n\\nPor la noche, Lucía tiene que volver a su hotel. Antes de salir, me abraza y dice:\\n\\n—Te quiero mucho, Daniel. Gracias por este día tan bonito.\\n\\n—Yo también te quiero. Hasta mañana.\\n\\nCuando Lucía se va, me siento en el sofá. Estoy cansado, pero muy contento.\\n\\nPienso que los mejores regalos no siempre son caros. A veces, pasar tiempo con las personas que queremos es el mejor regalo.",
+        "ru": "Меня зовут Даниэль, мне 28 лет, и я живу в Мадриде. У меня есть сестра по имени Лусия. Она живёт в Севилье и работает преподавателем.\\n\\nСегодня особенный день, потому что у неё день рождения. Я хочу приготовить для неё сюрприз.\\n\\nСейчас девять утра. Ещё очень рано, но у меня много дел.\\n\\nСначала я иду в магазин, чтобы купить подарок. Я вижу очень красивую куртку и спрашиваю: «Сколько это стоит?» Продавщица говорит, что она стоит 180 евро.\\n\\n180 евро! Это очень дорого. Я не могу купить эту куртку, потому что у меня недостаточно денег. Решаю поискать другой подарок.\\n\\nВ конце концов нахожу красивую сумку. Она недорогая, стоит всего 25 евро. Я покупаю её и выхожу из магазина.\\n\\nЗатем иду в супермаркет. Супермаркет находится недалеко от моего дома. Я хочу приготовить для Лусии особенный обед.\\n\\nЛусия обожает бананы и любит клубнику, но не любит яблоки. Поэтому я покупаю клубнику, бананы и шоколадный торт.\\n\\nЯ также хочу приготовить картофельную тортилью. Иногда я готовлю, но я не очень хороший повар. Возможно, сегодня всё получится хорошо.\\n\\nВ двенадцать я получаю сообщение от моего друга Пабло. Он говорит, что хочет помочь мне с праздником, но опоздает на 15 минут.\\n\\nЯ пишу ему: «Не переживай. У нас ещё есть время».\\n\\nКогда Пабло приходит, мы начинаем готовить дом. Ставим еду на стол и украшаем гостиную цветами.\\n\\nВ два часа я смотрю на часы. Который час? Сейчас два пятнадцать. Лусия приезжает в три. У нас мало времени!\\n\\nВдруг у меня начинает болеть голова. Я устал, потому что у меня много дел. Пабло говорит мне немного отдохнуть.\\n\\nВ три часа приезжает Лусия. Я открываю дверь и говорю:\\n\\n— Добрый день! Добро пожаловать ко мне домой! С днём рождения!\\n\\nЛусия очень удивлена. Она не знает, что сказать.\\n\\n— Правда? Ты серьёзно? — спрашивает она.\\n\\n— Конечно да! Сегодня твой особенный день.\\n\\nЯ даю ей подарок и говорю: «Это для тебя».\\n\\nЛусия открывает подарок и улыбается.\\n\\n— Большое спасибо! Мне очень нравится!\\n\\nЗатем мы садимся есть. Тортилья вкусная, но шоколадный торт ещё вкуснее.\\n\\nЛусия пробует торт и говорит:\\n\\n— Торт очень вкусный! Хочу ещё!\\n\\nМы все смеёмся. После еды слушаем музыку и разговариваем о наших планах.\\n\\nВечером Лусии нужно вернуться в отель. Перед уходом она обнимает меня и говорит:\\n\\n— Я тебя очень люблю, Даниэль. Спасибо за такой прекрасный день.\\n\\n— Я тоже тебя люблю. До завтра.\\n\\nКогда Лусия уходит, я сажусь на диван. Я устал, но очень доволен.\\n\\nЯ думаю, что лучшие подарки не всегда дорогие. Иногда проводить время с людьми, которых мы любим, — это лучший подарок."
+      },
+      "sentences": [
+        {
+          "es": "Me llamo Daniel, tengo 28 años y vivo en Madrid.",
+          "ru": "Меня зовут Даниэль, мне 28 лет, и я живу в Мадриде.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/01.mp3"
+        },
+        {
+          "es": "Tengo una hermana que se llama Lucía.",
+          "ru": "У меня есть сестра по имени Лусия.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/02.mp3"
+        },
+        {
+          "es": "Ella vive en Sevilla y trabaja como profesora.",
+          "ru": "Она живёт в Севилье и работает преподавателем.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/03.mp3"
+        },
+        {
+          "es": "Hoy es un día especial porque es su cumpleaños.",
+          "ru": "Сегодня особенный день, потому что у неё день рождения.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/04.mp3"
+        },
+        {
+          "es": "Quiero preparar una sorpresa para ella.",
+          "ru": "Я хочу приготовить для неё сюрприз.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/05.mp3"
+        },
+        {
+          "es": "Son las nueve de la mañana.",
+          "ru": "Сейчас девять утра.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/06.mp3"
+        },
+        {
+          "es": "Es muy temprano, pero tengo muchas cosas que hacer.",
+          "ru": "Ещё очень рано, но у меня много дел.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/07.mp3"
+        },
+        {
+          "es": "Primero voy a una tienda para comprar un regalo.",
+          "ru": "Сначала я иду в магазин, чтобы купить подарок.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/08.mp3"
+        },
+        {
+          "es": "Veo una chaqueta muy bonita y pregunto: «¿Cuánto cuesta esto?».",
+          "ru": "Я вижу очень красивую куртку и спрашиваю: «Сколько это стоит?»",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/09.mp3"
+        },
+        {
+          "es": "La dependienta me dice que cuesta 180 euros.",
+          "ru": "Продавщица говорит, что она стоит 180 евро.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/10.mp3"
+        },
+        {
+          "es": "¡180 euros!",
+          "ru": "180 евро!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/11.mp3"
+        },
+        {
+          "es": "Es muy cara.",
+          "ru": "Это очень дорого.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/12.mp3"
+        },
+        {
+          "es": "No me puedo comprar esa chaqueta porque no tengo dinero suficiente.",
+          "ru": "Я не могу купить эту куртку, потому что у меня недостаточно денег.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/13.mp3"
+        },
+        {
+          "es": "Decido buscar otro regalo.",
+          "ru": "Решаю поискать другой подарок.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/14.mp3"
+        },
+        {
+          "es": "Al final encuentro un bolso bonito.",
+          "ru": "В конце концов нахожу красивую сумку.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/15.mp3"
+        },
+        {
+          "es": "Es barato, solo cuesta 25 euros.",
+          "ru": "Она недорогая, стоит всего 25 евро.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/16.mp3"
+        },
+        {
+          "es": "Lo compro y salgo de la tienda.",
+          "ru": "Я покупаю её и выхожу из магазина.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/17.mp3"
+        },
+        {
+          "es": "Después voy al supermercado.",
+          "ru": "Затем иду в супермаркет.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/18.mp3"
+        },
+        {
+          "es": "El supermercado está cerca de mi casa.",
+          "ru": "Супермаркет находится недалеко от моего дома.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/19.mp3"
+        },
+        {
+          "es": "Quiero preparar una comida especial para Lucía.",
+          "ru": "Я хочу приготовить для Лусии особенный обед.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/20.mp3"
+        },
+        {
+          "es": "A Lucía le encantan los plátanos y le gustan las fresas, pero no le gustan las manzanas.",
+          "ru": "Лусия обожает бананы и любит клубнику, но не любит яблоки.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/21.mp3"
+        },
+        {
+          "es": "Por eso compro fresas, plátanos y una tarta de chocolate.",
+          "ru": "Поэтому я покупаю клубнику, бананы и шоколадный торт.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/22.mp3"
+        },
+        {
+          "es": "También quiero preparar una tortilla de patatas.",
+          "ru": "Я также хочу приготовить картофельную тортилью.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/23.mp3"
+        },
+        {
+          "es": "A veces cocino, pero no soy un gran cocinero.",
+          "ru": "Иногда я готовлю, но я не очень хороший повар.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/24.mp3"
+        },
+        {
+          "es": "Quizás hoy todo salga bien.",
+          "ru": "Возможно, сегодня всё получится хорошо.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/25.mp3"
+        },
+        {
+          "es": "A las doce recibo un mensaje de mi amigo Pablo.",
+          "ru": "В двенадцать я получаю сообщение от моего друга Пабло.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/26.mp3"
+        },
+        {
+          "es": "Me dice que quiere ayudarme con la fiesta, pero va a llegar 15 minutos tarde.",
+          "ru": "Он говорит, что хочет помочь мне с праздником, но опоздает на 15 минут.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/27.mp3"
+        },
+        {
+          "es": "Le escribo: «No te preocupes.",
+          "ru": "Я пишу ему: «Не переживай.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/28.mp3"
+        },
+        {
+          "es": "Todavía tenemos tiempo».",
+          "ru": "У нас ещё есть время».",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/29.mp3"
+        },
+        {
+          "es": "Cuando Pablo llega, empezamos a preparar la casa.",
+          "ru": "Когда Пабло приходит, мы начинаем готовить дом.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/30.mp3"
+        },
+        {
+          "es": "Ponemos la comida en la mesa y decoramos el salón con flores.",
+          "ru": "Ставим еду на стол и украшаем гостиную цветами.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/31.mp3"
+        },
+        {
+          "es": "A las dos, miro el reloj.",
+          "ru": "В два часа я смотрю на часы.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/32.mp3"
+        },
+        {
+          "es": "¿Qué hora es?",
+          "ru": "Который час?",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/33.mp3"
+        },
+        {
+          "es": "Son las dos y cuarto.",
+          "ru": "Сейчас два пятнадцать.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/34.mp3"
+        },
+        {
+          "es": "Lucía llega a las tres.",
+          "ru": "Лусия приезжает в три.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/35.mp3"
+        },
+        {
+          "es": "¡Tenemos poco tiempo!",
+          "ru": "У нас мало времени!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/36.mp3"
+        },
+        {
+          "es": "De repente, me duele la cabeza.",
+          "ru": "Вдруг у меня начинает болеть голова.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/37.mp3"
+        },
+        {
+          "es": "Estoy cansado porque tengo muchas cosas que hacer.",
+          "ru": "Я устал, потому что у меня много дел.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/38.mp3"
+        },
+        {
+          "es": "Pablo me dice que descanse un poco.",
+          "ru": "Пабло говорит мне немного отдохнуть.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/39.mp3"
+        },
+        {
+          "es": "A las tres llega Lucía.",
+          "ru": "В три часа приезжает Лусия.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/40.mp3"
+        },
+        {
+          "es": "Abro la puerta y digo:",
+          "ru": "Я открываю дверь и говорю:",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/41.mp3"
+        },
+        {
+          "es": "—¡Buenas tardes!",
+          "ru": "— Добрый день!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/42.mp3"
+        },
+        {
+          "es": "¡Bienvenida a mi casa!",
+          "ru": "Добро пожаловать ко мне домой!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/43.mp3"
+        },
+        {
+          "es": "¡Feliz cumpleaños!",
+          "ru": "С днём рождения!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/44.mp3"
+        },
+        {
+          "es": "Lucía está muy sorprendida.",
+          "ru": "Лусия очень удивлена.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/45.mp3"
+        },
+        {
+          "es": "No sabe qué decir.",
+          "ru": "Она не знает, что сказать.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/46.mp3"
+        },
+        {
+          "es": "—¿De verdad?",
+          "ru": "— Правда?",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/47.mp3"
+        },
+        {
+          "es": "¿Lo dices en serio? —pregunta.",
+          "ru": "Ты серьёзно? — спрашивает она.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/48.mp3"
+        },
+        {
+          "es": "—¡Por supuesto que sí!",
+          "ru": "— Конечно да!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/49.mp3"
+        },
+        {
+          "es": "Hoy es tu día especial.",
+          "ru": "Сегодня твой особенный день.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/50.mp3"
+        },
+        {
+          "es": "Le doy su regalo y digo: «Esto es para ti».",
+          "ru": "Я даю ей подарок и говорю: «Это для тебя».",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/51.mp3"
+        },
+        {
+          "es": "Lucía abre el regalo y sonríe.",
+          "ru": "Лусия открывает подарок и улыбается.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/52.mp3"
+        },
+        {
+          "es": "—¡Muchas gracias!",
+          "ru": "— Большое спасибо!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/53.mp3"
+        },
+        {
+          "es": "¡Me encanta!",
+          "ru": "Мне очень нравится!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/54.mp3"
+        },
+        {
+          "es": "Después nos sentamos a comer.",
+          "ru": "Затем мы садимся есть.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/55.mp3"
+        },
+        {
+          "es": "La tortilla está buena, pero la tarta de chocolate está todavía mejor.",
+          "ru": "Тортилья вкусная, но шоколадный торт ещё вкуснее.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/56.mp3"
+        },
+        {
+          "es": "Lucía prueba la tarta y dice:",
+          "ru": "Лусия пробует торт и говорит:",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/57.mp3"
+        },
+        {
+          "es": "—¡La tarta está muy rica!",
+          "ru": "— Торт очень вкусный!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/58.mp3"
+        },
+        {
+          "es": "¡Quiero más!",
+          "ru": "Хочу ещё!",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/59.mp3"
+        },
+        {
+          "es": "Todos nos reímos.",
+          "ru": "Мы все смеёмся.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/60.mp3"
+        },
+        {
+          "es": "Después de comer, escuchamos música y hablamos de nuestros planes.",
+          "ru": "После еды слушаем музыку и разговариваем о наших планах.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/61.mp3"
+        },
+        {
+          "es": "Por la noche, Lucía tiene que volver a su hotel.",
+          "ru": "Вечером Лусии нужно вернуться в отель.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/62.mp3"
+        },
+        {
+          "es": "Antes de salir, me abraza y dice:",
+          "ru": "Перед уходом она обнимает меня и говорит:",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/63.mp3"
+        },
+        {
+          "es": "—Te quiero mucho, Daniel.",
+          "ru": "— Я тебя очень люблю, Даниэль.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/64.mp3"
+        },
+        {
+          "es": "Gracias por este día tan bonito.",
+          "ru": "Спасибо за такой прекрасный день.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/65.mp3"
+        },
+        {
+          "es": "—Yo también te quiero.",
+          "ru": "— Я тоже тебя люблю.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/66.mp3"
+        },
+        {
+          "es": "Hasta mañana.",
+          "ru": "До завтра.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/67.mp3"
+        },
+        {
+          "es": "Cuando Lucía se va, me siento en el sofá.",
+          "ru": "Когда Лусия уходит, я сажусь на диван.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/68.mp3"
+        },
+        {
+          "es": "Estoy cansado, pero muy contento.",
+          "ru": "Я устал, но очень доволен.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/69.mp3"
+        },
+        {
+          "es": "Pienso que los mejores regalos no siempre son caros.",
+          "ru": "Я думаю, что лучшие подарки не всегда дорогие.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/70.mp3"
+        },
+        {
+          "es": "A veces, pasar tiempo con las personas que queremos es el mejor regalo.",
+          "ru": "Иногда проводить время с людьми, которых мы любим, — это лучший подарок.",
+          "audio": "sentence-audio/una-sorpresa-para-mi-hermana/71.mp3"
+        }
+      ],
+      "dialogue_turns": [
+        [
+          41,
+          43
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          63,
+          64
+        ],
+        [
+          65,
+          66
+        ]
+      ],
+      "audio": {
+        "src": "una-sorpresa-para-mi-hermana.mp3",
+        "available": true
+      }
     }
   ],
   "numbers": {
