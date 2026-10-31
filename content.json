@@ -2286,6 +2286,271 @@
         "src": "una-cita-con-la-medica.mp3",
         "available": true
       }
+    },
+    {
+      "id": "story-11",
+      "title": "Un día especial en Bilbao",
+      "level": "A1",
+      "es": [
+        "Hoy es sábado y hace muy buen tiempo. Hace sol y quiero hacer algo diferente. Vivo en Santander, pero hoy me voy de viaje a Bilbao.",
+        "Me levanto a las ocho de la mañana. Tengo mucho sueño y quiero dormir más, pero también tengo muchas ganas de visitar Bilbao.",
+        "Después de desayunar, voy a la estación de autobuses. Tengo hambre otra vez, así que compro un bocadillo. También tengo mucha sed y compro una botella de agua.",
+        "En la estación veo muchos autobuses. No sé cuál es el mío. Pregunto a un trabajador: «Perdona, ¿a dónde va este autobús?». Me dice que va a Bilbao. Perfecto.",
+        "Después de una hora y media llego a Bilbao. Es una ciudad muy bonita. Me gusta caminar por sus calles y mirar los edificios.",
+        "Quiero visitar un museo, pero primero necesito comer. Busco un restaurante en el centro. No sé dónde está, así que pregunto a una mujer: «Perdona, ¿en qué calle está el restaurante?». Ella me explica que está todo recto, después a la izquierda.",
+        "Encuentro el restaurante y entro. ¿Me puedo sentar aquí?, pregunto al camarero. Me dice que sí.",
+        "Pido una tortilla de patatas y agua. Cuando pruebo la tortilla, pienso: «¡Qué rico!». Me encanta la comida española.",
+        "Después de comer, pido la cuenta, por favor. La comida no es cara y estoy muy contento.",
+        "Por la tarde quiero visitar el museo, pero cuando miro el móvil veo que es muy tarde. ¡Qué raro! El tiempo pasa muy rápido cuando estoy de viaje.",
+        "Decido volver a Santander. En el autobús estoy cansado, pero feliz.",
+        "Cuando llego a casa, pienso: «Bilbao es una ciudad fantástica. Tenemos que vernos pronto otra vez».",
+        "Mañana es domingo. Mañana por la mañana va a llover, así que voy a quedarme en casa, leer un libro y descansar.",
+        "Pero ahora... ¡Tengo mucho sueño! A dormir."
+      ],
+      "ru": [
+        "Сегодня суббота, и погода очень хорошая. Светит солнце, и мне хочется сделать что-нибудь необычное. Я живу в Сантандере, но сегодня отправляюсь в Бильбао.",
+        "Я встаю в восемь утра. Мне очень хочется спать, и я хочу поспать ещё, но мне также очень хочется посетить Бильбао.",
+        "После завтрака я иду на автовокзал. Я снова голоден, поэтому покупаю бутерброд. Ещё я очень хочу пить и покупаю бутылку воды.",
+        "На вокзале я вижу много автобусов. Я не знаю, какой из них мой. Спрашиваю сотрудника: «Извините, куда едет этот автобус?» Он говорит, что автобус едет в Бильбао. Отлично!",
+        "Через полтора часа я приезжаю в Бильбао. Это очень красивый город. Мне нравится гулять по его улицам и смотреть на здания.",
+        "Я хочу посетить музей, но сначала мне нужно поесть. Я ищу ресторан в центре. Я не знаю, где он находится, поэтому спрашиваю женщину: «Извините, на какой улице находится ресторан?» Она объясняет, что нужно идти прямо, а потом налево.",
+        "Я нахожу ресторан и захожу. «Можно мне здесь сесть?» — спрашиваю официанта. Он говорит, что можно.",
+        "Я заказываю картофельную тортилью и воду. Когда пробую тортилью, думаю: «Как вкусно!» Мне очень нравится испанская кухня.",
+        "После еды я прошу счёт. Еда недорогая, и я очень доволен.",
+        "Днём я хочу посетить музей, но когда смотрю на телефон, вижу, что уже очень поздно. Как странно! Время проходит очень быстро, когда путешествуешь.",
+        "Я решаю вернуться в Сантандер. В автобусе я уставший, но счастливый.",
+        "Когда прихожу домой, думаю: «Бильбао — фантастический город. Нам нужно скоро снова встретиться».",
+        "Завтра воскресенье. Завтра утром будет дождь, поэтому я останусь дома, буду читать книгу и отдыхать.",
+        "Но сейчас... Я очень хочу спать! Пора спать."
+      ],
+      "vocab": [
+        [
+          "irse de viaje",
+          "отправляться в путешествие"
+        ],
+        [
+          "tener ganas de + infinitivo",
+          "хотеть что-то сделать"
+        ],
+        [
+          "otra vez",
+          "снова"
+        ],
+        [
+          "así que",
+          "поэтому"
+        ],
+        [
+          "¿Cuál es el mío?",
+          "Какой из них мой?"
+        ],
+        [
+          "una hora y media",
+          "полтора часа"
+        ],
+        [
+          "todo recto",
+          "всё время прямо"
+        ],
+        [
+          "a la izquierda",
+          "налево"
+        ],
+        [
+          "¿Me puedo sentar aquí?",
+          "Можно мне здесь сесть?"
+        ],
+        [
+          "¡Qué rico!",
+          "Как вкусно!"
+        ],
+        [
+          "¡Qué raro!",
+          "Как странно!"
+        ],
+        [
+          "mañana por la mañana",
+          "завтра утром"
+        ],
+        [
+          "ir a + infinitivo",
+          "собираться что-то сделать"
+        ],
+        [
+          "quedarse en casa",
+          "оставаться дома"
+        ],
+        [
+          "¡A dormir!",
+          "Пора спать!"
+        ]
+      ],
+      "full_text": {
+        "es": "Hoy es sábado y hace muy buen tiempo. Hace sol y quiero hacer algo diferente. Vivo en Santander, pero hoy me voy de viaje a Bilbao.\\n\\nMe levanto a las ocho de la mañana. Tengo mucho sueño y quiero dormir más, pero también tengo muchas ganas de visitar Bilbao.\\n\\nDespués de desayunar, voy a la estación de autobuses. Tengo hambre otra vez, así que compro un bocadillo. También tengo mucha sed y compro una botella de agua.\\n\\nEn la estación veo muchos autobuses. No sé cuál es el mío. Pregunto a un trabajador: «Perdona, ¿a dónde va este autobús?». Me dice que va a Bilbao. Perfecto.\\n\\nDespués de una hora y media llego a Bilbao. Es una ciudad muy bonita. Me gusta caminar por sus calles y mirar los edificios.\\n\\nQuiero visitar un museo, pero primero necesito comer. Busco un restaurante en el centro. No sé dónde está, así que pregunto a una mujer: «Perdona, ¿en qué calle está el restaurante?». Ella me explica que está todo recto, después a la izquierda.\\n\\nEncuentro el restaurante y entro. ¿Me puedo sentar aquí?, pregunto al camarero. Me dice que sí.\\n\\nPido una tortilla de patatas y agua. Cuando pruebo la tortilla, pienso: «¡Qué rico!». Me encanta la comida española.\\n\\nDespués de comer, pido la cuenta, por favor. La comida no es cara y estoy muy contento.\\n\\nPor la tarde quiero visitar el museo, pero cuando miro el móvil veo que es muy tarde. ¡Qué raro! El tiempo pasa muy rápido cuando estoy de viaje.\\n\\nDecido volver a Santander. En el autobús estoy cansado, pero feliz.\\n\\nCuando llego a casa, pienso: «Bilbao es una ciudad fantástica. Tenemos que vernos pronto otra vez».\\n\\nMañana es domingo. Mañana por la mañana va a llover, así que voy a quedarme en casa, leer un libro y descansar.\\n\\nPero ahora... ¡Tengo mucho sueño! A dormir.",
+        "ru": "Сегодня суббота, и погода очень хорошая. Светит солнце, и мне хочется сделать что-нибудь необычное. Я живу в Сантандере, но сегодня отправляюсь в Бильбао.\\n\\nЯ встаю в восемь утра. Мне очень хочется спать, и я хочу поспать ещё, но мне также очень хочется посетить Бильбао.\\n\\nПосле завтрака я иду на автовокзал. Я снова голоден, поэтому покупаю бутерброд. Ещё я очень хочу пить и покупаю бутылку воды.\\n\\nНа вокзале я вижу много автобусов. Я не знаю, какой из них мой. Спрашиваю сотрудника: «Извините, куда едет этот автобус?» Он говорит, что автобус едет в Бильбао. Отлично!\\n\\nЧерез полтора часа я приезжаю в Бильбао. Это очень красивый город. Мне нравится гулять по его улицам и смотреть на здания.\\n\\nЯ хочу посетить музей, но сначала мне нужно поесть. Я ищу ресторан в центре. Я не знаю, где он находится, поэтому спрашиваю женщину: «Извините, на какой улице находится ресторан?» Она объясняет, что нужно идти прямо, а потом налево.\\n\\nЯ нахожу ресторан и захожу. «Можно мне здесь сесть?» — спрашиваю официанта. Он говорит, что можно.\\n\\nЯ заказываю картофельную тортилью и воду. Когда пробую тортилью, думаю: «Как вкусно!» Мне очень нравится испанская кухня.\\n\\nПосле еды я прошу счёт. Еда недорогая, и я очень доволен.\\n\\nДнём я хочу посетить музей, но когда смотрю на телефон, вижу, что уже очень поздно. Как странно! Время проходит очень быстро, когда путешествуешь.\\n\\nЯ решаю вернуться в Сантандер. В автобусе я уставший, но счастливый.\\n\\nКогда прихожу домой, думаю: «Бильбао — фантастический город. Нам нужно скоро снова встретиться».\\n\\nЗавтра воскресенье. Завтра утром будет дождь, поэтому я останусь дома, буду читать книгу и отдыхать.\\n\\nНо сейчас... Я очень хочу спать! Пора спать."
+      },
+      "sentences": [
+        {
+          "es": "Hoy es sábado y hace muy buen tiempo.",
+          "ru": "Сегодня суббота, и погода очень хорошая."
+        },
+        {
+          "es": "Hace sol y quiero hacer algo diferente.",
+          "ru": "Светит солнце, и мне хочется сделать что-нибудь необычное."
+        },
+        {
+          "es": "Vivo en Santander, pero hoy me voy de viaje a Bilbao.",
+          "ru": "Я живу в Сантандере, но сегодня отправляюсь в Бильбао."
+        },
+        {
+          "es": "Me levanto a las ocho de la mañana.",
+          "ru": "Я встаю в восемь утра."
+        },
+        {
+          "es": "Tengo mucho sueño y quiero dormir más, pero también tengo muchas ganas de visitar Bilbao.",
+          "ru": "Мне очень хочется спать, и я хочу поспать ещё, но мне также очень хочется посетить Бильбао."
+        },
+        {
+          "es": "Después de desayunar, voy a la estación de autobuses.",
+          "ru": "После завтрака я иду на автовокзал."
+        },
+        {
+          "es": "Tengo hambre otra vez, así que compro un bocadillo.",
+          "ru": "Я снова голоден, поэтому покупаю бутерброд."
+        },
+        {
+          "es": "También tengo mucha sed y compro una botella de agua.",
+          "ru": "Ещё я очень хочу пить и покупаю бутылку воды."
+        },
+        {
+          "es": "En la estación veo muchos autobuses.",
+          "ru": "На вокзале я вижу много автобусов."
+        },
+        {
+          "es": "No sé cuál es el mío.",
+          "ru": "Я не знаю, какой из них мой."
+        },
+        {
+          "es": "Pregunto a un trabajador: «Perdona, ¿a dónde va este autobús?».",
+          "ru": "Спрашиваю сотрудника: «Извините, куда едет этот автобус?»"
+        },
+        {
+          "es": "Me dice que va a Bilbao.",
+          "ru": "Он говорит, что автобус едет в Бильбао."
+        },
+        {
+          "es": "Perfecto.",
+          "ru": "Отлично!"
+        },
+        {
+          "es": "Después de una hora y media llego a Bilbao.",
+          "ru": "Через полтора часа я приезжаю в Бильбао."
+        },
+        {
+          "es": "Es una ciudad muy bonita.",
+          "ru": "Это очень красивый город."
+        },
+        {
+          "es": "Me gusta caminar por sus calles y mirar los edificios.",
+          "ru": "Мне нравится гулять по его улицам и смотреть на здания."
+        },
+        {
+          "es": "Quiero visitar un museo, pero primero necesito comer.",
+          "ru": "Я хочу посетить музей, но сначала мне нужно поесть."
+        },
+        {
+          "es": "Busco un restaurante en el centro.",
+          "ru": "Я ищу ресторан в центре."
+        },
+        {
+          "es": "No sé dónde está, así que pregunto a una mujer: «Perdona, ¿en qué calle está el restaurante?».",
+          "ru": "Я не знаю, где он находится, поэтому спрашиваю женщину: «Извините, на какой улице находится ресторан?»"
+        },
+        {
+          "es": "Ella me explica que está todo recto, después a la izquierda.",
+          "ru": "Она объясняет, что нужно идти прямо, а потом налево."
+        },
+        {
+          "es": "Encuentro el restaurante y entro.",
+          "ru": "Я нахожу ресторан и захожу."
+        },
+        {
+          "es": "¿Me puedo sentar aquí?, pregunto al camarero.",
+          "ru": "«Можно мне здесь сесть?» — спрашиваю официанта."
+        },
+        {
+          "es": "Me dice que sí.",
+          "ru": "Он говорит, что можно."
+        },
+        {
+          "es": "Pido una tortilla de patatas y agua.",
+          "ru": "Я заказываю картофельную тортилью и воду."
+        },
+        {
+          "es": "Cuando pruebo la tortilla, pienso: «¡Qué rico!».",
+          "ru": "Когда пробую тортилью, думаю: «Как вкусно!»"
+        },
+        {
+          "es": "Me encanta la comida española.",
+          "ru": "Мне очень нравится испанская кухня."
+        },
+        {
+          "es": "Después de comer, pido la cuenta, por favor.",
+          "ru": "После еды я прошу счёт."
+        },
+        {
+          "es": "La comida no es cara y estoy muy contento.",
+          "ru": "Еда недорогая, и я очень доволен."
+        },
+        {
+          "es": "Por la tarde quiero visitar el museo, pero cuando miro el móvil veo que es muy tarde.",
+          "ru": "Днём я хочу посетить музей, но когда смотрю на телефон, вижу, что уже очень поздно."
+        },
+        {
+          "es": "¡Qué raro!",
+          "ru": "Как странно!"
+        },
+        {
+          "es": "El tiempo pasa muy rápido cuando estoy de viaje.",
+          "ru": "Время проходит очень быстро, когда путешествуешь."
+        },
+        {
+          "es": "Decido volver a Santander.",
+          "ru": "Я решаю вернуться в Сантандер."
+        },
+        {
+          "es": "En el autobús estoy cansado, pero feliz.",
+          "ru": "В автобусе я уставший, но счастливый."
+        },
+        {
+          "es": "Cuando llego a casa, pienso: «Bilbao es una ciudad fantástica.",
+          "ru": "Когда прихожу домой, думаю: «Бильбао — фантастический город."
+        },
+        {
+          "es": "Tenemos que vernos pronto otra vez».",
+          "ru": "Нам нужно скоро снова встретиться»."
+        },
+        {
+          "es": "Mañana es domingo.",
+          "ru": "Завтра воскресенье."
+        },
+        {
+          "es": "Mañana por la mañana va a llover, así que voy a quedarme en casa, leer un libro y descansar.",
+          "ru": "Завтра утром будет дождь, поэтому я останусь дома, буду читать книгу и отдыхать."
+        },
+        {
+          "es": "Pero ahora... ¡Tengo mucho sueño!",
+          "ru": "Но сейчас... Я очень хочу спать!"
+        },
+        {
+          "es": "A dormir.",
+          "ru": "Пора спать."
+        }
+      ],
+      "audio": {
+        "src": "un-dia-especial-en-bilbao.mp3",
+        "available": false
+      }
     }
   ],
   "numbers": {
