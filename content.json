@@ -2392,164 +2392,203 @@
       "sentences": [
         {
           "es": "Hoy es sábado y hace muy buen tiempo.",
-          "ru": "Сегодня суббота, и погода очень хорошая."
+          "ru": "Сегодня суббота, и погода очень хорошая.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/01.mp3"
         },
         {
           "es": "Hace sol y quiero hacer algo diferente.",
-          "ru": "Светит солнце, и мне хочется сделать что-нибудь необычное."
+          "ru": "Светит солнце, и мне хочется сделать что-нибудь необычное.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/02.mp3"
         },
         {
           "es": "Vivo en Santander, pero hoy me voy de viaje a Bilbao.",
-          "ru": "Я живу в Сантандере, но сегодня отправляюсь в Бильбао."
+          "ru": "Я живу в Сантандере, но сегодня отправляюсь в Бильбао.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/03.mp3"
         },
         {
           "es": "Me levanto a las ocho de la mañana.",
-          "ru": "Я встаю в восемь утра."
+          "ru": "Я встаю в восемь утра.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/04.mp3"
         },
         {
           "es": "Tengo mucho sueño y quiero dormir más, pero también tengo muchas ganas de visitar Bilbao.",
-          "ru": "Мне очень хочется спать, и я хочу поспать ещё, но мне также очень хочется посетить Бильбао."
+          "ru": "Мне очень хочется спать, и я хочу поспать ещё, но мне также очень хочется посетить Бильбао.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/05.mp3"
         },
         {
           "es": "Después de desayunar, voy a la estación de autobuses.",
-          "ru": "После завтрака я иду на автовокзал."
+          "ru": "После завтрака я иду на автовокзал.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/06.mp3"
         },
         {
           "es": "Tengo hambre otra vez, así que compro un bocadillo.",
-          "ru": "Я снова голоден, поэтому покупаю бутерброд."
+          "ru": "Я снова голоден, поэтому покупаю бутерброд.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/07.mp3"
         },
         {
           "es": "También tengo mucha sed y compro una botella de agua.",
-          "ru": "Ещё я очень хочу пить и покупаю бутылку воды."
+          "ru": "Ещё я очень хочу пить и покупаю бутылку воды.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/08.mp3"
         },
         {
           "es": "En la estación veo muchos autobuses.",
-          "ru": "На вокзале я вижу много автобусов."
+          "ru": "На вокзале я вижу много автобусов.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/09.mp3"
         },
         {
           "es": "No sé cuál es el mío.",
-          "ru": "Я не знаю, какой из них мой."
+          "ru": "Я не знаю, какой из них мой.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/10.mp3"
         },
         {
           "es": "Pregunto a un trabajador: «Perdona, ¿a dónde va este autobús?».",
-          "ru": "Спрашиваю сотрудника: «Извините, куда едет этот автобус?»"
+          "ru": "Спрашиваю сотрудника: «Извините, куда едет этот автобус?»",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/11.mp3"
         },
         {
           "es": "Me dice que va a Bilbao.",
-          "ru": "Он говорит, что автобус едет в Бильбао."
+          "ru": "Он говорит, что автобус едет в Бильбао.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/12.mp3"
         },
         {
           "es": "Perfecto.",
-          "ru": "Отлично!"
+          "ru": "Отлично!",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/13.mp3"
         },
         {
           "es": "Después de una hora y media llego a Bilbao.",
-          "ru": "Через полтора часа я приезжаю в Бильбао."
+          "ru": "Через полтора часа я приезжаю в Бильбао.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/14.mp3"
         },
         {
           "es": "Es una ciudad muy bonita.",
-          "ru": "Это очень красивый город."
+          "ru": "Это очень красивый город.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/15.mp3"
         },
         {
           "es": "Me gusta caminar por sus calles y mirar los edificios.",
-          "ru": "Мне нравится гулять по его улицам и смотреть на здания."
+          "ru": "Мне нравится гулять по его улицам и смотреть на здания.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/16.mp3"
         },
         {
           "es": "Quiero visitar un museo, pero primero necesito comer.",
-          "ru": "Я хочу посетить музей, но сначала мне нужно поесть."
+          "ru": "Я хочу посетить музей, но сначала мне нужно поесть.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/17.mp3"
         },
         {
           "es": "Busco un restaurante en el centro.",
-          "ru": "Я ищу ресторан в центре."
+          "ru": "Я ищу ресторан в центре.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/18.mp3"
         },
         {
           "es": "No sé dónde está, así que pregunto a una mujer: «Perdona, ¿en qué calle está el restaurante?».",
-          "ru": "Я не знаю, где он находится, поэтому спрашиваю женщину: «Извините, на какой улице находится ресторан?»"
+          "ru": "Я не знаю, где он находится, поэтому спрашиваю женщину: «Извините, на какой улице находится ресторан?»",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/19.mp3"
         },
         {
           "es": "Ella me explica que está todo recto, después a la izquierda.",
-          "ru": "Она объясняет, что нужно идти прямо, а потом налево."
+          "ru": "Она объясняет, что нужно идти прямо, а потом налево.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/20.mp3"
         },
         {
           "es": "Encuentro el restaurante y entro.",
-          "ru": "Я нахожу ресторан и захожу."
+          "ru": "Я нахожу ресторан и захожу.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/21.mp3"
         },
         {
           "es": "¿Me puedo sentar aquí?, pregunto al camarero.",
-          "ru": "«Можно мне здесь сесть?» — спрашиваю официанта."
+          "ru": "«Можно мне здесь сесть?» — спрашиваю официанта.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/22.mp3"
         },
         {
           "es": "Me dice que sí.",
-          "ru": "Он говорит, что можно."
+          "ru": "Он говорит, что можно.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/23.mp3"
         },
         {
           "es": "Pido una tortilla de patatas y agua.",
-          "ru": "Я заказываю картофельную тортилью и воду."
+          "ru": "Я заказываю картофельную тортилью и воду.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/24.mp3"
         },
         {
           "es": "Cuando pruebo la tortilla, pienso: «¡Qué rico!».",
-          "ru": "Когда пробую тортилью, думаю: «Как вкусно!»"
+          "ru": "Когда пробую тортилью, думаю: «Как вкусно!»",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/25.mp3"
         },
         {
           "es": "Me encanta la comida española.",
-          "ru": "Мне очень нравится испанская кухня."
+          "ru": "Мне очень нравится испанская кухня.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/26.mp3"
         },
         {
           "es": "Después de comer, pido la cuenta, por favor.",
-          "ru": "После еды я прошу счёт."
+          "ru": "После еды я прошу счёт.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/27.mp3"
         },
         {
           "es": "La comida no es cara y estoy muy contento.",
-          "ru": "Еда недорогая, и я очень доволен."
+          "ru": "Еда недорогая, и я очень доволен.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/28.mp3"
         },
         {
           "es": "Por la tarde quiero visitar el museo, pero cuando miro el móvil veo que es muy tarde.",
-          "ru": "Днём я хочу посетить музей, но когда смотрю на телефон, вижу, что уже очень поздно."
+          "ru": "Днём я хочу посетить музей, но когда смотрю на телефон, вижу, что уже очень поздно.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/29.mp3"
         },
         {
           "es": "¡Qué raro!",
-          "ru": "Как странно!"
+          "ru": "Как странно!",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/30.mp3"
         },
         {
           "es": "El tiempo pasa muy rápido cuando estoy de viaje.",
-          "ru": "Время проходит очень быстро, когда путешествуешь."
+          "ru": "Время проходит очень быстро, когда путешествуешь.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/31.mp3"
         },
         {
           "es": "Decido volver a Santander.",
-          "ru": "Я решаю вернуться в Сантандер."
+          "ru": "Я решаю вернуться в Сантандер.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/32.mp3"
         },
         {
           "es": "En el autobús estoy cansado, pero feliz.",
-          "ru": "В автобусе я уставший, но счастливый."
+          "ru": "В автобусе я уставший, но счастливый.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/33.mp3"
         },
         {
           "es": "Cuando llego a casa, pienso: «Bilbao es una ciudad fantástica.",
-          "ru": "Когда прихожу домой, думаю: «Бильбао — фантастический город."
+          "ru": "Когда прихожу домой, думаю: «Бильбао — фантастический город.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/34.mp3"
         },
         {
           "es": "Tenemos que vernos pronto otra vez».",
-          "ru": "Нам нужно скоро снова встретиться»."
+          "ru": "Нам нужно скоро снова встретиться».",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/35.mp3"
         },
         {
           "es": "Mañana es domingo.",
-          "ru": "Завтра воскресенье."
+          "ru": "Завтра воскресенье.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/36.mp3"
         },
         {
           "es": "Mañana por la mañana va a llover, así que voy a quedarme en casa, leer un libro y descansar.",
-          "ru": "Завтра утром будет дождь, поэтому я останусь дома, буду читать книгу и отдыхать."
+          "ru": "Завтра утром будет дождь, поэтому я останусь дома, буду читать книгу и отдыхать.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/37.mp3"
         },
         {
           "es": "Pero ahora... ¡Tengo mucho sueño!",
-          "ru": "Но сейчас... Я очень хочу спать!"
+          "ru": "Но сейчас... Я очень хочу спать!",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/38.mp3"
         },
         {
           "es": "A dormir.",
-          "ru": "Пора спать."
+          "ru": "Пора спать.",
+          "audio": "sentence-audio/un-dia-especial-en-bilbao/39.mp3"
         }
       ],
       "audio": {
         "src": "un-dia-especial-en-bilbao.mp3",
-        "available": false
+        "available": true
       }
     }
   ],
