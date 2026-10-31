@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create sentence clips from storyData in ../index.html; see AUDIO_WORKFLOW.md."""
+"""Create sentence clips from storyData; see ../references/workflow.md."""
 import argparse
 import difflib
 import hashlib
@@ -8,7 +8,8 @@ from pathlib import Path
 import re
 import unicodedata
 
-SITE = Path(__file__).resolve().parents[1]
+SITE = next(parent for parent in Path(__file__).resolve().parents
+            if (parent / 'index.html').is_file())
 DATA_RE = re.compile(r'const storyData = (.*?);\n')
 
 

@@ -17,25 +17,25 @@ From the project root (the directory containing AGENTS.md):
 
 ```sh
 python3 -m venv /private/tmp/spanish-audio-env
-/private/tmp/spanish-audio-env/bin/pip install -r github-pages/tools/audio-requirements.txt
+/private/tmp/spanish-audio-env/bin/pip install -r github-pages/.agents/skills/spanish-story-audio/scripts/requirements.txt
 ```
 
 Generate only missing clips for all stories:
 
 ```sh
-/private/tmp/spanish-audio-env/bin/python github-pages/tools/split_story_audio.py
+/private/tmp/spanish-audio-env/bin/python github-pages/.agents/skills/spanish-story-audio/scripts/split_story_audio.py
 ```
 
 Or select a story by full audio filename stem (exact title or internal ID also accepted):
 
 ```sh
-/private/tmp/spanish-audio-env/bin/python github-pages/tools/split_story_audio.py --story un-cafe-con-ana
+/private/tmp/spanish-audio-env/bin/python github-pages/.agents/skills/spanish-story-audio/scripts/split_story_audio.py --story un-cafe-con-ana
 ```
 
 The script preserves completed stories by default. To intentionally rebuild a selected story after changing its recording or text, use `--story <slug> --force`. Review and remove obsolete clips if the new sentence count is smaller; the script does not delete them automatically.
 
 ```sh
-/private/tmp/spanish-audio-env/bin/python github-pages/tools/split_story_audio.py --check
+/private/tmp/spanish-audio-env/bin/python github-pages/.agents/skills/spanish-story-audio/scripts/split_story_audio.py --check
 ```
 
 `--check` only checks existing files; it does not download a model, transcribe, or change the HTML. The first generation needs network access to download the `small` model. Defaults: model in `/private/tmp/spanish-whisper-model`, transcript cache and `last-manifest.json` in `/private/tmp/spanish-audio-cache`. Both locations are disposable and can be overridden with `--model-dir` and `--cache-dir`. Do not assume old temporary files survive a new session. Cache keys include the recording and sentence text hashes to prevent reuse of stale timestamps.
