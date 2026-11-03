@@ -58,6 +58,8 @@ const dockPlayer = document.getElementById('fixed-audio');
 const title = document.getElementById('player-title');
 const note = document.getElementById('player-note');
 const main = document.getElementById('stories');
+const AUDIO_CACHE_VERSION = 'c6762d8f';
+const versionedAudioURL = src => `${src}${src.includes('?') ? '&' : '?'}v=${AUDIO_CACHE_VERSION}`;
 
 let stories = [], activeStory = -1;
 const sentencePlayer = new Audio();
@@ -79,7 +81,7 @@ function selectStory(index) {
   if (activeStory === index) return;
   activeStory = index;
   dockPlayer.pause();
-  dockPlayer.src = stories[index].audio.src;
+  dockPlayer.src = versionedAudioURL(stories[index].audio.src);
   title.textContent = stories[index].title;
   dockPlayer.setAttribute('aria-label', title.textContent);
   dockPlayer.load();
@@ -155,7 +157,7 @@ main.addEventListener('click', async event => {
     if (wasPlaying) return;
     dockPlayer.pause();
     sentencePlayButton = clipButton;
-    sentencePlayer.src = clipButton.dataset.src;
+    sentencePlayer.src = versionedAudioURL(clipButton.dataset.src);
     clipButton.textContent = 'Ⅱ';
     clipButton.setAttribute('aria-label', 'Пауза');
     clipButton.setAttribute('aria-pressed', 'true');
