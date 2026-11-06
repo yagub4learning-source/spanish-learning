@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f39">
+  <title>Аудиоистории · Испанский через истории</title>
+  <style>
+    :root{color-scheme:light;--green:#173f39;--paper:#f6f3ec;--card:#fffefa;--muted:#66745e;--line:#dfe5d6}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:#233c39;font:16px/1.6 system-ui,sans-serif}
+    header{padding:44px max(6vw,24px);background:var(--green);color:#faf6ea}
+    header a{color:#d7e1d7;text-decoration:none;font-size:14px}
+    header a:hover{text-decoration:underline}
+    h1{font:clamp(34px,5vw,56px)/1.1 Georgia,serif;margin:18px 0 8px}
+    header p{margin:0;color:#d7e1d7}
+    main{max-width:980px;margin:0 auto;padding:36px 22px 64px}
+    .layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start}
+    nav{position:sticky;top:20px;display:grid;gap:10px}
+    nav strong{font-size:12px;letter-spacing:.12em;color:var(--muted);margin:0 4px 3px}
+    .story-choice{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:inherit;text-align:left;font:inherit;cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
+    .story-choice:hover{border-color:#9aaf92;transform:translateY(-1px)}
+    .story-choice[aria-pressed="true"]{background:#e3ecdf;border-color:#9aaf92;box-shadow:inset 4px 0 #286054}
+    .story-choice span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+    .player{min-height:300px;padding:clamp(24px,5vw,48px);border:1px solid #e2e4d9;border-radius:22px;background:var(--card);box-shadow:0 8px 25px #233c3905}
+    .eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--muted)}
+    h2{font:clamp(28px,4vw,38px)/1.2 Georgia,serif;margin:12px 0 30px}
+    audio{width:100%;margin:8px 0 0;accent-color:var(--green)}
+    .hint{margin:22px 0 0;color:var(--muted);font-size:14px}
+    button:focus-visible,a:focus-visible{outline:3px solid #cf8e37;outline-offset:3px}
+    @media(max-width:700px){header{padding:32px 22px}.layout{grid-template-columns:1fr;gap:18px}nav{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}nav strong{grid-column:1/-1}.story-choice{padding:12px}.player{min-height:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./">← К обычным историям</a>
+    <h1>Аудиоистории</h1>
+    <p>Выбери запись и слушай.</p>
+  </header>
+  <main>
+    <div class="layout">
+      <nav aria-label="Выбор аудиоистории" id="story-list">
+        <strong>ВЫБЕРИ ИСТОРИЮ</strong>
+      </nav>
+      <section class="player" aria-live="polite">
+        <div class="eyebrow" id="story-label">АУДИОИСТОРИЯ 01</div>
+        <h2 id="story-title">История 1</h2>
+        <audio id="audio-player" controls preload="metadata" aria-label="Аудиоистория 1">
+          Ваш браузер не поддерживает аудиоплеер.
+        </audio>
+        <p class="hint">Испанская фраза звучит вместе с переводом на русский.</p>
+      </section>
+    </div>
+  </main>
+  <script>
+    (() => {
+      const stories = Array.from({length: 6}, (_, i) => ({
+        title: `История ${i + 1}`,
+        src: `audio-stories/story-${String(i + 1).padStart(2, '0')}.mp3`
+      }));
+      const list = document.getElementById('story-list');
+      const player = document.getElementById('audio-player');
+      const title = document.getElementById('story-title');
+      const label = document.getElementById('story-label');
+      stories.forEach((story, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'story-choice';
+        button.setAttribute('aria-pressed', String(index === 0));
+        button.innerHTML = `${story.title}<span>Испанский · русский</span>`;
+        button.addEventListener('click', () => {
+          player.pause();
+          player.src = story.src;
+          player.setAttribute('aria-label', `Аудио ${story.title.toLowerCase()}`);
+          title.textContent = story.title;
+          label.textContent = `АУДИОИСТОРИЯ ${String(index + 1).padStart(2, '0')}`;
+          list.querySelectorAll('.story-choice').forEach((item, itemIndex) => item.setAttribute('aria-pressed', String(index === itemIndex)));
+          player.load();
+          player.play().catch(() => {});
+        });
+        list.append(button);
+      });
+      player.src = stories[0].src;
+    })();
+  </script>
+</body>
+</html>
