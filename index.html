@@ -50,7 +50,18 @@ body{padding-bottom:150px}.audio{display:none}.player-dock{position:fixed;bottom
  .story-play{min-height:48px;font-size:16px}
 }
 
-.sentence-play{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin-right:10px;border:1px solid #b7c8a6;border-radius:50%;background:#fffefa;color:#245e4d;cursor:pointer;vertical-align:middle;font:14px system-ui}.sentence-play:focus-visible{outline:2px solid #cf8e37;outline-offset:3px}.sentence-audio-error{display:block;font:13px system-ui;color:#8a3429}@media print{.sentence-play{display:none}}</style></head><body><header><h1>Spanish stories</h1><a class="page-link" href="audio-stories.html">🎧 Аудиоистории</a></header><div class="layout"><nav aria-label="Навигация по рассказам" id="story-nav"></nav><main id="stories"><p role="status">Загрузка историй…</p></main></div><section class="player-dock" aria-label="Аудиоплеер рассказов"><div><div class="player-caption">СЛУШАЙ И ЧИТАЙ</div><div class="player-title" id="player-title" lang="es-ES"></div><p class="player-note" id="player-note" role="status"></p></div><audio id="fixed-audio" controls preload="none" aria-label="Аудио выбранного рассказа"></audio></section>
+.sentence-play{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin-right:10px;border:1px solid #b7c8a6;border-radius:50%;background:#fffefa;color:#245e4d;cursor:pointer;vertical-align:middle;font:14px system-ui}.sentence-play:focus-visible{outline:2px solid #cf8e37;outline-offset:3px}.sentence-audio-error{display:block;font:13px system-ui;color:#8a3429}@media print{.sentence-play{display:none}}
+.player-dock{justify-content:space-between;gap:24px;padding:12px max(24px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left))}.player-info{width:230px;min-width:0}.player-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.player-dock>audio{display:none}.custom-controls{display:grid;grid-template-columns:auto minmax(220px,560px) auto;align-items:center;gap:24px;flex:1;max-width:940px}.transport-controls{display:flex;align-items:center;gap:10px}.transport-controls button{position:relative;display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #ccd6c4;border-radius:50%;background:#edf2e7;color:#173f39;font:600 18px system-ui;cursor:pointer;touch-action:manipulation}.transport-controls button:hover{background:#e2e9db}.transport-controls .player-toggle{width:48px;height:48px;border:0;border-radius:16px;background:#173f39;color:#fffefa;font-size:21px}.transport-controls .player-toggle:hover{background:#286054}.player-skip small{position:absolute;top:15px;font:600 9px/1 system-ui}.transport-controls button:focus-visible,.speed-control select:focus-visible{outline:2px solid #cf8e37;outline-offset:3px}.seek-control{display:grid;grid-template-columns:40px minmax(80px,1fr) 40px;align-items:center;gap:10px;font:12px/1 system-ui;font-variant-numeric:tabular-nums;color:#52605a}.seek-control span:last-child{text-align:right}.seek-control input{grid-column:auto;grid-row:auto;width:100%;min-width:0;height:24px;margin:0;padding:0;border:0;background:transparent;accent-color:#173f39;touch-action:pan-x}.seek-control input:disabled{opacity:.45}.speed-control{display:flex;align-items:center;gap:8px;white-space:nowrap;font:600 12px system-ui;color:#52605a}.speed-control select{padding:8px 10px;border:1px solid #ccd6c4;border-radius:9px;background:#fffefa;color:#233c39;font:600 13px system-ui;cursor:pointer}.player-note:empty{display:none}
+@media(max-width:850px){.player-info{width:180px}.custom-controls{gap:14px;grid-template-columns:auto minmax(140px,1fr) auto}}
+@media(max-width:650px){.player-dock{display:block;padding:6px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:#fffefa}.player-info{display:none}.custom-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px;max-width:none}.transport-controls{grid-column:1/-1;grid-row:2;justify-content:center;gap:18px}.seek-control{grid-column:1/-1;grid-row:1;grid-template-columns:40px minmax(0,1fr) 40px;gap:8px}.speed-control{grid-column:2;grid-row:2;justify-self:end;font-size:11px}.speed-control select{padding:7px 9px}.transport-controls button{width:42px;height:42px}.transport-controls .player-toggle{width:46px;height:46px}.player-note{font-size:11px}}
+@media print{.player-dock{display:none}}
+</style></head><body><header><h1>Spanish stories</h1><a class="page-link" href="audio-stories.html">🎧 Аудиоистории</a></header><div class="layout"><nav aria-label="Навигация по рассказам" id="story-nav"></nav><main id="stories"><p role="status">Загрузка историй…</p></main></div><section class="player-dock" aria-label="Аудиоплеер рассказов">
+<div class="player-info"><div class="player-caption">СЛУШАЙ И ЧИТАЙ</div><div class="player-title" id="player-title" lang="es-ES"></div><p class="player-note" id="player-note" role="status"></p></div>
+<div class="custom-controls">
+<div class="transport-controls"><button class="player-skip" id="player-back" type="button" aria-label="Назад на 3 секунды">↶<small>3</small></button><button class="player-toggle" id="player-toggle" type="button" aria-label="Воспроизвести">▶</button><button class="player-skip" id="player-forward" type="button" aria-label="Вперёд на 3 секунды">↷<small>3</small></button></div>
+<div class="seek-control"><span id="player-elapsed">0:00</span><input id="player-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения" disabled><span id="player-duration">0:00</span></div>
+<label class="speed-control" for="playback-speed">Скорость<select id="playback-speed" aria-label="Скорость воспроизведения"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label>
+</div><audio id="fixed-audio" preload="none" aria-label="Аудио выбранного рассказа"></audio></section>
 <script>
 (async () => {
 try {
@@ -339,15 +350,24 @@ updateCurrentSection();
 }
 })();
 </script>
+
 <script>
 (() => {
  const audio = document.getElementById('fixed-audio');
  const dock = document.querySelector('.player-dock');
- // Keep the fixed player inside Safari's visible viewport, including its toolbars.
+ const play = document.getElementById('player-toggle');
+ const seek = document.getElementById('player-seek');
+ const elapsed = document.getElementById('player-elapsed');
+ const duration = document.getElementById('player-duration');
+ const speed = document.getElementById('playback-speed');
+ const note = document.getElementById('player-note');
+ const storageKey = 'spanish-story-playback-rate';
+ const savedRate = localStorage.getItem(storageKey);
+ if (savedRate && [...speed.options].some(option => option.value === savedRate)) speed.value = savedRate;
+ audio.playbackRate = Number(speed.value);
  const positionPlayer = () => {
   const viewport = window.visualViewport;
-  const bottom = viewport && viewport.scale === 1
-   ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop) : 0;
+  const bottom = viewport && viewport.scale === 1 ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop) : 0;
   dock.style.setProperty('--player-viewport-bottom', bottom + 'px');
  };
  const refreshPlayerPosition = () => { positionPlayer(); requestAnimationFrame(positionPlayer); };
@@ -357,22 +377,14 @@ updateCurrentSection();
   window.visualViewport.addEventListener('resize', refreshPlayerPosition);
   window.visualViewport.addEventListener('scroll', refreshPlayerPosition);
  }
- audio.addEventListener('play', refreshPlayerPosition);
- positionPlayer();
- const controls = document.createElement('div');
- controls.className = 'mobile-player';
- controls.innerHTML = `<div class="mobile-transport"><button type="button" class="mobile-back" aria-label="Назад на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button><button type="button" class="mobile-play" aria-label="Воспроизвести">▶</button><button type="button" class="mobile-forward" aria-label="Вперёд на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g transform="translate(32 0) scale(-1 1)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button></div><div class="mobile-seek-row"><span class="mobile-elapsed">0:00</span><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения" disabled><span class="mobile-duration">0:00</span></div>`;
- dock.append(controls);
- const play = controls.querySelector('.mobile-play');
- const seek = controls.querySelector('input');
- const elapsed = controls.querySelector('.mobile-elapsed');
- const duration = controls.querySelector('.mobile-duration');
  const format = value => { const seconds = Number.isFinite(value) ? Math.floor(value) : 0; return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0'); };
  const refresh = () => {
   const ready = Number.isFinite(audio.duration) && audio.duration > 0;
   seek.disabled = !ready;
   seek.max = ready ? audio.duration : 100;
-  seek.value = audio.currentTime || 0;
+  seek.value = ready ? audio.currentTime : 0;
+  const progress = ready ? audio.currentTime / audio.duration * 100 : 0;
+  seek.style.setProperty('--seek-progress', progress + '%');
   seek.setAttribute('aria-valuetext', format(audio.currentTime) + ' / ' + format(audio.duration));
   elapsed.textContent = format(audio.currentTime);
   duration.textContent = format(audio.duration);
@@ -380,16 +392,20 @@ updateCurrentSection();
   play.setAttribute('aria-label', audio.paused ? 'Воспроизвести' : 'Пауза');
  };
  play.addEventListener('click', () => {
-  if (audio.paused) audio.play().catch(() => { document.getElementById('player-note').textContent = 'Не удалось включить аудио. Попробуй ещё раз.'; });
+  if (audio.paused) audio.play().catch(() => { note.textContent = 'Не удалось включить аудио. Попробуй ещё раз.'; });
   else audio.pause();
  });
  const skip = seconds => { if (Number.isFinite(audio.duration)) audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + seconds)); refresh(); };
- controls.querySelector('.mobile-back').addEventListener('click', () => skip(-3));
- controls.querySelector('.mobile-forward').addEventListener('click', () => skip(3));
- seek.addEventListener('input', () => { audio.currentTime = Number(seek.value); refresh(); });
- ['play','pause','ended','timeupdate','loadedmetadata','durationchange','emptied'].forEach(event => audio.addEventListener(event, refresh));
+ document.getElementById('player-back').addEventListener('click', () => skip(-3));
+ document.getElementById('player-forward').addEventListener('click', () => skip(3));
+ seek.addEventListener('input', () => { if (Number.isFinite(audio.duration)) audio.currentTime = Number(seek.value); refresh(); });
+ speed.addEventListener('change', () => {
+  audio.playbackRate = Number(speed.value);
+  localStorage.setItem(storageKey, speed.value);
+ });
+ ['play','pause','ended','timeupdate','loadedmetadata','durationchange','emptied','ratechange'].forEach(event => audio.addEventListener(event, refresh));
+ audio.addEventListener('play', refreshPlayerPosition);
  refresh();
- dock.classList.add('mobile-ready');
 })();
 </script>
 </body></html>

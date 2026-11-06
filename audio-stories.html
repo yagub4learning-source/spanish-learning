@@ -8,7 +8,7 @@
   <style>
     :root{color-scheme:light;--green:#173f39;--paper:#f6f3ec;--card:#fffefa;--muted:#66745e;--line:#dfe5d6}
     *{box-sizing:border-box}
-    body{margin:0;background:var(--paper);color:#233c39;font:16px/1.6 system-ui,sans-serif}
+    body{margin:0;background:var(--paper);color:#233c39;font:16px/1.6 system-ui,sans-serif;padding-bottom:40px}
     header{padding:44px max(6vw,24px);background:var(--green);color:#faf6ea}
     header a{color:#d7e1d7;text-decoration:none;font-size:14px}
     header a:hover{text-decoration:underline}
@@ -24,11 +24,24 @@
     .story-choice span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
     .player{min-height:300px;padding:clamp(24px,5vw,48px);border:1px solid #e2e4d9;border-radius:22px;background:var(--card);box-shadow:0 8px 25px #233c3905}
     .eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--muted)}
-    h2{font:clamp(28px,4vw,38px)/1.2 Georgia,serif;margin:12px 0 30px}
-    audio{width:100%;margin:8px 0 0;accent-color:var(--green)}
-    .hint{margin:22px 0 0;color:var(--muted);font-size:14px}
-    button:focus-visible,a:focus-visible{outline:3px solid #cf8e37;outline-offset:3px}
-    @media(max-width:700px){header{padding:32px 22px}.layout{grid-template-columns:1fr;gap:18px}nav{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}nav strong{grid-column:1/-1}.story-choice{padding:12px}.player{min-height:auto}}
+    h2{font:clamp(28px,4vw,38px)/1.2 Georgia,serif;margin:12px 0 34px}
+    .player-controls{display:grid;grid-template-columns:auto minmax(140px,1fr) auto;align-items:center;gap:22px}
+    .transport{display:flex;align-items:center;gap:10px}
+    .transport button{position:relative;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #ccd6c4;border-radius:50%;background:#edf2e7;color:#173f39;font:600 18px system-ui;cursor:pointer;touch-action:manipulation}
+    .transport button:hover{background:#e2e9db}
+    .transport .toggle{width:50px;height:50px;border:0;border-radius:16px;background:var(--green);color:#fffefa;font-size:21px}
+    .transport .toggle:hover{background:#286054}
+    .transport .skip small{position:absolute;top:15px;font:600 9px/1 system-ui}
+    .transport button:focus-visible,.speed-control select:focus-visible,.seek input:focus-visible,.story-choice:focus-visible,header a:focus-visible{outline:3px solid #cf8e37;outline-offset:3px}
+    .seek{display:grid;grid-template-columns:40px minmax(70px,1fr) 40px;align-items:center;gap:8px;font:12px/1 system-ui;font-variant-numeric:tabular-nums;color:#52605a}
+    .seek span:last-child{text-align:right}
+    .seek input{width:100%;min-width:0;height:24px;margin:0;padding:0;border:0;background:transparent;accent-color:var(--green);touch-action:pan-x}
+    .seek input:disabled{opacity:.45}
+    .speed-control{display:flex;align-items:center;gap:8px;white-space:nowrap;font:600 12px system-ui;color:#52605a}
+    .speed-control select{padding:9px 10px;border:1px solid #ccd6c4;border-radius:9px;background:var(--card);color:#233c39;font:600 14px system-ui;cursor:pointer}
+    .hint{margin:26px 0 0;color:var(--muted);font-size:14px}
+    audio{display:none}
+    @media(max-width:760px){header{padding:32px 22px}main{padding:24px 14px}.layout{grid-template-columns:1fr;gap:18px}nav{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}nav strong{grid-column:1/-1}.story-choice{padding:12px}.player{min-height:auto}.player-controls{grid-template-columns:minmax(0,1fr) auto;gap:8px}.seek{grid-column:1/-1;grid-row:1;grid-template-columns:40px minmax(0,1fr) 40px}.transport{grid-column:1;grid-row:2;justify-content:center;gap:16px}.speed-control{grid-column:2;grid-row:2;justify-self:end;font-size:11px}.speed-control select{padding:8px}.hint{margin-top:20px}}
   </style>
 </head>
 <body>
@@ -39,48 +52,80 @@
   </header>
   <main>
     <div class="layout">
-      <nav aria-label="Выбор аудиоистории" id="story-list">
-        <strong>ВЫБЕРИ ИСТОРИЮ</strong>
-      </nav>
+      <nav aria-label="Выбор аудиоистории" id="story-list"><strong>ВЫБЕРИ ИСТОРИЮ</strong></nav>
       <section class="player" aria-live="polite">
         <div class="eyebrow" id="story-label">АУДИОИСТОРИЯ 01</div>
         <h2 id="story-title">История 1</h2>
-        <audio id="audio-player" controls preload="metadata" aria-label="Аудиоистория 1">
-          Ваш браузер не поддерживает аудиоплеер.
-        </audio>
+        <div class="player-controls">
+          <div class="transport">
+            <button class="skip" id="back" type="button" aria-label="Назад на 3 секунды">↶<small>3</small></button>
+            <button class="toggle" id="toggle" type="button" aria-label="Воспроизвести">▶</button>
+            <button class="skip" id="forward" type="button" aria-label="Вперёд на 3 секунды">↷<small>3</small></button>
+          </div>
+          <div class="seek"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения" disabled><span id="duration">0:00</span></div>
+          <label class="speed-control" for="speed">Скорость<select id="speed" aria-label="Скорость воспроизведения"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label>
+        </div>
         <p class="hint">Испанская фраза звучит вместе с переводом на русский.</p>
+        <audio id="audio-player" preload="metadata" aria-label="Аудиоистория 1"></audio>
       </section>
     </div>
   </main>
   <script>
     (() => {
-      const stories = Array.from({length: 6}, (_, i) => ({
-        title: `История ${i + 1}`,
-        src: `audio-stories/story-${String(i + 1).padStart(2, '0')}.mp3`
-      }));
+      const stories = Array.from({length: 6}, (_, i) => ({title: `История ${i + 1}`, src: `audio-stories/story-${String(i + 1).padStart(2, '0')}.mp3`}));
       const list = document.getElementById('story-list');
       const player = document.getElementById('audio-player');
       const title = document.getElementById('story-title');
       const label = document.getElementById('story-label');
+      const toggle = document.getElementById('toggle');
+      const seek = document.getElementById('seek');
+      const elapsed = document.getElementById('elapsed');
+      const duration = document.getElementById('duration');
+      const speed = document.getElementById('speed');
+      const storageKey = 'spanish-story-playback-rate';
+      const savedRate = localStorage.getItem(storageKey);
+      if (savedRate && [...speed.options].some(option => option.value === savedRate)) speed.value = savedRate;
+      player.playbackRate = Number(speed.value);
+      const format = value => { const seconds = Number.isFinite(value) ? Math.floor(value) : 0; return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0'); };
+      const refresh = () => {
+        const ready = Number.isFinite(player.duration) && player.duration > 0;
+        seek.disabled = !ready;
+        seek.max = ready ? player.duration : 100;
+        seek.value = ready ? player.currentTime : 0;
+        elapsed.textContent = format(player.currentTime);
+        duration.textContent = format(player.duration);
+        toggle.textContent = player.paused ? '▶' : 'Ⅱ';
+        toggle.setAttribute('aria-label', player.paused ? 'Воспроизвести' : 'Пауза');
+      };
+      const playCurrent = () => player.play().catch(() => {});
+      const selectStory = (story, index, autoplay = true) => {
+        player.pause();
+        player.src = story.src;
+        player.setAttribute('aria-label', `Аудио ${story.title.toLowerCase()}`);
+        title.textContent = story.title;
+        label.textContent = `АУДИОИСТОРИЯ ${String(index + 1).padStart(2, '0')}`;
+        list.querySelectorAll('.story-choice').forEach((item, itemIndex) => item.setAttribute('aria-pressed', String(index === itemIndex)));
+        player.load();
+        if (autoplay) playCurrent();
+        refresh();
+      };
       stories.forEach((story, index) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'story-choice';
-        button.setAttribute('aria-pressed', String(index === 0));
+        button.setAttribute('aria-pressed', 'false');
         button.innerHTML = `${story.title}<span>Испанский · русский</span>`;
-        button.addEventListener('click', () => {
-          player.pause();
-          player.src = story.src;
-          player.setAttribute('aria-label', `Аудио ${story.title.toLowerCase()}`);
-          title.textContent = story.title;
-          label.textContent = `АУДИОИСТОРИЯ ${String(index + 1).padStart(2, '0')}`;
-          list.querySelectorAll('.story-choice').forEach((item, itemIndex) => item.setAttribute('aria-pressed', String(index === itemIndex)));
-          player.load();
-          player.play().catch(() => {});
-        });
+        button.addEventListener('click', () => selectStory(story, index));
         list.append(button);
       });
-      player.src = stories[0].src;
+      toggle.addEventListener('click', () => player.paused ? playCurrent() : player.pause());
+      const skip = seconds => { if (Number.isFinite(player.duration)) player.currentTime = Math.max(0, Math.min(player.duration, player.currentTime + seconds)); refresh(); };
+      document.getElementById('back').addEventListener('click', () => skip(-3));
+      document.getElementById('forward').addEventListener('click', () => skip(3));
+      seek.addEventListener('input', () => { if (Number.isFinite(player.duration)) player.currentTime = Number(seek.value); refresh(); });
+      speed.addEventListener('change', () => { player.playbackRate = Number(speed.value); localStorage.setItem(storageKey, speed.value); });
+      ['play','pause','ended','timeupdate','loadedmetadata','durationchange','emptied'].forEach(event => player.addEventListener(event, refresh));
+      selectStory(stories[0], 0, false);
     })();
   </script>
 </body>
