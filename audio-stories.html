@@ -10,8 +10,9 @@
     *{box-sizing:border-box}
     body{margin:0;background:var(--paper);color:#233c39;font:16px/1.6 system-ui,sans-serif;padding-bottom:40px}
     header{padding:44px max(6vw,24px);background:var(--green);color:#faf6ea}
-    header a{color:#d7e1d7;text-decoration:none;font-size:14px}
-    header a:hover{text-decoration:underline}
+    .header-links{display:flex;flex-wrap:wrap;gap:16px}
+    .header-links a{color:#d7e1d7;text-decoration:none;font-size:14px}
+    .header-links a:hover{text-decoration:underline}
     h1{font:clamp(34px,5vw,56px)/1.1 Georgia,serif;margin:18px 0 8px}
     header p{margin:0;color:#d7e1d7}
     main{max-width:980px;margin:0 auto;padding:36px 22px 64px}
@@ -46,7 +47,7 @@
 </head>
 <body>
   <header>
-    <a href="./">← К обычным историям</a>
+    <div class="header-links"><a href="./">← Обычные истории</a><a href="phrases.html">💬 Фразы на каждый день</a></div>
     <h1>Аудиоистории</h1>
     <p>Выбери запись и слушай.</p>
   </header>
