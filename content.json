@@ -4220,6 +4220,149 @@
         "src": "una-habitacion-en-sevilla.mp3",
         "available": true
       }
+    },
+    {
+      "id": "story-15",
+      "title": "El nuevo peinado de Paula",
+      "level": "A1",
+      "es": [
+        "Paula lleva el pelo largo desde hace muchos años. Este sábado decide cambiar de peinado. Busca una peluquería cerca de su casa y pide hora por teléfono. A las once, entra en el salón y saluda a la peluquera.",
+        "—Quiero cortarme el pelo, pero no demasiado —explica Paula. La peluquera le pregunta si quiere mantener el color natural. Paula dice que sí y le enseña una foto en el móvil. La peluquera empieza a trabajar y las dos hablan de sus planes para el fin de semana. Después de un rato, la peluquera termina el corte y le enseña el espejo. Paula mira su reflejo y se toca el flequillo con cuidado. El cambio es grande, pero le gusta cómo queda.",
+        "Por la tarde, queda con su amiga Irene en una terraza. Irene la ve llegar y abre mucho los ojos. —¿Qué opinas de mi nuevo peinado? —pregunta Paula. —Es muy feo —contesta Irene con una sonrisa. Paula se queda seria un segundo, pero Irene enseguida se ríe. —¡Es broma! No es broma: te queda muy bien. Irene dice que el flequillo hace que Paula parezca diferente. Paula le cuenta que tenía ganas de probar algo nuevo. Las dos piden algo de beber y hablan hasta la tarde. Antes de despedirse, Irene le desea un buen día. Paula vuelve a casa contenta con su peinado y con la tarde que ha pasado."
+      ],
+      "ru": [
+        "Паула носит длинные волосы уже много лет. В эту субботу она решает сменить причёску. Она ищет парикмахерскую рядом с домом и записывается по телефону. В одиннадцать она входит в салон и здоровается с парикмахером.",
+        "— Я хочу подстричься, но не слишком коротко, — объясняет Паула. Парикмахер спрашивает, хочет ли она сохранить свой естественный цвет волос. Паула отвечает, что да, и показывает фотографию на телефоне. Парикмахер начинает работать, и они обсуждают планы на выходные. Через некоторое время парикмахер заканчивает стрижку и показывает ей зеркало. Паула смотрит на своё отражение и осторожно трогает чёлку. Перемены большие, но ей нравится, как получилось.",
+        "Днём она встречается с подругой Ирене на летней террасе кафе. Ирене видит, как она подходит, и широко раскрывает глаза. — Как тебе моя новая причёска? — спрашивает Паула. — Она очень уродливая, — отвечает Ирене с улыбкой. Паула на секунду становится серьёзной, но Ирене тут же смеётся. — Шучу! Правда, она тебе очень идёт. Ирене говорит, что чёлка делает Паулу совсем другой. Паула рассказывает, что ей давно хотелось попробовать что-нибудь новое. Они заказывают напитки и разговаривают до вечера. Перед прощанием Ирене желает ей хорошего дня. Паула возвращается домой довольная своей причёской и проведённым днём."
+      ],
+      "vocab": [
+        [
+          "cambiar de peinado",
+          "сменить причёску"
+        ],
+        [
+          "pedir hora",
+          "записаться на приём"
+        ],
+        [
+          "cortarse el pelo",
+          "подстричься"
+        ],
+        [
+          "mantener el color natural",
+          "сохранить естественный цвет"
+        ],
+        [
+          "el flequillo",
+          "чёлка"
+        ],
+        [
+          "el reflejo",
+          "отражение"
+        ],
+        [
+          "te queda muy bien",
+          "тебе очень идёт"
+        ]
+      ],
+      "full_text": {
+        "es": "Paula lleva el pelo largo desde hace muchos años. Este sábado decide cambiar de peinado. Busca una peluquería cerca de su casa y pide hora por teléfono. A las once, entra en el salón y saluda a la peluquera.\n\n—Quiero cortarme el pelo, pero no demasiado —explica Paula. La peluquera le pregunta si quiere mantener el color natural. Paula dice que sí y le enseña una foto en el móvil. La peluquera empieza a trabajar y las dos hablan de sus planes para el fin de semana. Después de un rato, la peluquera termina el corte y le enseña el espejo. Paula mira su reflejo y se toca el flequillo con cuidado. El cambio es grande, pero le gusta cómo queda.\n\nPor la tarde, queda con su amiga Irene en una terraza. Irene la ve llegar y abre mucho los ojos. —¿Qué opinas de mi nuevo peinado? —pregunta Paula. —Es muy feo —contesta Irene con una sonrisa. Paula se queda seria un segundo, pero Irene enseguida se ríe. —¡Es broma! No es broma: te queda muy bien. Irene dice que el flequillo hace que Paula parezca diferente. Paula le cuenta que tenía ganas de probar algo nuevo. Las dos piden algo de beber y hablan hasta la tarde. Antes de despedirse, Irene le desea un buen día. Paula vuelve a casa contenta con su peinado y con la tarde que ha pasado.",
+        "ru": "Паула носит длинные волосы уже много лет. В эту субботу она решает сменить причёску. Она ищет парикмахерскую рядом с домом и записывается по телефону. В одиннадцать она входит в салон и здоровается с парикмахером.\n\n— Я хочу подстричься, но не слишком коротко, — объясняет Паула. Парикмахер спрашивает, хочет ли она сохранить свой естественный цвет волос. Паула отвечает, что да, и показывает фотографию на телефоне. Парикмахер начинает работать, и они обсуждают планы на выходные. Через некоторое время парикмахер заканчивает стрижку и показывает ей зеркало. Паула смотрит на своё отражение и осторожно трогает чёлку. Перемены большие, но ей нравится, как получилось.\n\nДнём она встречается с подругой Ирене на летней террасе кафе. Ирене видит, как она подходит, и широко раскрывает глаза. — Как тебе моя новая причёска? — спрашивает Паула. — Она очень уродливая, — отвечает Ирене с улыбкой. Паула на секунду становится серьёзной, но Ирене тут же смеётся. — Шучу! Правда, она тебе очень идёт. Ирене говорит, что чёлка делает Паулу совсем другой. Паула рассказывает, что ей давно хотелось попробовать что-нибудь новое. Они заказывают напитки и разговаривают до вечера. Перед прощанием Ирене желает ей хорошего дня. Паула возвращается домой довольная своей причёской и проведённым днём."
+      },
+      "sentences": [
+        {
+          "es": "Paula lleva el pelo largo desde hace muchos años.",
+          "ru": "Паула носит длинные волосы уже много лет."
+        },
+        {
+          "es": "Este sábado decide cambiar de peinado.",
+          "ru": "В эту субботу она решает сменить причёску."
+        },
+        {
+          "es": "Busca una peluquería cerca de su casa y pide hora por teléfono.",
+          "ru": "Она ищет парикмахерскую рядом с домом и записывается по телефону."
+        },
+        {
+          "es": "A las once, entra en el salón y saluda a la peluquera.",
+          "ru": "В одиннадцать она входит в салон и здоровается с парикмахером."
+        },
+        {
+          "es": "—Quiero cortarme el pelo, pero no demasiado —explica Paula.",
+          "ru": "— Я хочу подстричься, но не слишком коротко, — объясняет Паула."
+        },
+        {
+          "es": "La peluquera le pregunta si quiere mantener el color natural.",
+          "ru": "Парикмахер спрашивает, хочет ли она сохранить свой естественный цвет волос."
+        },
+        {
+          "es": "Paula dice que sí y le enseña una foto en el móvil.",
+          "ru": "Паула отвечает, что да, и показывает фотографию на телефоне."
+        },
+        {
+          "es": "La peluquera empieza a trabajar y las dos hablan de sus planes para el fin de semana.",
+          "ru": "Парикмахер начинает работать, и они обсуждают планы на выходные."
+        },
+        {
+          "es": "Después de un rato, la peluquera termina el corte y le enseña el espejo.",
+          "ru": "Через некоторое время парикмахер заканчивает стрижку и показывает ей зеркало."
+        },
+        {
+          "es": "Paula mira su reflejo y se toca el flequillo con cuidado.",
+          "ru": "Паула смотрит на своё отражение и осторожно трогает чёлку."
+        },
+        {
+          "es": "El cambio es grande, pero le gusta cómo queda.",
+          "ru": "Перемены большие, но ей нравится, как получилось."
+        },
+        {
+          "es": "Por la tarde, queda con su amiga Irene en una terraza.",
+          "ru": "Днём она встречается с подругой Ирене на летней террасе кафе."
+        },
+        {
+          "es": "Irene la ve llegar y abre mucho los ojos.",
+          "ru": "Ирене видит, как она подходит, и широко раскрывает глаза."
+        },
+        {
+          "es": "—¿Qué opinas de mi nuevo peinado? —pregunta Paula.",
+          "ru": "— Как тебе моя новая причёска? — спрашивает Паула."
+        },
+        {
+          "es": "—Es muy feo —contesta Irene con una sonrisa.",
+          "ru": "— Она очень уродливая, — отвечает Ирене с улыбкой."
+        },
+        {
+          "es": "Paula se queda seria un segundo, pero Irene enseguida se ríe.",
+          "ru": "Паула на секунду становится серьёзной, но Ирене тут же смеётся."
+        },
+        {
+          "es": "—¡Es broma! No es broma: te queda muy bien.",
+          "ru": "— Шучу! Правда, она тебе очень идёт."
+        },
+        {
+          "es": "Irene dice que el flequillo hace que Paula parezca diferente.",
+          "ru": "Ирене говорит, что чёлка делает Паулу совсем другой."
+        },
+        {
+          "es": "Paula le cuenta que tenía ganas de probar algo nuevo.",
+          "ru": "Паула рассказывает, что ей давно хотелось попробовать что-нибудь новое."
+        },
+        {
+          "es": "Las dos piden algo de beber y hablan hasta la tarde.",
+          "ru": "Они заказывают напитки и разговаривают до вечера."
+        },
+        {
+          "es": "Antes de despedirse, Irene le desea un buen día.",
+          "ru": "Перед прощанием Ирене желает ей хорошего дня."
+        },
+        {
+          "es": "Paula vuelve a casa contenta con su peinado y con la tarde que ha pasado.",
+          "ru": "Паула возвращается домой довольная своей причёской и проведённым днём."
+        }
+      ],
+      "audio": {
+        "src": "el-nuevo-peinado-de-paula.mp3",
+        "available": false
+      }
     }
   ],
   "numbers": {
