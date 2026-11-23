@@ -624,6 +624,9 @@ updateCurrentSection();
     if (user) authMode = 'signin';
     $('auth-form').hidden = !supabase;
     $('signout-button').hidden = !user;
+    $('auth-form').querySelector('[data-auth-action="signin"]').hidden = !!user;
+    $('signup-button').hidden = !!user;
+    $('auth-form').querySelectorAll('label').forEach(label=>label.hidden=!!user);
     $('auth-password').value = '';
     $('auth-password').autocomplete = user ? 'new-password' : 'current-password';
   }
