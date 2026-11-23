@@ -62,7 +62,11 @@ body{padding-bottom:150px}.audio{display:none}.player-dock{position:fixed;bottom
 @media print{.section-tabs,.audio-story-nav{display:none}}
 .phrase-audio-button{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 13px;border:1px solid #b7c8a6;border-radius:20px;background:#edf2e7;color:#245e4d;font:600 13px system-ui;cursor:pointer;touch-action:manipulation}.phrase-audio-button:hover,.phrase-audio-button[aria-pressed="true"]{background:#dce9d6}.phrase-audio-button:focus-visible{outline:3px solid #cf8e37;outline-offset:3px}
 
-</style></head><body><header><h1>Spanish learning</h1><nav class="section-tabs" role="tablist" aria-label="Разделы"><button class="section-tab" id="tab-text" type="button" role="tab" aria-selected="true" aria-controls="text-panel">Текстовые истории</button><button class="section-tab" id="tab-audio" type="button" role="tab" aria-selected="false" aria-controls="audio-panel" tabindex="-1">Аудиоистории</button><button class="section-tab" id="tab-phrases" type="button" role="tab" aria-selected="false" aria-controls="phrases-panel" tabindex="-1">Фразы на каждый день</button></nav></header><section id="text-panel" class="view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-text"><div class="layout"><nav aria-label="Навигация по рассказам" id="story-nav"></nav><main id="stories"><p role="status">Загрузка историй…</p></main></div><section class="player-dock" aria-label="Аудиоплеер рассказов">
+
+/* FSRS flashcard section */
+.cards-main{max-width:940px;margin:0 auto;padding:38px 22px 70px}.cards-heading{margin:0 0 22px}.cards-heading h2{margin-bottom:10px}.cards-heading p{max-width:700px;color:#66745e}.sync-panel{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:18px 20px;border:1px solid #dfe5d6;border-radius:16px;background:#fffefa}.sync-copy{min-width:0}.sync-copy strong{font-size:15px}.sync-copy p{margin:5px 0 0;color:#66745e;font-size:13px}.sync-settings{flex:0 0 auto;max-width:460px}.sync-settings summary{padding:7px 10px;border:1px solid #ccd6c4;border-radius:9px;color:#285b4d;font-size:13px}.sync-settings[open]{flex-basis:100%;max-width:none}.sync-panel:has(.sync-settings[open]){flex-wrap:wrap}.sync-instructions{font-size:13px;color:#66745e}.sync-instructions a{color:#245e4d}.sync-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.sync-form label{display:grid;gap:5px;font-size:12px;font-weight:650}.sync-form input{font:14px system-ui;min-height:42px}.sync-form button{align-self:end}.auth-form{border-top:1px solid #e5e7df;padding-top:12px}.auth-actions{display:flex;flex-wrap:wrap;gap:8px;grid-column:1/-1}.primary-action,.secondary-action{min-height:44px;padding:10px 16px;border:0;border-radius:11px;background:#173f39;color:#fffefa;font:650 14px system-ui;cursor:pointer}.primary-action:hover{background:#286054}.secondary-action{border:1px solid #b7c8a6;background:#edf2e7;color:#245e4d}.secondary-action:hover{background:#dce9d6}.primary-action:focus-visible,.secondary-action:focus-visible,.rating-buttons button:focus-visible{outline:3px solid #cf8e37;outline-offset:3px}.deck-summary{display:flex;align-items:center;gap:22px;margin:18px 0}.deck-summary>div{display:grid;gap:0}.deck-summary strong{font:26px/1.1 Georgia,serif;color:#285b4d}.deck-summary span{font-size:12px;color:#66745e}.deck-summary .secondary-action{margin-left:auto}.flashcard{min-height:340px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:clamp(24px,6vw,58px);border:1px solid #dfe5d6;border-radius:24px;background:#fffefa;box-shadow:0 10px 30px #233c3908}.card-counter{margin:4px 0;color:#66745e;font-size:13px}.card-face{max-width:700px;margin:18px auto 28px;font:clamp(27px,5vw,44px)/1.3 Georgia,serif}.card-back{max-width:700px;margin:0 auto 20px;color:#285b4d;font:clamp(25px,4vw,37px)/1.35 Georgia,serif}.flashcard>.primary-action{min-width:200px}.schedule-preview{margin:2px 0 15px;color:#66745e;font-size:13px}.rating-buttons{display:grid;grid-template-columns:repeat(4,minmax(92px,1fr));gap:10px;width:min(100%,560px)}.rating-buttons button{display:grid;gap:3px;padding:10px 8px;border:1px solid #ccd6c4;border-radius:12px;background:#f7f8f2;color:#233c39;cursor:pointer;font:inherit}.rating-buttons button:hover{background:#e9efdf}.rating-buttons button strong{font-size:14px}.rating-buttons button span{font-size:12px;color:#66745e}.rating-buttons .rating-again{border-color:#e5b6a7;background:#fbefea}.rating-buttons .rating-hard{border-color:#e8d3a4;background:#fbf6e8}.rating-buttons .rating-good{border-color:#b7c8a6;background:#edf4e7}.rating-buttons .rating-easy{border-color:#a8ccca;background:#e9f4f2}.memory-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.memory-stats>div{display:grid;gap:4px;padding:15px;border:1px solid #dfe5d6;border-radius:13px;background:#fffefa}.memory-stats span{font-size:12px;color:#66745e}.memory-stats strong{font-size:14px}.history-panel{padding:0 4px;color:#66745e;font-size:13px}.history-panel ol{padding-left:22px}.history-panel li{padding:4px 0}.cards-empty{color:#66745e;font:20px Georgia,serif}.cards-error{color:#8a3429}.sync-badge{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:99px;background:#e7f1e2;color:#285b4d;font-size:11px}@media(max-width:700px){.cards-main{padding:24px 14px 45px}.sync-panel{display:block}.sync-settings{margin-top:14px}.sync-settings[open]{margin-top:18px}.sync-form{grid-template-columns:1fr}.auth-actions{grid-column:auto}.deck-summary{gap:14px;flex-wrap:wrap}.deck-summary .secondary-action{margin-left:0}.flashcard{min-height:310px;padding:25px 17px}.rating-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.memory-stats{grid-template-columns:1fr}.memory-stats>div{grid-template-columns:1fr auto;align-items:center}}
+body[data-active-panel="cards-panel"]{padding-bottom:0}
+</style></head><body><header><h1>Spanish learning</h1><nav class="section-tabs" role="tablist" aria-label="Разделы"><button class="section-tab" id="tab-text" type="button" role="tab" aria-selected="true" aria-controls="text-panel">Текстовые истории</button><button class="section-tab" id="tab-audio" type="button" role="tab" aria-selected="false" aria-controls="audio-panel" tabindex="-1">Аудиоистории</button><button class="section-tab" id="tab-phrases" type="button" role="tab" aria-selected="false" aria-controls="phrases-panel" tabindex="-1">Фразы на каждый день</button><button class="section-tab" id="tab-cards" type="button" role="tab" aria-selected="false" aria-controls="cards-panel" tabindex="-1">Карточки · FSRS</button></nav></header><section id="text-panel" class="view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-text"><div class="layout"><nav aria-label="Навигация по рассказам" id="story-nav"></nav><main id="stories"><p role="status">Загрузка историй…</p></main></div><section class="player-dock" aria-label="Аудиоплеер рассказов">
 <div class="player-info"><div class="player-caption">СЛУШАЙ И ЧИТАЙ</div><div class="player-title" id="player-title" lang="es-ES"></div><p class="player-note" id="player-note" role="status"></p></div>
 <div class="custom-controls">
 <div class="transport-controls"><button class="player-skip" id="player-back" type="button" aria-label="Назад на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button><button class="player-toggle" id="player-toggle" type="button" aria-label="Воспроизвести">▶</button><button class="player-skip" id="player-forward" type="button" aria-label="Вперёд на 3 секунды"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><g transform="translate(32 0) scale(-1 1)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a11 11 0 1 1-2 12"/><path d="M7 3v5h5"/></g><text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="13" font-weight="650">3</text></svg></button></div>
@@ -77,6 +81,30 @@ body{padding-bottom:150px}.audio{display:none}.player-dock{position:fixed;bottom
 <div class="audio-story-seek"><span id="audio-elapsed">0:00</span><input id="audio-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Позиция воспроизведения аудиоистории" disabled><span id="audio-duration">0:00</span></div>
 <label class="audio-story-speed" for="audio-speed">Скорость<select id="audio-speed" aria-label="Скорость воспроизведения аудиоистории"><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1" selected>1×</option><option value="1.25">1,25×</option><option value="1.5">1,5×</option><option value="1.75">1,75×</option><option value="2">2×</option></select></label>
 </div><p class="hint">Испанская фраза звучит вместе с переводом на русский.</p><audio id="audio-story-player" preload="metadata" aria-label="Аудиоистория 1"></audio></section></div></section>
+<section id="cards-panel" class="view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-cards" hidden>
+<main class="cards-main">
+  <section class="cards-heading"><div class="eyebrow">ИНТЕРВАЛЬНОЕ ПОВТОРЕНИЕ · FSRS-7</div><h2>Карточки</h2><p>Вспомни испанское выражение по-русски, открой ответ и оцени, насколько легко оно вспомнилось. Расписание рассчитывает FSRS.</p></section>
+  <section class="sync-panel" aria-labelledby="sync-title">
+    <div class="sync-copy"><strong id="sync-title">Синхронизация между устройствами</strong><p id="sync-status" role="status">Карточки сохраняются на этом устройстве. Настрой Supabase, чтобы включить синхронизацию.</p></div>
+    <details class="sync-settings"><summary>Настроить Supabase и аккаунт</summary>
+      <div class="sync-instructions"><p>Создай проект Supabase, выполни SQL из <a href="supabase-flashcards.sql" target="_blank" rel="noopener">файла настройки</a> в SQL Editor, затем укажи Project URL и публичный publishable/anon key. Создай аккаунт с тем же email на других устройствах.</p><p>Ключ хранится в локальном хранилище браузера. Не вставляй сюда service_role ключ.</p></div>
+      <form id="supabase-config-form" class="sync-form">
+        <label>Project URL<input id="supabase-url" type="url" inputmode="url" placeholder="https://…supabase.co" autocomplete="url" required></label>
+        <label>Publishable / anon key<input id="supabase-key" type="password" autocomplete="off" required></label>
+        <button type="submit" class="primary-action">Сохранить подключение</button>
+      </form>
+      <form id="auth-form" class="sync-form auth-form" hidden>
+        <label>Email<input id="auth-email" type="email" autocomplete="email" required></label>
+        <label>Пароль<input id="auth-password" type="password" autocomplete="current-password" minlength="6" required></label>
+        <div class="auth-actions"><button type="submit" class="primary-action" data-auth-action="signin">Войти</button><button type="button" class="secondary-action" id="signup-button">Создать аккаунт</button><button type="button" class="secondary-action" id="signout-button" hidden>Выйти</button></div>
+      </form>
+    </details>
+  </section>
+  <section class="deck-summary" aria-label="Состояние колоды"><div><strong id="due-count">—</strong><span>к повторению</span></div><div><strong id="new-count">—</strong><span>новых</span></div><div><strong id="review-count">0</strong><span>сегодня</span></div><button id="shuffle-new" type="button" class="secondary-action">Перемешать новые</button></section>
+  <section id="flashcard" class="flashcard" aria-live="polite"><div class="eyebrow" id="card-category">ЗАГРУЗКА КОЛОДЫ</div><p id="card-counter" class="card-counter"></p><div id="card-front" class="card-face" lang="ru">Подготавливаем карточки…</div><button id="show-answer" class="primary-action" type="button" hidden>Показать ответ</button><div id="card-back" class="card-back" lang="es-ES" hidden></div><div id="rating-area" hidden><div id="schedule-preview" class="schedule-preview" aria-live="polite"></div><div class="rating-buttons" aria-label="Оценить ответ"><button type="button" data-rating="1" class="rating-again"><strong>Again</strong><span>Снова</span></button><button type="button" data-rating="2" class="rating-hard"><strong>Hard</strong><span>Трудно</span></button><button type="button" data-rating="3" class="rating-good"><strong>Good</strong><span>Хорошо</span></button><button type="button" data-rating="4" class="rating-easy"><strong>Easy</strong><span>Легко</span></button></div></div></section>
+  <section class="memory-stats" aria-label="Параметры выбранной карточки"><div><span>Сложность</span><strong id="card-difficulty">—</strong></div><div><span>Устойчивость памяти</span><strong id="card-stability">—</strong></div><div><span>Следующий повтор</span><strong id="card-due">—</strong></div></section>
+  <section class="history-panel"><details><summary>Последние повторы</summary><ol id="review-history"><li>История появится после первого ответа.</li></ol></details></section>
+</main></section>
 <section id="phrases-panel" class="view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-phrases" hidden>
 <main class="phrase-main"><p class="phrase-intro">Фразы для повседневных ситуаций в Испании.</p>
 <section class="phrase-list" aria-label="Фразы на русском и испанском">
@@ -480,6 +508,210 @@ updateCurrentSection();
  });
  ['play','pause','ended','error'].forEach(event=>player.addEventListener(event,refresh));
  window.addEventListener('learningsectionchange',event=>{if(event.detail!=='phrases-panel')player.pause()});
+})();
+</script>
+<script type="module">
+import { DefaultScheduler, Rating } from 'https://esm.sh/ts-fsrs@6.0.0';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+(() => {
+  const $ = id => document.getElementById(id);
+  const status = $('sync-status'), front = $('card-front'), back = $('card-back');
+  const showAnswer = $('show-answer'), ratingArea = $('rating-area');
+  const configKey = 'spanish-flashcards-supabase-v1';
+  const progressKey = 'spanish-flashcards-progress-v1';
+  const historyKey = 'spanish-flashcards-history-v1';
+  const historyImportKey = 'spanish-flashcards-history-imported-user-v1';
+  const ratingValues = {1: Rating.Again, 2: Rating.Hard, 3: Rating.Good, 4: Rating.Easy};
+  const ratingNames = {1:'Again',2:'Hard',3:'Good',4:'Easy'};
+  let scheduler, deck = [], progress = {}, history = [], queue = [], activeCard = null;
+  let supabase = null, signedInUser = null, syncing = false;
+  const escapeHTML = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const readJSON = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
+  const persistLocal = () => { localStorage.setItem(progressKey, JSON.stringify(progress)); localStorage.setItem(historyKey, JSON.stringify(history.slice(0,100))); };
+  const toCard = (saved, id) => {
+    if (!saved) return scheduler.newCard({cardId:id, now:new Date()});
+    const card = {...saved, cardId:id};
+    card.dueAt = new Date(card.dueAt);
+    card.lastReviewAt = card.lastReviewAt ? new Date(card.lastReviewAt) : null;
+    return card;
+  };
+  const cardState = card => ({...card, dueAt:card.dueAt.toISOString(), lastReviewAt:card.lastReviewAt ? card.lastReviewAt.toISOString() : null});
+  const readableInterval = due => {
+    const minutes = Math.max(0, (due.getTime() - Date.now()) / 60000);
+    if (minutes < 1) return 'сейчас';
+    if (minutes < 60) return `через ${Math.max(1,Math.round(minutes))} мин`;
+    const hours = minutes / 60;
+    if (hours < 24) return `через ${Math.max(1,Math.round(hours))} ч`;
+    const days = hours / 24;
+    return `через ${Math.max(1,Math.round(days))} дн.`;
+  };
+  const dateLabel = value => value ? new Intl.DateTimeFormat('ru-RU',{dateStyle:'medium',timeStyle:'short'}).format(new Date(value)) : '—';
+  const todayCount = () => history.filter(item => new Date(item.reviewed_at).toDateString() === new Date().toDateString()).length;
+  function refreshSummary() {
+    const now = Date.now();
+    $('due-count').textContent = deck.filter(card => !progress[card.id] || new Date(progress[card.id].dueAt).getTime() <= now).length;
+    $('new-count').textContent = deck.filter(card => !progress[card.id]).length;
+    $('review-count').textContent = todayCount();
+  }
+  function refreshMetrics(card) {
+    const saved = progress[card.id];
+    $('card-difficulty').textContent = saved ? `${Number(saved.difficulty).toFixed(1)} / 10` : 'Новая карточка';
+    $('card-stability').textContent = saved ? `${Number(saved.stability).toFixed(1)} дн.` : 'Появится после оценки';
+    $('card-due').textContent = saved ? dateLabel(saved.dueAt) : 'После первого повтора';
+  }
+  function renderHistory() {
+    const target = $('review-history');
+    target.innerHTML = history.slice(0,10).map(item => `<li><strong>${escapeHTML(item.front || item.card_id)}</strong> · ${escapeHTML(ratingNames[item.rating] || 'Оценка')} · ${dateLabel(item.reviewed_at)}</li>`).join('') || '<li>История появится после первого ответа.</li>';
+    refreshSummary();
+  }
+  function dueQueue() {
+    const now = Date.now();
+    return deck.filter(card => !progress[card.id] || new Date(progress[card.id].dueAt).getTime() <= now)
+      .sort((a,b) => {
+        const aDue = progress[a.id] ? new Date(progress[a.id].dueAt).getTime() : -1;
+        const bDue = progress[b.id] ? new Date(progress[b.id].dueAt).getTime() : -1;
+        return aDue - bDue;
+      });
+  }
+  function displayNext() {
+    queue = dueQueue();
+    if (!queue.length) {
+      $('card-category').textContent = 'НА СЕГОДНЯ ВСЁ';
+      $('card-counter').textContent = '';
+      front.textContent = 'Все карточки повторены. Возвращайся, когда наступит время следующего повтора.';
+      front.className = 'cards-empty'; back.hidden = true; showAnswer.hidden = true; ratingArea.hidden = true;
+      activeCard = null; refreshSummary(); return;
+    }
+    activeCard = queue[0];
+    $('card-category').textContent = activeCard.category;
+    $('card-counter').textContent = `${queue.length} ${queue.length===1?'карточка к повторению':'карточек к повторению'}`;
+    front.className = 'card-face'; front.textContent = activeCard.front;
+    back.textContent = activeCard.back; back.hidden = true; showAnswer.hidden = false; ratingArea.hidden = true;
+    refreshMetrics(activeCard); refreshSummary();
+  }
+  function reviewPreviews() {
+    const card = toCard(progress[activeCard.id]?.fsrs_card, activeCard.id);
+    const now = new Date();
+    const preview = scheduler.preview({card, now});
+    $('schedule-preview').textContent = 'Следующий повтор: ' + [...preview].map(item => `${ratingNames[item.grade]} · ${readableInterval(item.card.dueAt)}`).join('   ·   ');
+  }
+  async function saveReview(card, result, grade) {
+    const reviewedAt = new Date();
+    const savedCard = cardState(result.card);
+    const entry = {card_id:card.cardId, front:activeCard.front, rating:Number(grade), reviewed_at:reviewedAt.toISOString(), due_at:result.card.dueAt.toISOString(), difficulty:result.card.difficulty, stability:result.card.stability, stability_fast:result.card.stabilityFast, revlog:result.revlog};
+    progress[card.cardId] = {fsrs_card:savedCard, dueAt:savedCard.dueAt, difficulty:result.card.difficulty, stability:result.card.stability, stability_fast:result.card.stabilityFast, updated_at:reviewedAt.toISOString()};
+    history.unshift(entry); persistLocal(); renderHistory();
+    if (supabase && signedInUser) {
+      const {error} = await supabase.rpc('review_flashcard',{p_card_id:card.cardId,p_fsrs_card:savedCard,p_review:entry});
+      if (error) status.textContent = `Оценка сохранена на устройстве, но не синхронизирована: ${error.message}`;
+    }
+  }
+  async function rateCard(grade) {
+    if (!activeCard) return;
+    document.querySelectorAll('.rating-buttons button').forEach(button => button.disabled = true);
+    const card = toCard(progress[activeCard.id]?.fsrs_card, activeCard.id);
+    try {
+      const result = scheduler.review({card, grade:ratingValues[grade], now:new Date()});
+      await saveReview(card,result,grade);
+      displayNext();
+    } catch (error) {
+      status.textContent = `Не удалось рассчитать повтор: ${error.message}`;
+      document.querySelectorAll('.rating-buttons button').forEach(button => button.disabled = false);
+    }
+  }
+  function setSignedIn(user) {
+    signedInUser = user;
+    $('auth-form').hidden = !supabase;
+    $('signout-button').hidden = !user;
+    $('auth-password').value = '';
+    $('auth-password').autocomplete = user ? 'new-password' : 'current-password';
+  }
+  async function refreshFromCloud() {
+    if (!supabase || !signedInUser || syncing) return;
+    syncing = true;
+    try {
+      const [{data:remoteProgress,error:progressError},{data:remoteHistory,error:historyError}] = await Promise.all([
+        supabase.from('flashcard_progress').select('card_id,fsrs_card,updated_at'),
+        supabase.from('flashcard_reviews').select('card_id,rating,reviewed_at,due_at,difficulty,stability,stability_fast,revlog').order('reviewed_at',{ascending:false}).limit(100)
+      ]);
+      if (progressError) throw progressError;
+      if (historyError) throw historyError;
+      if (localStorage.getItem(historyImportKey) !== signedInUser.id && history.length) {
+        const legacyRows = history.slice(0,100).map(row=>({user_id:signedInUser.id,card_id:row.card_id,rating:row.rating,reviewed_at:row.reviewed_at,due_at:row.due_at,difficulty:row.difficulty,stability:row.stability,stability_fast:row.stability_fast,revlog:row.revlog}));
+        const {error} = await supabase.from('flashcard_reviews').insert(legacyRows);
+        if (error) throw error;
+        localStorage.setItem(historyImportKey,signedInUser.id);
+      }
+      const remoteIds = new Set(remoteProgress.map(row=>row.card_id));
+      // Migrate this browser's saved card states that have not yet reached the cloud.
+      const localOnly = Object.entries(progress).filter(([id])=>!remoteIds.has(id)).map(([card_id,value])=>({user_id:signedInUser.id,card_id,fsrs_card:value.fsrs_card,updated_at:value.updated_at||new Date().toISOString()}));
+      if (localOnly.length) {
+        const {error} = await supabase.from('flashcard_progress').upsert(localOnly,{onConflict:'user_id,card_id'});
+        if (error) throw error;
+      }
+      remoteProgress.forEach(row=>{progress[row.card_id]={fsrs_card:row.fsrs_card,dueAt:row.fsrs_card.dueAt,difficulty:row.fsrs_card.difficulty,stability:row.fsrs_card.stability,stability_fast:row.fsrs_card.stabilityFast,updated_at:row.updated_at};});
+      history = [...remoteHistory,...(localStorage.getItem(historyImportKey) === signedInUser.id ? history.filter(row=>!remoteHistory.some(remote=>remote.card_id===row.card_id && remote.reviewed_at===row.reviewed_at)) : [])].sort((a,b)=>new Date(b.reviewed_at)-new Date(a.reviewed_at)).slice(0,100).map(row=>({...row,front:deck.find(card=>card.id===row.card_id)?.front || row.card_id}));
+      persistLocal(); status.innerHTML = `Синхронизация включена · ${escapeHTML(signedInUser.email || 'аккаунт')} <span class="sync-badge">Supabase</span>`;
+      renderHistory(); displayNext();
+    } catch (error) {
+      status.textContent = `Ошибка синхронизации: ${error.message}`;
+    } finally { syncing = false; }
+  }
+  function connectClient(url,key) {
+    supabase = createClient(url,key);
+    $('auth-form').hidden = false;
+    status.textContent = 'Подключено к Supabase. Войди в аккаунт или создай его.';
+    supabase.auth.onAuthStateChange((event,session)=>{
+      setSignedIn(session?.user || null);
+      if (session?.user) queueMicrotask(refreshFromCloud);
+      else { status.textContent = 'Войди, чтобы синхронизировать карточки между устройствами.'; displayNext(); }
+    });
+    supabase.auth.getSession().then(({data,error})=>{
+      if (error) { status.textContent = `Ошибка авторизации: ${error.message}`; return; }
+      setSignedIn(data.session?.user || null);
+      if (data.session?.user) refreshFromCloud();
+    });
+  }
+  async function main() {
+    scheduler = await DefaultScheduler({version:'FSRS-7',desiredRetention:0.9,enableFuzz:false,maximumInterval:36500});
+    progress = readJSON(progressKey,{}); history = readJSON(historyKey,[]);
+    const response = await fetch('content.json');
+    if (!response.ok) throw new Error('Не удалось загрузить словарь.');
+    const content = await response.json();
+    const seen = new Set();
+    deck = content.stories.flatMap(story => story.vocab.map(([es,ru],index)=>({
+      id:`${story.id}-${index+1}-${es.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}`,
+      front:ru,back:es,category:story.title
+    }))).filter(card=>{if(seen.has(card.back))return false;seen.add(card.back);return true;});
+    renderHistory(); displayNext();
+    showAnswer.addEventListener('click',()=>{if(!activeCard)return;back.hidden=false;showAnswer.hidden=true;ratingArea.hidden=false;reviewPreviews();});
+    document.querySelectorAll('.rating-buttons button').forEach(button=>button.addEventListener('click',()=>rateCard(Number(button.dataset.rating))));
+    $('shuffle-new').addEventListener('click',()=>{const news=deck.filter(card=>!progress[card.id]);for(let i=news.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[news[i],news[j]]=[news[j],news[i]];}const order=new Map(news.map((card,index)=>[card.id,index]));deck.sort((a,b)=>{const aNew=order.has(a.id),bNew=order.has(b.id);return aNew&&bNew?order.get(a.id)-order.get(b.id):aNew?-1:bNew?1:0;});displayNext();});
+    $('supabase-config-form').addEventListener('submit',event=>{
+      event.preventDefault(); const url=$('supabase-url').value.trim().replace(/\/$/,''); const key=$('supabase-key').value.trim();
+      if(!/^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(url)){status.textContent='Укажи полный Project URL вида https://…supabase.co.';return;}
+      localStorage.setItem(configKey,JSON.stringify({url,key})); connectClient(url,key); status.textContent='Настройки сохранены. Теперь войди или создай аккаунт.';
+    });
+    $('auth-form').addEventListener('submit',async event=>{
+      event.preventDefault(); if(!supabase)return;
+      const email=$('auth-email').value.trim(),password=$('auth-password').value,button=event.submitter;
+      try {
+        if(button?.dataset.authAction==='signup') {
+          const {data,error}=await supabase.auth.signUp({email,password}); if(error)throw error;
+          if(data.session) status.textContent='Аккаунт создан. Синхронизация включена.';
+          else status.textContent='Проверь почту и подтверди аккаунт, затем войди здесь.';
+        } else {const {error}=await supabase.auth.signInWithPassword({email,password});if(error)throw error;}
+      } catch(error){status.textContent=`Не удалось выполнить вход: ${error.message}`;}
+    });
+    $('signup-button').addEventListener('click',()=>{const form=$('auth-form');let button=form.querySelector('[data-auth-action="signup"]');if(!button){button=document.createElement('button');button.type='submit';button.className='primary-action';button.dataset.authAction='signup';button.textContent='Создать аккаунт';form.querySelector('.auth-actions').prepend(button);} $('auth-password').autocomplete='new-password';button.focus();});
+    $('signout-button').addEventListener('click',async()=>{if(supabase)await supabase.auth.signOut();});
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshFromCloud();});
+    const savedConfig=readJSON(configKey,null);
+    if(savedConfig?.url&&savedConfig?.key){$('supabase-url').value=savedConfig.url;$('supabase-key').value=savedConfig.key;connectClient(savedConfig.url,savedConfig.key);}
+    else { $('auth-form').hidden=true; }
+  }
+  main().catch(error=>{status.textContent=`Колоду не удалось загрузить: ${error.message}`;front.textContent='Не удалось подготовить карточки. Обнови страницу и попробуй ещё раз.';});
 })();
 </script>
 </body></html>
