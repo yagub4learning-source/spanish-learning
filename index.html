@@ -511,9 +511,6 @@ updateCurrentSection();
 })();
 </script>
 <script type="module">
-import { DefaultScheduler, Rating } from 'https://esm.sh/ts-fsrs@6.0.0';
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-
 (() => {
   const $ = id => document.getElementById(id);
   const status = $('sync-status'), front = $('card-front'), back = $('card-back');
@@ -526,6 +523,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   const ratingNames = {1:'Again',2:'Hard',3:'Good',4:'Easy'};
   let scheduler, deck = [], progress = {}, history = [], queue = [], activeCard = null;
   let supabase = null, signedInUser = null, syncing = false;
+  let DefaultScheduler, Rating, createClient, authMode = 'signin';
   const escapeHTML = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const readJSON = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
   const persistLocal = () => { localStorage.setItem(progressKey, JSON.stringify(progress)); localStorage.setItem(historyKey, JSON.stringify(history.slice(0,100))); };
@@ -575,6 +573,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
       });
   }
   function displayNext() {
+    document.querySelectorAll('.rating-buttons button').forEach(button => button.disabled = false);
     queue = dueQueue();
     if (!queue.length) {
       $('card-category').textContent = 'НА СЕГОДНЯ ВСЁ';
@@ -622,6 +621,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   }
   function setSignedIn(user) {
     signedInUser = user;
+    if (user) authMode = 'signin';
     $('auth-form').hidden = !supabase;
     $('signout-button').hidden = !user;
     $('auth-password').value = '';
@@ -674,6 +674,8 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     });
   }
   async function main() {
+    const [fsrsModule,supabaseModule] = await Promise.all([import('https://esm.sh/ts-fsrs@6.0.0'),import('https://esm.sh/@supabase/supabase-js@2')]);
+    DefaultScheduler = fsrsModule.DefaultScheduler; Rating = fsrsModule.Rating; createClient = supabaseModule.createClient;
     scheduler = await DefaultScheduler({version:'FSRS-7',desiredRetention:0.9,enableFuzz:false,maximumInterval:36500});
     progress = readJSON(progressKey,{}); history = readJSON(historyKey,[]);
     const response = await fetch('content.json');
@@ -695,16 +697,17 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     });
     $('auth-form').addEventListener('submit',async event=>{
       event.preventDefault(); if(!supabase)return;
-      const email=$('auth-email').value.trim(),password=$('auth-password').value,button=event.submitter;
+      const email=$('auth-email').value.trim(),password=$('auth-password').value;
       try {
-        if(button?.dataset.authAction==='signup') {
+        if(authMode==='signup') {
           const {data,error}=await supabase.auth.signUp({email,password}); if(error)throw error;
+          authMode='signin'; $('auth-form').querySelector('[data-auth-action="signin"]').textContent='Войти'; $('signup-button').textContent='Создать аккаунт';
           if(data.session) status.textContent='Аккаунт создан. Синхронизация включена.';
           else status.textContent='Проверь почту и подтверди аккаунт, затем войди здесь.';
         } else {const {error}=await supabase.auth.signInWithPassword({email,password});if(error)throw error;}
       } catch(error){status.textContent=`Не удалось выполнить вход: ${error.message}`;}
     });
-    $('signup-button').addEventListener('click',()=>{const form=$('auth-form');let button=form.querySelector('[data-auth-action="signup"]');if(!button){button=document.createElement('button');button.type='submit';button.className='primary-action';button.dataset.authAction='signup';button.textContent='Создать аккаунт';form.querySelector('.auth-actions').prepend(button);} $('auth-password').autocomplete='new-password';button.focus();});
+    $('signup-button').addEventListener('click',()=>{authMode=authMode==='signin'?'signup':'signin';$('auth-form').querySelector('[data-auth-action="signin"]').textContent=authMode==='signup'?'Создать аккаунт':'Войти';$('signup-button').textContent=authMode==='signup'?'Уже есть аккаунт? Войти':'Создать аккаунт';$('auth-password').autocomplete=authMode==='signup'?'new-password':'current-password';});
     $('signout-button').addEventListener('click',async()=>{if(supabase)await supabase.auth.signOut();});
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshFromCloud();});
     const savedConfig=readJSON(configKey,null);
