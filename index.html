@@ -637,32 +637,26 @@ updateCurrentSection();
       status.textContent = `Ошибка синхронизации: ${error.message}`;
     } finally { syncing = false; }
   }
-  function connectClient() {
-    supabase = createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
-    status.textContent = 'Подключаем публичную колоду…';
-    refreshFromCloud();
-  }
   async function main() {
     const [fsrsModule,supabaseModule] = await Promise.all([import('https://esm.sh/ts-fsrs@6.0.0'),import('https://esm.sh/@supabase/supabase-js@2')]);
     DefaultScheduler = fsrsModule.DefaultScheduler; Rating = fsrsModule.Rating; createClient = supabaseModule.createClient;
     ratingValues = {1:Rating.Again,2:Rating.Hard,3:Rating.Good,4:Rating.Easy};
     scheduler = await DefaultScheduler({version:'FSRS-7',desiredRetention:0.9,enableFuzz:false,maximumInterval:36500});
     progress = readJSON(progressKey,{}); history = readJSON(historyKey,[]);
-    const response = await fetch('content.json');
-    if (!response.ok) throw new Error('Не удалось загрузить словарь.');
-    const content = await response.json();
-    const seen = new Set();
-    deck = content.stories.flatMap(story => story.vocab.map(([es,ru],index)=>({
-      id:`${story.id}-${index+1}-${es.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}`,
-      front:ru,back:es,category:story.title
-    }))).filter(card=>{if(seen.has(card.back))return false;seen.add(card.back);return true;});
+    if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) throw new Error('Не настроено подключение к Supabase.');
+    supabase = createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+    status.textContent = 'Загружаем карточки из Supabase…';
+    const {data:remoteCards,error:cardsError} = await supabase.from('shared_flashcards')
+      .select('card_id,front,back,category,sort_order').order('sort_order');
+    if (cardsError) throw cardsError;
+    deck = (remoteCards || []).map(card=>({id:card.card_id,cardId:card.card_id,front:card.front,back:card.back,category:card.category}));
+    if (!deck.length) throw new Error('В Supabase пока нет карточек. Выполните SQL-скрипт настройки колоды.');
     renderHistory(); displayNext();
     showAnswer.addEventListener('click',()=>{if(!activeCard)return;back.hidden=false;showAnswer.hidden=true;ratingArea.hidden=false;reviewPreviews();});
     document.querySelectorAll('.rating-buttons button').forEach(button=>button.addEventListener('click',()=>rateCard(Number(button.dataset.rating))));
     $('shuffle-new').addEventListener('click',()=>{const news=deck.filter(card=>!progress[card.id]);for(let i=news.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[news[i],news[j]]=[news[j],news[i]];}const order=new Map(news.map((card,index)=>[card.id,index]));deck.sort((a,b)=>{const aNew=order.has(a.id),bNew=order.has(b.id);return aNew&&bNew?order.get(a.id)-order.get(b.id):aNew?-1:bNew?1:0;});displayNext();});
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshFromCloud();});
-    if(SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY) connectClient();
-    else status.textContent='Supabase не настроен; карточки сохраняются локально.';
+    refreshFromCloud();
   }
   main().catch(error=>{status.textContent=`Колоду не удалось загрузить: ${error.message}`;front.textContent='Не удалось подготовить карточки. Обнови страницу и попробуй ещё раз.';});
 })();
