@@ -55,19 +55,17 @@ Deno.serve(async (request) => {
   }
 
   try {
-    const aiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${openAiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "gpt-4.1-mini",
-        temperature: 0.3,
-        response_format: { type: "json_object" },
-        messages: [
-          {
-            role: "system",
-            content: "Ты создаёшь учебные Anki-style карточки для изучающего современный испанский Испании и русского носителя. Подготовь данные для трёх типов карточек: Recognition — испанское слово → вспомнить русский перевод; Recall — русский перевод → вспомнить испанское слово; Cloze — предложение на испанском с целевым словом, заменённым ровно на _____, и перевод предложения → вспомнить и вставить целевое слово. Ответь только JSON-объектом с ключами display, translation, pronunciation, example, exampleTranslation, cloze, clozeTranslation. display — нормативная словарная форма; для существительного добавь правильный артикль el/la, для множественного числа los/las, для остальных частей речи не добавляй артикль. translation — краткий наиболее частый перевод на русский. pronunciation — IPA для кастильского испанского (Испания), в квадратных скобках. example — естественное короткое предложение на испанском из повседневной жизни, где слово/выражение употреблено в подходящей форме. exampleTranslation — точный естественный русский перевод примера. cloze — естественное предложение на испанском с целевым словом, заменённым ровно на _____. clozeTranslation — русский перевод полного предложения с целевым словом. Например, для cielo: display — «el cielo», translation — «небо», cloze — «Hoy el _____ está despejado.», clozeTranslation — «Сегодня небо ясное.». Не используй HTML или Markdown."
-          },
-          { role: "user", content: `Создай три типа Anki-style карточек для слова «${word}»:
+    const openAiUrl = "https://api.openai.com/v1/chat/completions";
+    const openAiRequestBody = {
+      model: "gpt-4.1-mini",
+      temperature: 0.3,
+      response_format: { type: "json_object" },
+      messages: [
+        {
+          role: "system",
+          content: "Ты создаёшь учебные Anki-style карточки для изучающего современный испанский Испании и русского носителя. Подготовь данные для трёх типов карточек: Recognition — испанское слово → вспомнить русский перевод; Recall — русский перевод → вспомнить испанское слово; Cloze — предложение на испанском с целевым словом, заменённым ровно на _____, и перевод предложения → вспомнить и вставить целевое слово. Ответь только JSON-объектом с ключами display, translation, pronunciation, example, exampleTranslation, cloze, clozeTranslation. display — нормативная словарная форма; для существительного добавь правильный артикль el/la, для множественного числа los/las, для остальных частей речи не добавляй артикль. translation — краткий наиболее частый перевод на русский. pronunciation — IPA для кастильского испанского (Испания), в квадратных скобках. example — естественное короткое предложение на испанском из повседневной жизни, где слово/выражение употреблено в подходящей форме. exampleTranslation — точный естественный русский перевод примера. cloze — естественное предложение на испанском с целевым словом, заменённым ровно на _____. clozeTranslation — русский перевод полного предложения с целевым словом. Например, для cielo: display — «el cielo», translation — «небо», cloze — «Hoy el _____ está despejado.», clozeTranslation — «Сегодня небо ясное.». Не используй HTML или Markdown."
+        },
+        { role: "user", content: `Создай три типа Anki-style карточек для слова «${word}»:
 1. Recognition — испанское слово → вспомнить перевод.
 2. Recall — русский перевод → вспомнить испанское слово.
 3. Cloze — предложение на испанском с пропущенным изучаемым словом и переводом предложения → вспомнить и вставить слово.
@@ -76,10 +74,33 @@ Deno.serve(async (request) => {
 - Recognition: el cielo → небо.
 - Recall: небо → el cielo.
 - Cloze: Hoy el _____ está despejado. → cielo.` },
-        ],
-      }),
+      ],
+    };
+    console.info("OpenAI request", JSON.stringify({
+      method: "POST",
+      url: openAiUrl,
+      body: openAiRequestBody,
+    }));
+
+    const requestStartedAt = Date.now();
+    const aiResponse = await fetch(openAiUrl, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${openAiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify(openAiRequestBody),
     });
-    const aiData = await aiResponse.json();
+    const responseText = await aiResponse.text();
+    let aiData: any;
+    try {
+      aiData = JSON.parse(responseText);
+    } catch {
+      aiData = { raw: responseText };
+    }
+    console.info("OpenAI response", JSON.stringify({
+      status: aiResponse.status,
+      requestId: aiResponse.headers.get("x-request-id"),
+      durationMs: Date.now() - requestStartedAt,
+      body: aiData,
+    }));
     if (!aiResponse.ok) {
       console.error("OpenAI request failed", aiResponse.status, aiData?.error?.type);
       return json({ error: "ИИ не смог подготовить карточки. Попробуй ещё раз." }, 502);
