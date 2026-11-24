@@ -652,9 +652,9 @@ updateCurrentSection();
       const response=await fetch(`${SUPABASE_URL}/functions/v1/generate-word-cards`,{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':`Bearer ${SUPABASE_PUBLISHABLE_KEY}`},body:JSON.stringify({word})});
       const result=await response.json();
       if(!response.ok) throw new Error(result.error || `Ошибка сервера (${response.status})`);
-      const item=result.word;
-      $('word-preview').innerHTML=`<h4 lang="es-ES">${escapeHTML(item.display)}</h4><p><strong>Перевод:</strong> ${escapeHTML(item.translation)}</p><p><strong>Пример:</strong> <span lang="es-ES">${escapeHTML(item.example)}</span></p><p><strong>Перевод примера:</strong> ${escapeHTML(item.exampleTranslation)}</p><p><strong>Произношение:</strong> ${escapeHTML(item.pronunciation)}</p><button type="button" id="speak-word">▶ Послушать слово</button>`;
-      $('word-preview').hidden=false; $('speak-word').addEventListener('click',()=>speakSpanish(item.display));
+      const cards=result.cards||[];
+      $('word-preview').innerHTML=`<h4>Созданные карточки</h4><ol>${cards.map(card=>`<li><strong>${escapeHTML(card.type)}</strong><p>${escapeHTML(card.front)}</p><p><strong>Ответ:</strong> ${escapeHTML(card.back)}</p></li>`).join('')}</ol><button type="button" id="speak-word">▶ Послушать слово</button>`;
+      $('word-preview').hidden=false; $('speak-word').addEventListener('click',()=>speakSpanish(cards.find(card=>card.type==='Recognition')?.front||word));
       setWordStatus('Созданы и сохранены три карточки: Recognition, Recall и Cloze.');
       input.value='';
       if(supabase) {

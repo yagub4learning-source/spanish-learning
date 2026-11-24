@@ -22,6 +22,36 @@ function slugify(value: string) {
     .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90);
 }
 
+function cleanCardText(value: string) {
+  return value.trim()
+    .replace(/^\*\*(.*)\*\*$/, "$1")
+    .replace(/^`(.*)`$/, "$1")
+    .replace(/^["“](.*)["”]$/, "$1")
+    .trim();
+}
+
+function parseGeneratedCards(value: string) {
+  const cards: Record<string, { front: string; back: string }> = {};
+  for (const line of value.split(/\r?\n/)) {
+    const match = line.match(/^\s*(?:[-*]\s*)?(?:\d+[.)]\s*)?\*{0,2}(Recognition|Recall|Cloze)\*{0,2}\s*[:：—–-]\s*(.+)$/i);
+    if (!match) continue;
+
+    const content = match[2].trim();
+    const arrowIndex = content.lastIndexOf("→");
+    if (arrowIndex < 0) continue;
+
+    const type = match[1].toLowerCase();
+    cards[type] = {
+      front: cleanCardText(content.slice(0, arrowIndex)),
+      back: cleanCardText(content.slice(arrowIndex + 1)),
+    };
+  }
+
+  return ["recognition", "recall", "cloze"].every((type) => cards[type]?.front && cards[type]?.back)
+    ? cards
+    : null;
+}
+
 Deno.serve(async (request) => {
   if (request.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (request.method !== "POST") return json({ error: "Используй POST-запрос." }, 405);
@@ -58,22 +88,18 @@ Deno.serve(async (request) => {
     const openAiUrl = "https://api.openai.com/v1/chat/completions";
     const openAiRequestBody = {
       model: "gpt-4.1-mini",
-      temperature: 0.3,
-      response_format: { type: "json_object" },
       messages: [
-        {
-          role: "system",
-          content: "Ты создаёшь учебные Anki-style карточки для изучающего современный испанский Испании и русского носителя. Подготовь данные для трёх типов карточек: Recognition — испанское слово → вспомнить русский перевод; Recall — русский перевод → вспомнить испанское слово; Cloze — предложение на испанском с целевым словом, заменённым ровно на _____, и перевод предложения → вспомнить и вставить целевое слово. Ответь только JSON-объектом с ключами display, translation, pronunciation, example, exampleTranslation, cloze, clozeTranslation. display — нормативная словарная форма; для существительного добавь правильный артикль el/la, для множественного числа los/las, для остальных частей речи не добавляй артикль. translation — краткий наиболее частый перевод на русский. pronunciation — IPA для кастильского испанского (Испания), в квадратных скобках. example — естественное короткое предложение на испанском из повседневной жизни, где слово/выражение употреблено в подходящей форме. exampleTranslation — точный естественный русский перевод примера. cloze — естественное предложение на испанском с целевым словом, заменённым ровно на _____. clozeTranslation — русский перевод полного предложения с целевым словом. Например, для cielo: display — «el cielo», translation — «небо», cloze — «Hoy el _____ está despejado.», clozeTranslation — «Сегодня небо ясное.». Не используй HTML или Markdown."
-        },
-        { role: "user", content: `Создай три типа Anki-style карточек для слова «${word}»:
-1. Recognition — испанское слово → вспомнить перевод.
-2. Recall — русский перевод → вспомнить испанское слово.
-3. Cloze — предложение на испанском с пропущенным изучаемым словом и переводом предложения → вспомнить и вставить слово.
+        { role: "user", content: `создай три типа anki style карточек для слова "${word}":
 
-Пример для слова cielo:
-- Recognition: el cielo → небо.
-- Recall: небо → el cielo.
-- Cloze: Hoy el _____ está despejado. → cielo.` },
+1. **Recognition** — испанское слово → вспомнить перевод.
+2. **Recall** — русский перевод → вспомнить испанское слово.
+3. **Cloze** — предложение на испанском с пропущенным изучаемым словом и переводом предложения → вспомнить и вставить слово.
+
+Например, для слова \`cielo\`:
+
+- Recognition: \`el cielo\` → \`небо\`.
+- Recall: \`небо\` → \`el cielo\`.
+- Cloze: \`Hoy el _____ está despejado.\` → \`cielo\`.` },
       ],
     };
     console.info("OpenAI request", JSON.stringify({
@@ -107,34 +133,33 @@ Deno.serve(async (request) => {
     }
 
     const raw = aiData?.choices?.[0]?.message?.content;
-    const generated = typeof raw === "string" ? JSON.parse(raw) : null;
-    const fields = ["display", "translation", "pronunciation", "example", "exampleTranslation", "cloze", "clozeTranslation"];
-    if (!generated || fields.some((field) => typeof generated[field] !== "string" || !generated[field].trim())) {
+    const generated = typeof raw === "string" ? parseGeneratedCards(raw) : null;
+    if (!generated) {
       throw new Error("Invalid generated card data");
     }
 
     const slug = slugify(word) || crypto.randomUUID();
-    const category = `AI word · ${generated.display}`;
+    const category = `AI word · ${word}`;
     const cards = [
       {
         type: "Recognition",
         card_id: `ai-word-${slug}-recognition`,
-        front: generated.display,
-        back: `${generated.translation}\n\nПример: ${generated.example}\nПеревод: ${generated.exampleTranslation}\nПроизношение: ${generated.pronunciation}`,
+        front: generated.recognition.front,
+        back: generated.recognition.back,
         category: `${category} · Recognition`,
       },
       {
         type: "Recall",
         card_id: `ai-word-${slug}-recall`,
-        front: generated.translation,
-        back: `${generated.display}\n\nПроизношение: ${generated.pronunciation}\nПример: ${generated.example}\nПеревод: ${generated.exampleTranslation}`,
+        front: generated.recall.front,
+        back: generated.recall.back,
         category: `${category} · Recall`,
       },
       {
         type: "Cloze",
         card_id: `ai-word-${slug}-cloze`,
-        front: `${generated.cloze}\n\nПеревод: ${generated.clozeTranslation}`,
-        back: `${generated.display.replace(/^(el|la|los|las)\s+/i, "")}\n\nПроизношение: ${generated.pronunciation}`,
+        front: generated.cloze.front,
+        back: generated.cloze.back,
         category: `${category} · Cloze`,
       },
     ];
@@ -150,7 +175,7 @@ Deno.serve(async (request) => {
       console.error("Card insert failed", error.code);
       throw new Error("Не удалось сохранить карточки в общей колоде.");
     }
-    return json({ word: generated, cards: cards.map(({ type, card_id }) => ({ type, card_id })) });
+    return json({ word, cards: cards.map(({ type, card_id, front, back }) => ({ type, card_id, front, back })) });
   } catch (error) {
     console.error("Word generation failed", error instanceof Error ? error.message : "unknown");
     return json({ error: error instanceof Error && error.message.includes("сохранить")
