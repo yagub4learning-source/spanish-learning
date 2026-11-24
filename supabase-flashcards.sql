@@ -312,8 +312,9 @@ begin
     from public.shared_flashcards;
 
   insert into public.shared_flashcards (card_id, front, back, category, sort_order)
-  select card->>'card_id', card->>'front', card->>'back', card->>'category',
-         next_order + row_number() over (order by card->>'type')::integer - 1
+  select generated.card->>'card_id', generated.card->>'front',
+         generated.card->>'back', generated.card->>'category',
+         next_order + row_number() over (order by generated.card->>'type')::integer - 1
     from jsonb_array_elements(p_cards) as generated(card)
   on conflict (card_id) do nothing;
 end;
