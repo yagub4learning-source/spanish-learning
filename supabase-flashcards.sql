@@ -1,7 +1,7 @@
 -- Public shared flashcard deck and review data. No user accounts are required.
 -- Card content is readable by all visitors; progress and reviews are public too.
 
--- Card text is public and read-only through the website. Manage the deck in SQL Editor.
+-- Card text is public and visitors can edit front/back from the website; IDs and order are fixed.
 create table if not exists public.shared_flashcards (
   card_id text primary key,
   front text not null,
@@ -12,11 +12,20 @@ create table if not exists public.shared_flashcards (
 );
 
 alter table public.shared_flashcards enable row level security;
+revoke all privileges on table public.shared_flashcards from public, anon, authenticated;
 drop policy if exists "Public read shared flashcards" on public.shared_flashcards;
 create policy "Public read shared flashcards"
   on public.shared_flashcards for select to anon, authenticated
   using (true);
 grant select on public.shared_flashcards to anon, authenticated;
+
+-- Visitors can edit card text from the website. IDs, categories and order remain read-only.
+drop policy if exists "Public edit shared flashcard text" on public.shared_flashcards;
+create policy "Public edit shared flashcard text"
+  on public.shared_flashcards for update to anon, authenticated
+  using (true)
+  with check (true);
+grant update (front, back) on public.shared_flashcards to anon, authenticated;
 
 insert into public.shared_flashcards (card_id, front, back, category, sort_order)
 values
