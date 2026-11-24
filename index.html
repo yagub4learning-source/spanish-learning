@@ -737,6 +737,10 @@ updateCurrentSection();
       const response=await fetch(`${SUPABASE_URL}/functions/v1/generate-word-cards`,{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':`Bearer ${SUPABASE_PUBLISHABLE_KEY}`},body:JSON.stringify({word})});
       const result=await response.json();
       if(!response.ok) throw new Error(result.error || `Ошибка сервера (${response.status})`);
+      if(result.already_exists) {
+        setWordStatus(`Карточки для слова «${result.word}» уже есть.`);
+        return;
+      }
       const cards=result.cards||[];
       $('word-preview').innerHTML=`<h4>Созданные карточки</h4><ol>${cards.map(card=>`<li><strong>${escapeHTML(card.type)}</strong><p>${escapeHTML(card.front)}</p><p><strong>Ответ:</strong> ${escapeHTML(card.back)}</p></li>`).join('')}</ol>`;
       $('word-preview').hidden=false;

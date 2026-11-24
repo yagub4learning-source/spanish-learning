@@ -17,11 +17,6 @@ function json(body: unknown, status = 200) {
   });
 }
 
-function slugify(value: string) {
-  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90);
-}
-
 Deno.serve(async (request) => {
   if (request.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (request.method !== "POST") return json({ error: "Используй POST-запрос." }, 405);
@@ -55,6 +50,16 @@ Deno.serve(async (request) => {
   }
 
   try {
+    const supabase = createClient(supabaseUrl, serviceRoleKey, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+    const { data: normalizedWord, error: normalizationError } = await supabase.rpc("normalize_spanish_word", { value: word });
+    if (normalizationError) throw normalizationError;
+    const { data: existing, error: lookupError } = await supabase.from("words")
+      .select("id,word").eq("normalized_word", normalizedWord).maybeSingle();
+    if (lookupError) throw lookupError;
+    if (existing) return json({ already_exists: true, word: existing.word });
+
     const openAiUrl = "https://api.openai.com/v1/chat/completions";
     const openAiRequestBody = {
       model: "gpt-4.1-mini",
@@ -151,39 +156,41 @@ Deno.serve(async (request) => {
       throw new Error("Invalid generated card data");
     }
 
-    const slug = slugify(word) || crypto.randomUUID();
+    const batchId = crypto.randomUUID();
     const category = `AI word · ${word}`;
     const cards = [
       {
         type: "Recognition",
-        card_id: `ai-word-${slug}-recognition`,
+        card_id: `${batchId}-recognition`,
         front: generated.recognition.front,
         back: generated.recognition.back,
         category: `${category} · Recognition`,
       },
       {
         type: "Recall",
-        card_id: `ai-word-${slug}-recall`,
+        card_id: `${batchId}-recall`,
         front: generated.recall.front,
         back: generated.recall.back,
         category: `${category} · Recall`,
       },
       {
         type: "Cloze",
-        card_id: `ai-word-${slug}-cloze`,
+        card_id: `${batchId}-cloze`,
         front: generated.cloze.front,
         back: generated.cloze.back,
         category: `${category} · Cloze`,
       },
     ];
 
-    const supabase = createClient(supabaseUrl, serviceRoleKey, {
-      auth: { persistSession: false, autoRefreshToken: false },
-    });
     const { error } = await supabase.rpc("add_generated_word_cards", {
       p_word: word,
       p_cards: cards,
     });
+    if (error?.code === "23505") {
+      const { data: concurrentWord, error: concurrentError } = await supabase.from("words")
+        .select("word").eq("normalized_word", normalizedWord).maybeSingle();
+      if (!concurrentError && concurrentWord) return json({ already_exists: true, word: concurrentWord.word });
+    }
     if (error) {
       console.error("Card insert failed", error.code);
       throw new Error("Не удалось сохранить карточки в общей колоде.");
