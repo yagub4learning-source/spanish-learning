@@ -657,12 +657,16 @@ updateCurrentSection();
       $('word-preview').hidden=false; $('speak-word').addEventListener('click',()=>speakSpanish(item.display));
       setWordStatus('Созданы и сохранены три карточки: Recognition, Recall и Cloze.');
       input.value='';
-      const {data,error}=await supabase.from('shared_flashcards').select('card_id,front,back,category,sort_order').order('sort_order');
-      if(error) throw error;
-      deck=(data||[]).map(card=>({id:card.card_id,cardId:card.card_id,front:card.front,back:card.back,category:card.category}));
-      const createdIds=new Set((result.cards||[]).map(card=>card.card_id));
-      deck.sort((a,b)=>Number(createdIds.has(b.id))-Number(createdIds.has(a.id)));
-      displayNext(); refreshSummary();
+      if(supabase) {
+        const {data,error}=await supabase.from('shared_flashcards').select('card_id,front,back,category,sort_order').order('sort_order');
+        if(error) throw error;
+        deck=(data||[]).map(card=>({id:card.card_id,cardId:card.card_id,front:card.front,back:card.back,category:card.category}));
+        const createdIds=new Set((result.cards||[]).map(card=>card.card_id));
+        deck.sort((a,b)=>Number(createdIds.has(b.id))-Number(createdIds.has(a.id)));
+        displayNext(); refreshSummary();
+      } else {
+        setWordStatus('Карточки сохранены. Обнови страницу, чтобы загрузить общую колоду.');
+      }
     } catch(error) { setWordStatus(`Не удалось создать карточки: ${error.message}`,true); }
     finally { button.disabled=false; }
   }
@@ -683,11 +687,11 @@ updateCurrentSection();
     renderHistory(); displayNext();
     showAnswer.addEventListener('click',()=>{if(!activeCard)return;back.hidden=false;showAnswer.hidden=true;ratingArea.hidden=false;reviewPreviews();});
     document.querySelectorAll('.rating-buttons button').forEach(button=>button.addEventListener('click',()=>rateCard(Number(button.dataset.rating))));
-    $('word-form').addEventListener('submit',createWordCards);
     $('shuffle-new').addEventListener('click',()=>{const news=deck.filter(card=>!progress[card.id]);for(let i=news.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[news[i],news[j]]=[news[j],news[i]];}const order=new Map(news.map((card,index)=>[card.id,index]));deck.sort((a,b)=>{const aNew=order.has(a.id),bNew=order.has(b.id);return aNew&&bNew?order.get(a.id)-order.get(b.id):aNew?-1:bNew?1:0;});displayNext();});
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshFromCloud();});
     refreshFromCloud();
   }
+  $('word-form').addEventListener('submit',createWordCards);
   main().catch(error=>{status.textContent=`Колоду не удалось загрузить: ${error.message}`;front.textContent='Не удалось подготовить карточки. Обнови страницу и попробуй ещё раз.';});
 })();
 </script>
