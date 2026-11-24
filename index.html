@@ -516,7 +516,6 @@ updateCurrentSection();
   let DefaultScheduler, Rating, createClient;
   const escapeHTML = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const setWordStatus = (message, isError=false) => { $('word-status').textContent=message; $('word-status').classList.toggle('cards-error',isError); };
-  function speakSpanish(text) { if (!('speechSynthesis' in window)) { setWordStatus('Озвучивание не поддерживается этим браузером.',true); return; } speechSynthesis.cancel(); const utterance=new SpeechSynthesisUtterance(text); utterance.lang='es-ES'; utterance.rate=0.85; speechSynthesis.speak(utterance); }
   const readJSON = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
   const persistLocal = () => { localStorage.setItem(progressKey, JSON.stringify(progress)); localStorage.setItem(historyKey, JSON.stringify(history.slice(0,100))); };
   const toCard = (saved, id) => {
@@ -653,8 +652,8 @@ updateCurrentSection();
       const result=await response.json();
       if(!response.ok) throw new Error(result.error || `Ошибка сервера (${response.status})`);
       const cards=result.cards||[];
-      $('word-preview').innerHTML=`<h4>Созданные карточки</h4><ol>${cards.map(card=>`<li><strong>${escapeHTML(card.type)}</strong><p>${escapeHTML(card.front)}</p><p><strong>Ответ:</strong> ${escapeHTML(card.back)}</p></li>`).join('')}</ol><button type="button" id="speak-word">▶ Послушать слово</button>`;
-      $('word-preview').hidden=false; $('speak-word').addEventListener('click',()=>speakSpanish(cards.find(card=>card.type==='Recognition')?.front||word));
+      $('word-preview').innerHTML=`<h4>Созданные карточки</h4><ol>${cards.map(card=>`<li><strong>${escapeHTML(card.type)}</strong><p>${escapeHTML(card.front)}</p><p><strong>Ответ:</strong> ${escapeHTML(card.back)}</p></li>`).join('')}</ol>`;
+      $('word-preview').hidden=false;
       setWordStatus('Созданы и сохранены три карточки: Recognition, Recall и Cloze.');
       input.value='';
       if(supabase) {
