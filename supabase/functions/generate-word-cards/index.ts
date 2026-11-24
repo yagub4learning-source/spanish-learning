@@ -68,20 +68,20 @@ Deno.serve(async (request) => {
             properties: {
               recognition: {
                 type: "object",
-                properties: { front: { type: "string" }, back: { type: "string" }, image_prompt: { type: "string" } },
-                required: ["front", "back", "image_prompt"],
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
                 additionalProperties: false,
               },
               recall: {
                 type: "object",
-                properties: { front: { type: "string" }, back: { type: "string" }, image_prompt: { type: "string" } },
-                required: ["front", "back", "image_prompt"],
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
                 additionalProperties: false,
               },
               cloze: {
                 type: "object",
-                properties: { front: { type: "string" }, back: { type: "string" }, image_prompt: { type: "string" } },
-                required: ["front", "back", "image_prompt"],
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
                 additionalProperties: false,
               },
             },
@@ -91,7 +91,7 @@ Deno.serve(async (request) => {
         },
       },
       messages: [
-        { role: "user", content: `создай три типа anki style карточек для слова "${word}". Для каждой карточки также придумай image_prompt на английском: конкретная, легко узнаваемая сцена, которая помогает запомнить значение слова. Без букв, слов, подписей и текста внутри изображения; квадратная редакционная иллюстрация в едином тёплом стиле.
+        { role: "user", content: `создай три типа anki style карточек для слова "${word}":
 
 1. **Recognition** — испанское слово → вспомнить перевод.
 2. **Recall** — русский перевод → вспомнить испанское слово.
@@ -146,8 +146,7 @@ Deno.serve(async (request) => {
     const cardTypes = ["recognition", "recall", "cloze"];
     if (!generated || cardTypes.some((type) =>
       typeof generated[type]?.front !== "string" || !generated[type].front.trim() ||
-      typeof generated[type]?.back !== "string" || !generated[type].back.trim() ||
-      typeof generated[type]?.image_prompt !== "string" || !generated[type].image_prompt.trim()
+      typeof generated[type]?.back !== "string" || !generated[type].back.trim()
     )) {
       throw new Error("Invalid generated card data");
     }
@@ -160,7 +159,6 @@ Deno.serve(async (request) => {
         card_id: `ai-word-${slug}-recognition`,
         front: generated.recognition.front,
         back: generated.recognition.back,
-        image_prompt: generated.recognition.image_prompt,
         category: `${category} · Recognition`,
       },
       {
@@ -168,7 +166,6 @@ Deno.serve(async (request) => {
         card_id: `ai-word-${slug}-recall`,
         front: generated.recall.front,
         back: generated.recall.back,
-        image_prompt: generated.recall.image_prompt,
         category: `${category} · Recall`,
       },
       {
@@ -176,7 +173,6 @@ Deno.serve(async (request) => {
         card_id: `ai-word-${slug}-cloze`,
         front: generated.cloze.front,
         back: generated.cloze.back,
-        image_prompt: generated.cloze.image_prompt,
         category: `${category} · Cloze`,
       },
     ];
@@ -184,51 +180,18 @@ Deno.serve(async (request) => {
     const supabase = createClient(supabaseUrl, serviceRoleKey, {
       auth: { persistSession: false, autoRefreshToken: false },
     });
-    const bucketName = "flashcard-images";
-    const { data: existingBucket } = await supabase.storage.getBucket(bucketName);
-    if (!existingBucket) {
-      const { error: bucketError } = await supabase.storage.createBucket(bucketName, { public: true, fileSizeLimit: "5MB", allowedMimeTypes: ["image/png"] });
-      if (bucketError && !bucketError.message.toLowerCase().includes("already exists")) throw bucketError;
-    }
-    const imageCards = await Promise.all(cards.map(async (card) => {
-      const imageResponse = await fetch("https://api.openai.com/v1/images/generations", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${openAiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "gpt-image-2",
-          prompt: `${card.image_prompt.slice(0, 2000)}\n\nCreate a memorable square illustration for a Spanish vocabulary flashcard. Warm, refined, friendly editorial illustration, clear central subject, simple uncluttered background. No text, letters, numbers, labels, watermarks, or borders.`,
-          size: "1024x1024",
-          quality: "low",
-          output_format: "png",
-        }),
-      });
-      const imageData = await imageResponse.json();
-      const encodedImage = imageData?.data?.[0]?.b64_json;
-      if (!imageResponse.ok || typeof encodedImage !== "string") {
-        console.error("OpenAI image generation failed", imageResponse.status, imageData?.error?.type);
-        throw new Error("Не удалось создать иллюстрации для карточек.");
-      }
-      const imageBytes = Uint8Array.from(atob(encodedImage), (char) => char.charCodeAt(0));
-      const { error: uploadError } = await supabase.storage.from(bucketName).upload(`${card.card_id}.png`, imageBytes, {
-        contentType: "image/png",
-        upsert: true,
-      });
-      if (uploadError) throw uploadError;
-      const { data: publicImage } = supabase.storage.from(bucketName).getPublicUrl(`${card.card_id}.png`);
-      return { ...card, image_url: publicImage.publicUrl };
-    }));
     const { error } = await supabase.rpc("add_generated_word_cards", {
       p_word: word,
-      p_cards: imageCards,
+      p_cards: cards,
     });
     if (error) {
       console.error("Card insert failed", error.code);
       throw new Error("Не удалось сохранить карточки в общей колоде.");
     }
-    return json({ word, cards: imageCards.map(({ type, card_id, front, back, image_url }) => ({ type, card_id, front, back, image_url })) });
+    return json({ word, cards: cards.map(({ type, card_id, front, back }) => ({ type, card_id, front, back })) });
   } catch (error) {
     console.error("Word generation failed", error instanceof Error ? error.message : "unknown");
-    return json({ error: error instanceof Error && (error.message.includes("сохранить") || error.message.includes("иллюстрации"))
+    return json({ error: error instanceof Error && error.message.includes("сохранить")
       ? error.message
       : "Не удалось создать карточки. Проверь слово и повтори попытку." }, 500);
   }
