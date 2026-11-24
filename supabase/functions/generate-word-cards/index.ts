@@ -22,36 +22,6 @@ function slugify(value: string) {
     .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90);
 }
 
-function cleanCardText(value: string) {
-  return value.trim()
-    .replace(/^\*\*(.*)\*\*$/, "$1")
-    .replace(/^`(.*)`$/, "$1")
-    .replace(/^["“](.*)["”]$/, "$1")
-    .trim();
-}
-
-function parseGeneratedCards(value: string) {
-  const cards: Record<string, { front: string; back: string }> = {};
-  for (const line of value.split(/\r?\n/)) {
-    const match = line.match(/^\s*(?:[-*]\s*)?(?:\d+[.)]\s*)?\*{0,2}(Recognition|Recall|Cloze)\*{0,2}\s*[:：—–-]\s*(.+)$/i);
-    if (!match) continue;
-
-    const content = match[2].trim();
-    const arrowIndex = content.lastIndexOf("→");
-    if (arrowIndex < 0) continue;
-
-    const type = match[1].toLowerCase();
-    cards[type] = {
-      front: cleanCardText(content.slice(0, arrowIndex)),
-      back: cleanCardText(content.slice(arrowIndex + 1)),
-    };
-  }
-
-  return ["recognition", "recall", "cloze"].every((type) => cards[type]?.front && cards[type]?.back)
-    ? cards
-    : null;
-}
-
 Deno.serve(async (request) => {
   if (request.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (request.method !== "POST") return json({ error: "Используй POST-запрос." }, 405);
@@ -88,6 +58,38 @@ Deno.serve(async (request) => {
     const openAiUrl = "https://api.openai.com/v1/chat/completions";
     const openAiRequestBody = {
       model: "gpt-4.1-mini",
+      response_format: {
+        type: "json_schema",
+        json_schema: {
+          name: "anki_cards",
+          strict: true,
+          schema: {
+            type: "object",
+            properties: {
+              recognition: {
+                type: "object",
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
+                additionalProperties: false,
+              },
+              recall: {
+                type: "object",
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
+                additionalProperties: false,
+              },
+              cloze: {
+                type: "object",
+                properties: { front: { type: "string" }, back: { type: "string" } },
+                required: ["front", "back"],
+                additionalProperties: false,
+              },
+            },
+            required: ["recognition", "recall", "cloze"],
+            additionalProperties: false,
+          },
+        },
+      },
       messages: [
         { role: "user", content: `создай три типа anki style карточек для слова "${word}":
 
@@ -132,9 +134,20 @@ Deno.serve(async (request) => {
       return json({ error: "ИИ не смог подготовить карточки. Попробуй ещё раз." }, 502);
     }
 
-    const raw = aiData?.choices?.[0]?.message?.content;
-    const generated = typeof raw === "string" ? parseGeneratedCards(raw) : null;
-    if (!generated) {
+    const choice = aiData?.choices?.[0];
+    if (choice?.message?.refusal) {
+      throw new Error("OpenAI refused to generate cards");
+    }
+    if (choice?.finish_reason === "length") {
+      throw new Error("OpenAI response was incomplete");
+    }
+    const raw = choice?.message?.content;
+    const generated = typeof raw === "string" ? JSON.parse(raw) : null;
+    const cardTypes = ["recognition", "recall", "cloze"];
+    if (!generated || cardTypes.some((type) =>
+      typeof generated[type]?.front !== "string" || !generated[type].front.trim() ||
+      typeof generated[type]?.back !== "string" || !generated[type].back.trim()
+    )) {
       throw new Error("Invalid generated card data");
     }
 
