@@ -590,7 +590,7 @@ updateCurrentSection();
         <form class="card-edit-form" data-edit-form="${escapeHTML(card.id)}" ${editing ? '' : 'hidden'}>
           <label>Лицевая сторона<textarea name="front" maxlength="4000" required>${escapeHTML(card.front)}</textarea></label>
           <label>Ответ<textarea name="back" maxlength="4000" required>${escapeHTML(card.back)}</textarea></label>
-          <label>Изображение (JPG, PNG, WebP или GIF, до 5 МБ)<input type="file" name="image" accept="image/jpeg,image/png,image/webp,image/gif"></label>
+          <label>Изображение (JPG, PNG, WebP или GIF, до 5 МБ)<input type="file" name="image" accept="image/jpeg,image/png,image/webp,image/gif"><span>Можно выбрать файл или вставить изображение через Ctrl+V, пока открыта форма редактирования.</span></label>
           <img class="card-picture image-preview" alt="Предпросмотр изображения" hidden>
           <label>Показывать изображение<select name="imageSide"><option value="back" ${card.imageSide !== 'front' ? 'selected' : ''}>Вместе с ответом</option><option value="front" ${card.imageSide === 'front' ? 'selected' : ''}>На лицевой стороне</option></select></label>
           ${card.imagePath ? '<label class="image-remove"><input type="checkbox" name="removeImage">Убрать текущее изображение</label>' : ''}
@@ -603,6 +603,22 @@ updateCurrentSection();
     const target = $('card-list');
     const message = $('card-list-status');
     $('card-search').addEventListener('input', renderCardList);
+    function setCardImage(form, file) {
+      const input = form.elements.namedItem('image');
+      const preview = form.querySelector('.image-preview');
+      preview.hidden = true;
+      preview.removeAttribute('src');
+      input.setCustomValidity('');
+      if (!file) return;
+      if (!['image/jpeg','image/png','image/webp','image/gif'].includes(file.type) || file.size > 5 * 1024 * 1024) {
+        input.setCustomValidity('Выбери JPG, PNG, WebP или GIF размером до 5 МБ.');
+        input.reportValidity();
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = () => { if (input.files[0] === file) { preview.src = reader.result; preview.hidden = false; } };
+      reader.readAsDataURL(file);
+    }
     target.addEventListener('click', event => {
       if (!(event.target instanceof Element)) return;
       const editButton = event.target.closest('[data-edit-card]');
@@ -619,20 +635,21 @@ updateCurrentSection();
     });
     target.addEventListener('change', event => {
       if (!(event.target instanceof HTMLInputElement) || event.target.name !== 'image') return;
-      const file = event.target.files[0];
-      const preview = event.target.form.querySelector('.image-preview');
-      preview.hidden = true;
-      preview.removeAttribute('src');
-      event.target.setCustomValidity('');
+      setCardImage(event.target.form, event.target.files[0]);
+    });
+    target.addEventListener('paste', event => {
+      const form = event.target instanceof Element ? event.target.closest('[data-edit-form]') : null;
+      if (!form) return;
+      const items = Array.from(event.clipboardData?.items || []);
+      const imageItem = items.find(item => item.kind === 'file' && item.type.startsWith('image/'));
+      const file = imageItem?.getAsFile() || Array.from(event.clipboardData?.files || []).find(item => item.type.startsWith('image/'));
       if (!file) return;
-      if (!['image/jpeg','image/png','image/webp','image/gif'].includes(file.type) || file.size > 5 * 1024 * 1024) {
-        event.target.setCustomValidity('Выбери JPG, PNG, WebP или GIF размером до 5 МБ.');
-        event.target.reportValidity();
-        return;
-      }
-      const reader = new FileReader();
-      reader.onload = () => { if (event.target.files[0] === file) { preview.src = reader.result; preview.hidden = false; } };
-      reader.readAsDataURL(file);
+      event.preventDefault();
+      const input = form.elements.namedItem('image');
+      const transfer = new DataTransfer();
+      transfer.items.add(file);
+      input.files = transfer.files;
+      setCardImage(form, file);
     });
     target.addEventListener('submit', async event => {
       if (!(event.target instanceof HTMLFormElement) || !event.target.matches('[data-edit-form]')) return;
